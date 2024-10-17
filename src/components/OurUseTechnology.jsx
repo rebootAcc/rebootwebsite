@@ -31,7 +31,7 @@ const OurUseTechnology = () => {
       imgalt: "meta-business-partner",
     },
     { imgsrc: "/images/gpt-module.webp", imgalt: "gpt" },
-    { imgsrc: "/images/google-partner-logo.webp", imgalt: "google" },
+    { imgsrc: "/icons/google-partner-logo.webp", imgalt: "google" },
     { imgsrc: "/images/google-cloud-logo.webp", imgalt: "google" },
     { imgsrc: "/images/Go-Language-logo.webp", imgalt: "Go" },
   ];

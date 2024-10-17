@@ -14,26 +14,38 @@ export async function getStaticProps() {
     {
       site: "www.yourwebsite.com",
       img: "/case_studies/case-studies-2.webp",
-      clientlogo: "/clients/mahabirdoctorhub.webp",
+      clientlogo: "/clients/siliguricarrental.webp",
       category: "Car Rental Services",
     },
     {
       site: "www.yourwebsite.com",
       img: "/case_studies/case-studies-3.webp",
-      clientlogo: "/clients/mahabirdoctorhub.webp",
+      clientlogo: "/clients/chiangdentalclinic.webp",
       category: "Doctor Dental Clinic",
     },
     {
       site: "www.yourwebsite.com",
       img: "/case_studies/case-studies-4.webp",
-      clientlogo: "/clients/mahabirdoctorhub.webp",
+      clientlogo: "/clients/edunethub.webp",
       category: "Educational",
     },
     {
       site: "www.yourwebsite.com",
       img: "/case_studies/case-studies-5.webp",
-      clientlogo: "/clients/mahabirdoctorhub.webp",
+      clientlogo: "/clients/gravitas.webp",
       category: "Interior Studio",
+    },
+    {
+      site: "www.yourwebsite.com",
+      img: "/case_studies/case-studies-6.webp",
+      clientlogo: "/clients/mietcollege.webp",
+      category: "Educational",
+    },
+    {
+      site: "www.yourwebsite.com",
+      img: "/case_studies/case-studies-7.webp",
+      clientlogo: "/clients/smilecaredentalclinic.webp",
+      category: "Doctor Dental Clinic",
     },
   ];
   return { props: { pageData } };

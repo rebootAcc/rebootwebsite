@@ -4,6 +4,7 @@ import OurResponsibility from "@/components/OurResponsibility";
 import OurUseTechnology from "@/components/OurUseTechnology";
 import SubPageBanner from "@/components/SubPageBanner";
 import dynamic from "next/dynamic";
+import Head from "next/head";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 // import Slider from "react-slick/lib/slider";
@@ -79,54 +80,59 @@ const About = () => {
     arrows: false,
   };
   return (
-    <section>
-      <SubPageBanner heading={"About Us"} />
+    <>
+      <Head>
+        <title>Reboot AI | About Us</title>
+      </Head>
+      <section>
+        <SubPageBanner heading={"About Us"} />
 
-      <AboutusComponent showsection={true} />
+        <AboutusComponent showsection={true} />
 
-      <OurUseTechnology />
-      <section className="xl:px-16 lg:px-8 sm:px-4 ">
-        <section className="w-full">
-          <Slider {...settings}>
-            {vissionmission.map((item, index) => (
-              <section
-                key={index}
-                className="!flex justify-center items-center p-4"
-              >
-                <section className="xlg:px-4 xs:px-4 md:px-3 py-6 h-full w-full flex flex-col rounded-lg boxsh gap-4 relative">
-                  <section className="xlg:h-[2.1rem] xs:h-[1.5rem] xs:w-[3rem] xlg:w-[4rem] rounded-b-full bg-[#4385F533] absolute top-0 inset-0 left-[70%]"></section>
-                  <section className="flex flex-row items-center gap-2  ">
-                    <i className="w-[20%]">
-                      <Image
-                        src={item.icon}
-                        height={40}
-                        width={30}
-                        alt={item.name}
-                        className="xlg:h-[3rem] lg:h-[2.5rem] xs:h-[3rem] w-full"
-                      />
-                    </i>
-                    <h1 className="text-[#333333] lg:text-xl  xs:text-2xl xlg:text-2xl xl:text-3xl font-medium w-[80%]">
-                      Reboot <br />
-                      <span className="text-primary">{item.name}</span>
-                    </h1>
-                  </section>
-                  <section className="text-[#666666] xs:text-sm/[20px] md:text-sm/[20px] lg:text-[10px]/[15px] xlg:text-xs/[16px] xl:text-sm">
-                    {item.details}
-                  </section>
-                  <section className="xlg:mt-3 lg:mt-2 xs:mt-2 flex justify-center items-end h-full">
-                    <section className="h-[0.2rem] w-[40%] rounded-lg bg-[#333333]"></section>
+        <OurUseTechnology />
+        <section className="xl:px-16 lg:px-8 sm:px-4 ">
+          <section className="w-full">
+            <Slider {...settings}>
+              {vissionmission.map((item, index) => (
+                <section
+                  key={index}
+                  className="!flex justify-center items-center p-4"
+                >
+                  <section className="xlg:px-4 xs:px-4 md:px-3 py-6 h-full w-full flex flex-col rounded-lg boxsh gap-4 relative">
+                    <section className="xlg:h-[2.1rem] xs:h-[1.5rem] xs:w-[3rem] xlg:w-[4rem] rounded-b-full bg-[#4385F533] absolute top-0 inset-0 left-[70%]"></section>
+                    <section className="flex flex-row items-center gap-2  ">
+                      <i className="w-[20%]">
+                        <Image
+                          src={item.icon}
+                          height={40}
+                          width={30}
+                          alt={item.name}
+                          className="xlg:h-[3rem] lg:h-[2.5rem] xs:h-[3rem] w-full"
+                        />
+                      </i>
+                      <h1 className="text-[#333333] lg:text-xl  xs:text-2xl xlg:text-2xl xl:text-3xl font-medium w-[80%]">
+                        Reboot <br />
+                        <span className="text-primary">{item.name}</span>
+                      </h1>
+                    </section>
+                    <section className="text-[#666666] xs:text-sm/[20px] md:text-sm/[20px] lg:text-[10px]/[15px] xlg:text-xs/[16px] xl:text-sm">
+                      {item.details}
+                    </section>
+                    <section className="xlg:mt-3 lg:mt-2 xs:mt-2 flex justify-center items-end h-full">
+                      <section className="h-[0.2rem] w-[40%] rounded-lg bg-[#333333]"></section>
+                    </section>
                   </section>
                 </section>
-              </section>
-            ))}
-          </Slider>
+              ))}
+            </Slider>
+          </section>
+        </section>
+        <section>
+          <OurResponsibility showsection={true} />
+          <ClientReview />
         </section>
       </section>
-      <section>
-        <OurResponsibility showsection={true} />
-        <ClientReview />
-      </section>
-    </section>
+    </>
   );
 };
 

@@ -77,6 +77,14 @@ const OurClient = () => {
     { imgsrc: "/clients/theinsidestory.webp", imgalt: "The Inside Story" },
     { imgsrc: "/clients/toplinerealty.webp", imgalt: "Topline Realty" },
     { imgsrc: "/clients/visaexpress.webp", imgalt: "Visa Express" },
+    {
+      imgsrc: "/clients/smilecaredentalclinic.webp",
+      imgalt: "Smilecare Dental Clinic",
+    },
+    {
+      imgsrc: "/clients/siliguricarrental.webp",
+      imgalt: "Siliguri Car Rental",
+    },
   ];
 
   return (

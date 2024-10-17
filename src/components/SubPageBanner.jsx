@@ -6,7 +6,7 @@ const SubPageBanner = ({ heading, subheading }) => {
     <div className="relative">
       <Image
         className="w-full h-[20vmax] lg:h-[30vmax] xl:h-auto object-cover"
-        src={"/images/subbannerbg.png"}
+        src={"/images/subbannerbg.webp"}
         width={5760}
         height={1200}
         priority

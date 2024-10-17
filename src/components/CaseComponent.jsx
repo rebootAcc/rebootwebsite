@@ -22,7 +22,9 @@ const CaseComponent = ({ cases }) => {
         <Image
           src={cases.img}
           alt="case-studies"
+
           className="translate-y-0 group-hover:-translate-y-[67%] duration-[5s] scroll-smooth"
+
           width={840}
           height={4096}
         />

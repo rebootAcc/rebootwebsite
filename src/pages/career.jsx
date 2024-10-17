@@ -6,18 +6,8 @@ import { HiMiniArrowTopRightOnSquare } from "react-icons/hi2";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { MdOutlineAddLocation, MdOutlineWatchLater } from "react-icons/md";
 
-const Career = () => {
-  const [selectedCategory, setSelectedCategory] = useState("View All");
-
-  const careercategory = [
-    { name: "View All" },
-    { name: "Developer" },
-    { name: "Digital Marketer" },
-    { name: "Telecaller" },
-    { name: "BDE" },
-  ];
-
-  const careers = [
+export async function getStaticProps() {
+  const pageData = [
     {
       heading: "Business Development Executive",
       description:
@@ -51,12 +41,25 @@ const Career = () => {
       applyfor: "Developer",
     },
   ];
+  return { props: { pageData } };
+}
+
+const Career = ({ pageData }) => {
+  const [selectedCategory, setSelectedCategory] = useState("View All");
+
+  const careercategory = [
+    { name: "View All" },
+    { name: "Developer" },
+    { name: "Digital Marketer" },
+    { name: "Telecaller" },
+    { name: "BDE" },
+  ];
 
   // Filter careers based on selected category
   const filteredCareers =
     selectedCategory === "View All"
-      ? careers
-      : careers.filter((career) => career.applyfor === selectedCategory);
+      ? pageData
+      : pageData.filter((career) => career.applyfor === selectedCategory);
 
   return (
     <>

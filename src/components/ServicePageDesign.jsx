@@ -26,8 +26,9 @@ const ServicePageDesign = () => {
     centerMode: false,
     arrows: false,
   };
+
   const content = {
-    serviceimg: "/images/serviceimg.png",
+    serviceimg: "/images/serviceimg.webp",
     servicename: " Web Development",
     servicedesc1:
       "Today visual content is gaining importance as it creates your brand’s image in the audience’s mind and so, the need for graphic design has increased among all types of businesses. The reason is graphic design helps to make your business stand out different from its competition. In other words, it helps in engaging the audience with your brand.",
@@ -73,6 +74,7 @@ const ServicePageDesign = () => {
       ],
     },
   ];
+  
   const pagedesigns = ["/images/pagedesign.png", "/images/pagedesign.png"];
   return (
     <section>
@@ -147,7 +149,7 @@ const ServicePageDesign = () => {
           </section>
           <div className="w-[50%]">
             <Image
-              src={"/images/workimg.png"}
+              src={"/images/workimg-1.webp"}
               alt="work"
               width={512}
               height={392}
@@ -218,7 +220,7 @@ const ServicePageDesign = () => {
           <section className="w-[50%] flex flex-col gap-4">
             <div>
               <Image
-                src={"/images/workimg.png"}
+                src={"/images/workimg-2.webp"}
                 alt="work"
                 width={512}
                 height={392}

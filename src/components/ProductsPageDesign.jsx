@@ -15,7 +15,7 @@ const Slider = dynamic(() => import("react-slick/lib/slider"), {
 
 const ProductsPageDesign = () => {
   const content = {
-    serviceimg: "/images/serviceimg.png",
+    serviceimg: "/images/serviceimg.webp",
     servicename: " Web Development",
     servicedesc1:
       "Today visual content is gaining importance as it creates your brands image in the audiences mind and so, the need for graphic design has increased among all types of businesses. The reason is graphic design helps to make your business stand out different from its competition. In other words, it helps in engaging the audience with your brand.",
@@ -43,6 +43,7 @@ const ProductsPageDesign = () => {
     "If You Are a Doctor",
     "If You Are a Doctor",
   ];
+
   const othersoftware = [
     { imgsrc: "/images/kivihealth.png" },
     { imgsrc: "/images/bajajhealth.png" },
@@ -82,6 +83,7 @@ const ProductsPageDesign = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
   const settings = {
     infinite: true,
     slidesToShow: slidesToShow,
@@ -95,7 +97,7 @@ const ProductsPageDesign = () => {
   return (
     <div>
       <SubPageBanner
-        heading={"Service"}
+        heading={"Products"}
         subheading={"Educational Consultant CRM"}
       />
       <ServiceAndproductPage1stpart content={content} />
