@@ -113,14 +113,16 @@ const OurProjects = () => {
                   }}
                 >
                   {hoveredIndex === index ? (
-                    <div className="absolute inset-0 xs:w-[24rem] rounded-lg md:w-[28rem] z-50 h-full bg-white p-4 border border-[#666666]">
-                      <Image
-                        src={item.image}
-                        alt={item.name}
-                        layout="fill"
-                        objectFit="cover"
-                        className="rounded-lg p-4 h-full "
-                      />
+                    <div className="absolute inset-0 xs:w-[24rem] rounded-lg md:w-[28rem] z-50 h-full bg-white  ">
+                      <div className=" p-4 relative h-[32rem] boxsh rounded-lg">
+                        <Image
+                          src={item.image}
+                          alt={item.name}
+                          layout="fill"
+                          objectFit="cover"
+                          className="rounded-lg  h-full border border-primary"
+                        />
+                      </div>
                       <div className="absolute bottom-6 left-[50%] transform -translate-x-1/2">
                         <Link
                           href={item.link}
