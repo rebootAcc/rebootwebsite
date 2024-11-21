@@ -110,7 +110,7 @@ const Navbar = () => {
           menus: [
             {
               text: "Web Apps Development",
-              href: "/services/web_apps_development",
+              href: "/services/web_application_development",
             },
             {
               text: "Android App Development",
@@ -164,7 +164,7 @@ const Navbar = () => {
             },
             {
               text: "Web & Apps Security",
-              href: "/services/web_and_app_security",
+              href: "/services/web_and_apps_security",
             },
             {
               text: "Creative UI Design",
@@ -195,11 +195,11 @@ const Navbar = () => {
             },
             {
               text: "Clinic Management Software",
-              href: "/clinic_management_software",
+              href: "/products/clinic_management_software",
             },
             {
               text: "Service Center Management CRM ",
-              href: "/service_center_management_crm",
+              href: "/products/service_center_management_crm",
             },
           ],
         },

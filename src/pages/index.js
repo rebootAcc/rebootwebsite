@@ -5,7 +5,7 @@ import OurProjects from "@/components/OurProjects";
 import OurResponsibility from "@/components/OurResponsibility";
 import OurServices from "@/components/OurServices";
 import OurUseTechnology from "@/components/OurUseTechnology";
-import QueryForm from "@/components/QueryForm";
+
 import dynamic from "next/dynamic";
 import Head from "next/head";
 import Image from "next/image";
@@ -14,6 +14,10 @@ import { MdOutlineStarBorder, MdStarRate } from "react-icons/md";
 // import Slider from "react-slick/lib/slider";
 
 const Slider = dynamic(() => import("react-slick/lib/slider"), {
+  ssr: false,
+});
+
+const QueryForm = dynamic(() => import("@/components/QueryForm"), {
   ssr: false,
 });
 
@@ -68,6 +72,12 @@ export default function Home() {
     "/icons/makeinindia.webp",
   ];
 
+  const aboutcontent = {
+    aboutcontent:
+      "At Reboot AI Private Limited, our mission is to enhance the competitiveness and agility of companies through innovative software solutions. We empower individuals and organizations with exceptional design, reliable technology, and ongoing support to drive transformation within their industries. Based in Siliguri, West Bengal, we offer comprehensive services across India. Our offerings include web and app development, as well as business and IT consulting. Our development processes are designed to boost productivity and enable businesses to scale using modern techniques. </br> As a Google Partner Firm, we specialize in delivering exceptional services to enhance website security in response to the evolving landscape of organic and paid marketing. Our team comprises skilled security professionals equipped with advanced tools to identify, upgrade, and eliminate any malicious activities. We offer a comprehensive range of expertise across sales, support, marketing, and business development to meet all your business requirements. Our current projects include an Educational Consultant CRM, Clinic Management Software, and Service Centre Management solutions. With our custom development services, clients can tailor solutions to their specific needs. We foster digital innovation through user experience-driven engineering, design thinking, product accelerators for streamlined delivery, and strategic partnerships.</br> Ensure your digital products and services offer exceptional security, reliability, and performance to distinguish yourself in the online landscape.",
+    heading: "Crafting Intelligent Web & App Solutions with AI",
+  };
+
   return (
     <>
       <Head>
@@ -111,7 +121,7 @@ export default function Home() {
           </div>
         </section>
 
-        <AboutusComponent showsection={false} />
+        <AboutusComponent showsection={false} content={aboutcontent} />
 
         <OurUseTechnology />
         <OurServices />
@@ -122,7 +132,9 @@ export default function Home() {
         <OurResponsibility />
 
         <section className="flex flex-col lg:flex-row px-8 xlg:px-16 gap-6 my-20">
-          <QueryForm />
+          <div className="lg:min-w-[30rem] xl:min-w-[40rem]">
+            <QueryForm />
+          </div>
           <div className="flex flex-col gap-9">
             <div className="flex flex-col gap-4">
               <h2 className="text-[#333] text-xl font-semibold">

@@ -50,34 +50,34 @@ const OurProjects = () => {
 
   const projects = [
     {
-      name: "Interior Website Development",
-      image: "/images/project1.png",
-      link: "https://fasterrefrigeration.in/",
+      name: "Logo Design",
+      image: "/images/Logo-Design.webp",
+      link: "",
     },
     {
-      name: "Pharma App Development",
-      image: "/images/project1.png",
-      link: "https://fasterrefrigeration.in/",
+      name: "Student App Development",
+      image: "/images/student-app-development.webp",
+      link: "",
     },
     {
-      name: "Food App Development",
-      image: "/images/project1.png",
-      link: "https://fasterrefrigeration.in/",
+      name: "Creative UI Design",
+      image: "/images/creative-ui-design.webp",
+      link: "",
     },
     {
-      name: "Interior Website Development",
-      image: "/images/project1.png",
-      link: "https://fasterrefrigeration.in/",
+      name: "Dental Clinic Management",
+      image: "/images/dental-clinic-management.webp",
+      link: "",
     },
     {
-      name: "Pharma App Development",
-      image: "/images/project1.png",
-      link: "https://fasterrefrigeration.in/",
+      name: "Education SAAS Development",
+      image: "/images/education-saas-development.webp",
+      link: "",
     },
     {
-      name: "Food App Development",
-      image: "/images/project1.png",
-      link: "https://fasterrefrigeration.in/",
+      name: "Service Center CRM",
+      image: "/images/service-center-crm.webp",
+      link: "",
     },
   ];
 

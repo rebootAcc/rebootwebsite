@@ -79,6 +79,12 @@ const About = () => {
     centerMode: false,
     arrows: false,
   };
+
+  const aboutcontent = {
+    aboutcontent:
+      "Reboot AI Private Limited is a Google partner firm specializing in various aspects of business growth. Our mission is to help businesses enhance their brand and maximize their potential in the digital landscape. To ensure our clients stand out in the marketplace, our agency focuses on multiple parameters, guiding them from the initial stages of operation through to the final deployment. </br> Our team of specialists excels in various areas, including application development, branding solutions, AI and ML integration, and performance marketing. In addition to these services, we provide IT consulting and security solutions to help bring your ideas to life. At Reboot, we strive to enhance the digital landscape for all, employing a human-centered design approach to address the unique needs of businesses. </br> </br> <strong> Why Choose Us?</strong> </br> With five years of industry experience, we provide services across India, and our office is situated in Siliguri. We have assisted businesses in evolving from startups to technology-driven enterprises. Our mission is to create brighter futures for businesses and help them stay ahead in an increasingly tech-oriented world. </br> We aim to preserve your vision and authenticity while maintaining the essential details. If you want your brand to remain competitive in the market, reach out to us today.",
+    heading: "Welcome to Reboot AI Pvt Ltd",
+  };
   return (
     <>
       <Head>
@@ -87,7 +93,7 @@ const About = () => {
       <section>
         <SubPageBanner heading={"About Us"} />
 
-        <AboutusComponent showsection={true} />
+      <AboutusComponent showsection={true} content={aboutcontent} />
 
         <OurUseTechnology />
         <section className="xl:px-16 lg:px-8 sm:px-4 ">

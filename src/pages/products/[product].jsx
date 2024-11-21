@@ -16,3 +16,21 @@ const Educationalconsultantcrm = () => {
 };
 
 export default Educationalconsultantcrm;
+
+export const getStaticPaths = async () => {
+  return {
+    paths: [
+      {
+        paramas: {
+          product: "educational_consultant_crm",
+        },
+      },
+      {
+        paramas: {
+          product: "educational_consultant_crm",
+        },
+      },
+    ],
+    fallback: false,
+  };
+};

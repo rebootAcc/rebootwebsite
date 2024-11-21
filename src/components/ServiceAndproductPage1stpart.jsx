@@ -27,17 +27,20 @@ const ServiceAndproductPage1stpart = ({ content }) => {
           </p>
         </section>
       </div>
-      <section className="md:w-[55%] xs:w-full flex flex-col gap-4 xlg:gap-6">
+      <section className="md:w-[55%] xs:w-full flex flex-col  gap-4 xlg:gap-6">
         <section className="flex flex-col gap-2">
           <h2 className="xlg:text-3xl md:text-xl text-2xl font-medium ">
             Service
           </h2>
           <h1 className=" md:text-3xl text-3xl xlg:text-5xl font-semibold text-primary ">
-            {servicename} <br /> Services
+            {servicename}
           </h1>
         </section>
-        <section className="flex flex-col gap-4">
-          <p className="xlg:text-xl/[30px] text-base/[26px] ">{servicedesc1}</p>
+        <section className="flex flex-col  gap-4">
+          <p
+            className="xlg:text-xl/[30px] text-base/[26px] "
+            dangerouslySetInnerHTML={{ __html: servicedesc1 }}
+          ></p>
           <p
             className="xlg:text-base/[27px] lg:text-xs/[20px] text-xs"
             dangerouslySetInnerHTML={{ __html: servicedesc2 }}

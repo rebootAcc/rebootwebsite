@@ -10,3 +10,10 @@
   box-shadow: 10px 10px 20px 10px rgba(67, 133, 245, 0.58);
 }
 
+.threelinelimit {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limits to 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

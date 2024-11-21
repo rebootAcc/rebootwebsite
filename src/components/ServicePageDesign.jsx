@@ -13,7 +13,7 @@ const Slider = dynamic(() => import("react-slick/lib/slider"), {
   ssr: false,
 });
 
-const ServicePageDesign = () => {
+const ServicePageDesign = ({ title, content, packages, pagedesigns }) => {
   const settings = {
     infinite: true,
     speed: 2000,
@@ -27,58 +27,9 @@ const ServicePageDesign = () => {
     arrows: false,
   };
 
-  const content = {
-    serviceimg: "/images/serviceimg.webp",
-    servicename: " Web Development",
-    servicedesc1:
-      "Today visual content is gaining importance as it creates your brand’s image in the audience’s mind and so, the need for graphic design has increased among all types of businesses. The reason is graphic design helps to make your business stand out different from its competition. In other words, it helps in engaging the audience with your brand.",
-    servicedesc2:
-      "Lorem ipsum dolor sit amet consectetur. Hendrerit adipiscing morbi lorem nullam sit mattis sit commodo pretium. Risus fermentum lectus sed sed proin justo. Aliquet egestas cursus aliquet urna tellus molestie. Odio interdum nullam ipsum pulvinar placerat pellentesque maecenas tincidunt. Sagittis ut sit pellentesque dignissim. <br /> Vitae varius lectus tempus cilisis aliquet bibendum non in. Et aliquet malesuada malesuada sit sit nulla vitae malesuada  eget. Ut venenatis donec diam nec adipiscing eget quam tincidunt suspendisse. Urna consequat tincidunt tempor dolor mauris. Phasellus morbi quis pretium pharetra. Sit enim urna tellus libero adipiscing massa. Faucibus id nulla porttitor vel in massa  volutpat cursus. Luctus orci duis vitae urna. Donec consequat egestas imperdiet augue nisi tellus sagittis amet volutpat. sodales magna orci quis a aliquet. Nibh vitae non amet vitae. Posuere aliquam venenatis in fringilla risus vel consectetur. Tempus posuere at.",
-  };
-
-  const packages = [
-    {
-      heading: "Basic Web Designing Package",
-      details: [
-        "Website Design",
-        "SEO Friendly",
-        "Mobile and Desktop Responsive",
-        "1 Design art reversion",
-        "Up to 3-5 Pages Content",
-        "1-Month Free Support/Maintenance.",
-        "₹ 22,000 INR",
-      ],
-    },
-    {
-      heading: "Basic Web Designing Package",
-      details: [
-        "Website Design",
-        "SEO Friendly",
-        "Mobile and Desktop Responsive",
-        "1 Design art reversion",
-        "Up to 3-5 Pages Content",
-        "1-Month Free Support/Maintenance.",
-        "₹ 22,000 INR",
-      ],
-    },
-    {
-      heading: "Basic Web Designing Package",
-      details: [
-        "Website Design",
-        "SEO Friendly",
-        "Mobile and Desktop Responsive",
-        "1 Design art reversion",
-        "Up to 3-5 Pages Content",
-        "1-Month Free Support/Maintenance.",
-        "₹ 22,000 INR",
-      ],
-    },
-  ];
-  
-  const pagedesigns = ["/images/pagedesign.png", "/images/pagedesign.png"];
   return (
     <section>
-      <SubPageBanner heading={"Service"} subheading={"web Development"} />
+      <SubPageBanner heading={"Service"} subheading={title} />
       <ServiceAndproductPage1stpart content={content} />
       <ServiceAndProductPageTechnologySection />
 

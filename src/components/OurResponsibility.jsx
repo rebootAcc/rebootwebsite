@@ -96,32 +96,34 @@ const OurResponsibility = ({ showsection }) => {
             <h3 className="text-[#333333] text-xl md:text-xl xlg:text-2xl font-medium">
               Your <span className="text-primary">Business,</span>
             </h3>
-            <h1 className="text-[#333333] text-2xl md:text-2xl xlg:text-4xl font-semibold">
-              It&apos;s Our Responsibility To <br /> Grow
-              <span className="text-primary">Your Business</span>
+            <h1 className="text-[#333333] text-2xl md:text-2xl xlg:text-3xl font-semibold">
+              It&apos;s Our Responsibility To Grow
+              <span className="text-primary"> Your Business</span>
             </h1>
           </section>
-          <p className="xlg:text-sm/[20px] lg:text-xs/[18px] md:text-[10px]/[15px] text-xs/[20px] text-[#333333]">
-            Lorem ipsum dolor sit amet consectetur. Pretium sem quis feugiat
-            velit risus nec nunc. Tristique amet cursus tellus ornare. Cursus
-            quam ipsum viverra non duis viverra volutpat laoreet. Ac feugiat eu
-            sit quam auctor sed consequat libero vulputate. Duis facilisis
-            nullam nulla ornare amet amet. Id at in vestibulum sed mattis a. Sed
-            vel pellentesque est tincidunt sollicitudin rhoncus adipiscing.
-            Bibendum id in ante consectetur commodo. Nibh mauris vitae
-            pellentesque aliquet vel elit. Pharetra pharetra enim lorem
-            vulputate quam fusce sagittis ornare. Laoreet faucibus amet diam
-            viverra mauris tincidunt porta iaculis. Ultrices phasellus lacinia
-            pellentesque feugiat viverra purus tortor. Congue sollicitudin
-            luctus id eu fusce eu. Leo nisl tempor aenean lorem ultricies
-            tincidunt mauris. Sagittis nunc vel vitae pharetra amet aenean
-            cursus. Diam eget tristique vel consequat vitae. Consectetur
-            bibendum lacus odio vitae. Morbi egestas metus erat semper id lorem
-            volutpat.
+          <p className="xlg:text-sm/[20px] xl:text-base  lg:text-xs/[18px] md:text-[10px]/[15px] text-xs/[20px] text-[#333333]">
+            When it comes to driving business growth and increasing revenue, we
+            can be your trusted long-term partner in elevating your position in
+            the industry. Our technology advisors are here to help you develop
+            market-leading strategies, ensuring any last-minute adjustments to
+            your product and service launches. From the initial planning stages
+            to the final rollout, we are dedicated to supporting your expansion
+            and maximizing your return on investment. Leverage the capabilities
+            of contemporary web frameworks to create progressive web
+            applications that grow and generate leads with our services.
             <br />
-            Feugiat leo mi etiam cras adipiscing. Dui at eu eget tempus urna. Ut
-            et pellentesque viverra morbi. Porta id at risus morbi risus nibh
-            sit ac. A sit sagittis consectetur proin.
+            Our budget-friendly approach allows us to offer cost-effective
+            services to our clients and encourage them to freely share their
+            business needs with us. By utilizing our services, you can expect to
+            see increased traffic, higher sales, greater revenue, and,
+            naturally, more leads. Our dedicated team is always available to
+            assist you and provide consultations tailored to your requirements,
+            ensuring your progress remains uninterrupted. We specialize in web
+            app development, delivering unique web solutions for businesses
+            across various industries. With our advanced technologies and
+            innovative strategies, we are committed to boosting your business
+            revenue in the years ahead. Contact us today to address your
+            specific needs!
           </p>
         </section>
         <section className="lg:w-[40%] flex flex-col gap-8">
@@ -129,7 +131,7 @@ const OurResponsibility = ({ showsection }) => {
             Let’ See <br />
             <span className="text-[#333333]">How Will</span> You Benefit?
           </h1>
-          <section className="flex flex-col gap-6 ">
+          <section className="flex flex-col gap-8 ">
             {benifits.map((item, index) => (
               <section key={index} className="flex items-center gap-2 ">
                 <i>

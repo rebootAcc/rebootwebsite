@@ -1,9 +1,83 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 
 const QueryForm = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    mobileNumber: "",
+    email: "",
+    consultationFor: "",
+    massage: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+  const [errors, setErrors] = useState({});
+  const [success, setSuccess] = useState("");
+  const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
+
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [id]: value,
+    }));
+  };
+
+  const validateForm = () => {
+    const newErrors = {};
+
+    if (!formData.name) newErrors.name = "Name is required.";
+    if (!formData.mobileNumber) {
+      newErrors.mobileNumber = "Mobile Number is required.";
+    } else if (!/^\d{10}$/.test(formData.mobileNumber)) {
+      newErrors.mobileNumber = "Mobile Number must be exactly 10 digits.";
+    }
+
+    if (!formData.consultationFor)
+      newErrors.consultationFor = "Please select a support option.";
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0; // Valid if no errors
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setSuccess("");
+    setErrors({});
+    setLoading(true);
+
+    if (!validateForm()) {
+      setLoading(false);
+      return;
+    }
+
+    try {
+      const response = await axios.post(
+        `${backendUrl}/api/websiteleads/create`,
+        formData
+      );
+      if (response.status === 201) {
+        setSuccess("Query submitted successfully!");
+        setFormData({
+          name: "",
+          mobileNumber: "",
+          email: "",
+          consultationFor: "",
+          massage: "",
+        });
+      }
+    } catch (error) {
+      setErrors({
+        form: error.response?.data?.message || "Failed to submit the query.",
+      });
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
-    <div className="flex flex-col bg-[rgba(67,_133,_245,_0.05)] rounded-lg px-8 lg:min-w-[30rem] xl:min-w-[40rem] flex-1 py-5">
+    <div className="flex flex-col bg-[rgba(67,_133,_245,_0.05)] rounded-lg px-8  flex-1 py-5">
       <Image
         src="/icons/query-icon.png"
         alt="query icon"
@@ -13,7 +87,7 @@ const QueryForm = () => {
       />
 
       <form
-        action=""
+        onSubmit={handleSubmit}
         className="flex flex-col gap-5 py-1 justify-between flex-1"
       >
         <div className="flex flex-col gap-2">
@@ -23,19 +97,40 @@ const QueryForm = () => {
           <input
             type="text"
             id="name"
-            className="border border-[rgba(67,_133,_245,_0.30)] rounded-lg bg-white outline-none px-9 py-4 xl:py-8 text-xl text-[rgba(51,51,51,0.25)]"
+            value={formData.name}
+            onChange={handleChange}
+            required
+            className="border border-[rgba(67,_133,_245,_0.30)] rounded-lg bg-white outline-none px-9 py-4 xl:py-8 text-xl text-[#333]"
           />
+          {errors.name && <p className="text-red-500">{errors.name}</p>}
         </div>
+
         <div className="flex flex-col gap-2">
-          <label htmlFor="mobile" className="capitalize text-xl text-[#333]">
+          <label
+            htmlFor="mobileNumber"
+            className="capitalize text-xl text-[#333]"
+          >
             Mobile Number
           </label>
           <input
             type="tel"
-            id="mobile"
-            className="border border-[rgba(67,_133,_245,_0.30)] rounded-lg bg-white outline-none px-9 py-4 xl:py-8 text-xl text-[rgba(51,51,51,0.25)]"
+            id="mobileNumber"
+            value={formData.mobileNumber}
+            onChange={(e) => {
+              // Ensure only numbers are entered and no more than 10 digits
+              if (/^\d{0,10}$/.test(e.target.value)) {
+                handleChange(e);
+              }
+            }}
+            maxLength="10"
+            required
+            className="border border-[rgba(67,_133,_245,_0.30)] rounded-lg bg-white outline-none px-9 py-4 xl:py-8 text-xl text-[#333]"
           />
+          {errors.mobileNumber && (
+            <p className="text-red-500">{errors.mobileNumber}</p>
+          )}
         </div>
+
         <div className="flex flex-col gap-2">
           <label htmlFor="email" className="capitalize text-xl text-[#333]">
             Email Address
@@ -43,18 +138,27 @@ const QueryForm = () => {
           <input
             type="email"
             id="email"
-            className="border border-[rgba(67,_133,_245,_0.30)] rounded-lg bg-white outline-none px-9 py-4 xl:py-8 text-xl text-[rgba(51,51,51,0.25)]"
+            value={formData.email}
+            onChange={handleChange}
+            className="border border-[rgba(67,_133,_245,_0.30)] rounded-lg bg-white outline-none px-9 py-4 xl:py-8 text-xl text-[#333]"
           />
         </div>
+
         <div className="flex flex-col gap-2">
-          <label htmlFor="support" className="capitalize text-xl text-[#333]">
-            Support For
+          <label
+            htmlFor="consultationFor"
+            className="capitalize text-xl text-[#333]"
+          >
+            Inquiry For
           </label>
           <select
-            name=""
-            id="support"
-            className="border border-[rgba(67,_133,_245,_0.30)] rounded-lg bg-white outline-none px-9 py-4 xl:py-8 text-xl text-[rgba(51,51,51,0.25)]"
+            id="consultationFor"
+            value={formData.consultationFor}
+            onChange={handleChange}
+            required
+            className="border border-[rgba(67,_133,_245,_0.30)] rounded-lg bg-white outline-none px-9 py-4 xl:py-8 text-xl text-[#333]"
           >
+            <option value="">Select an option</option>
             <option value="App Development">App Development</option>
             <option value="Web Development">Web Development</option>
             <option value="SAAS">SAAS</option>
@@ -62,23 +166,34 @@ const QueryForm = () => {
             <option value="Marketing">Marketing</option>
             <option value="Others">Others</option>
           </select>
+          {errors.consultationFor && (
+            <p className="text-red-500">{errors.consultationFor}</p>
+          )}
         </div>
+
         <div className="flex flex-col gap-2">
-          <label htmlFor="message" className="capitalize text-xl text-[#333]">
-            Messages
+          <label htmlFor="massage" className="capitalize text-xl text-[#333]">
+            Message
           </label>
-          <input
-            type="email"
-            id="email"
-            className="border border-[rgba(67,_133,_245,_0.30)] rounded-lg bg-white outline-none px-9 py-4 xl:py-8 text-xl text-[rgba(51,51,51,0.25)]"
+          <textarea
+            id="massage"
+            value={formData.massage}
+            onChange={handleChange}
+            className="border border-[rgba(67,_133,_245,_0.30)] rounded-lg bg-white outline-none px-9 py-4 xl:py-8 text-xl text-[#333]"
           />
         </div>
+
         <button
-          type="button"
-          className={` text-white text-2xl font-semibold bg-primary py-5 xl:py-7 text-center rounded-lg`}
+          type="submit"
+          disabled={loading}
+          className={`text-white text-2xl font-semibold bg-primary py-5 xl:py-7 text-center rounded-lg ${
+            loading ? "opacity-50 cursor-not-allowed" : ""
+          }`}
         >
-          Send Query
+          {loading ? "Submitting..." : "Send Query"}
         </button>
+        {errors.form && <p className="text-red-500 mt-3">{errors.form}</p>}
+        {success && <p className="text-green-500 mt-3">{success}</p>}
       </form>
     </div>
   );

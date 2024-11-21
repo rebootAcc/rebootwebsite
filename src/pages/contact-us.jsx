@@ -1,9 +1,14 @@
+import dynamic from "next/dynamic";
 import SubPageBanner from "@/components/SubPageBanner";
 import Head from "next/head";
 import Link from "next/link";
 import React from "react";
 import { FaLocationDot, FaPhoneVolume } from "react-icons/fa6";
 import { IoLogoWhatsapp, IoMailSharp } from "react-icons/io5";
+
+const QueryForm = dynamic(() => import("@/components/QueryForm"), {
+  ssr: false,
+});
 
 const ContactUs = () => {
   return (
@@ -113,106 +118,7 @@ const ContactUs = () => {
               ></iframe>
             </div>
           </div>
-          <div className="flex flex-col bg-[rgba(67,_133,_245,_0.05)] rounded-lg px-8 py-5 my-14">
-            <form
-              action=""
-              className="flex flex-col gap-3 xlg:gap-5 py-1 justify-between flex-1"
-            >
-              <div className="flex flex-col gap-2">
-                <label
-                  htmlFor="name"
-                  className="capitalize text-xl text-[#333]"
-                >
-                  Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  className="border border-[rgba(67,_133,_245,_0.30)] rounded-lg bg-white outline-none px-9 py-4 xl:py-8 text-xl text-[rgba(51,51,51,0.25)]"
-                />
-              </div>
-              <div className="flex flex-col gap-2">
-                <label
-                  htmlFor="mobile"
-                  className="capitalize text-xl text-[#333]"
-                >
-                  Mobile Number
-                </label>
-                <input
-                  type="tel"
-                  id="mobile"
-                  className="border border-[rgba(67,_133,_245,_0.30)] rounded-lg bg-white outline-none px-9 py-4 xl:py-8 text-xl text-[rgba(51,51,51,0.25)]"
-                />
-              </div>
-              <div className="flex flex-col gap-2">
-                <label
-                  htmlFor="email"
-                  className="capitalize text-xl text-[#333]"
-                >
-                  Email Address
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  className="border border-[rgba(67,_133,_245,_0.30)] rounded-lg bg-white outline-none px-9 py-4 xl:py-8 text-xl text-[rgba(51,51,51,0.25)]"
-                />
-              </div>
-              <div className="flex justify-between gap-11">
-                <div className="flex flex-col gap-2 flex-1">
-                  <label
-                    htmlFor="businessName"
-                    className="capitalize text-xl text-[#333]"
-                  >
-                    Business Name
-                  </label>
-                  <input
-                    type="text"
-                    id="businessName"
-                    className="border border-[rgba(67,_133,_245,_0.30)] rounded-lg bg-white outline-none px-9 py-4 xl:py-8 text-xl text-[rgba(51,51,51,0.25)]"
-                  />
-                </div>
-                <div className="flex flex-col gap-2 flex-1">
-                  <label
-                    htmlFor="support"
-                    className="capitalize text-xl text-[#333]"
-                  >
-                    Select a service
-                  </label>
-                  <select
-                    name=""
-                    id="support"
-                    className="border border-[rgba(67,_133,_245,_0.30)] rounded-lg bg-white outline-none px-9 py-4 xl:py-8 text-xl text-[rgba(51,51,51,0.25)]"
-                  >
-                    <option value="App Development">App Development</option>
-                    <option value="Web Development">Web Development</option>
-                    <option value="SAAS">SAAS</option>
-                    <option value="Branding">Branding</option>
-                    <option value="Marketing">Marketing</option>
-                    <option value="Others">Others</option>
-                  </select>
-                </div>
-              </div>
-              <div className="flex flex-col gap-2">
-                <label
-                  htmlFor="message"
-                  className="capitalize text-xl text-[#333]"
-                >
-                  Messages
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  className="border border-[rgba(67,_133,_245,_0.30)] rounded-lg bg-white outline-none px-9 py-4 xl:py-8 text-xl text-[rgba(51,51,51,0.25)]"
-                />
-              </div>
-              <button
-                type="button"
-                className={`text-white text-2xl font-semibold bg-primary py-5 xl:py-7 text-center rounded-lg`}
-              >
-                Send Query
-              </button>
-            </form>
-          </div>
+          <QueryForm />
         </section>
       </main>
     </>
