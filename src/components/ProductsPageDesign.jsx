@@ -13,45 +13,13 @@ const Slider = dynamic(() => import("react-slick/lib/slider"), {
   ssr: false,
 });
 
-const ProductsPageDesign = () => {
-  const content = {
-    serviceimg: "/images/serviceimg.webp",
-    servicename: " Web Development",
-    servicedesc1:
-      "Today visual content is gaining importance as it creates your brands image in the audiences mind and so, the need for graphic design has increased among all types of businesses. The reason is graphic design helps to make your business stand out different from its competition. In other words, it helps in engaging the audience with your brand.",
-    servicedesc2:
-      "Lorem ipsum dolor sit amet consectetur. Hendrerit adipiscing morbi lorem nullam sit mattis sit commodo pretium. Risus fermentum lectus sed sed proin justo. Aliquet egestas cursus aliquet urna tellus molestie. Odio interdum nullam ipsum pulvinar placerat pellentesque maecenas tincidunt. Sagittis ut sit pellentesque dignissim. <br /> Vitae varius lectus tempus cilisis aliquet bibendum non in. Et aliquet malesuada malesuada sit sit nulla vitae malesuada  eget. Ut venenatis donec diam nec adipiscing eget quam tincidunt suspendisse. Urna consequat tincidunt tempor dolor mauris. Phasellus morbi quis pretium pharetra. Sit enim urna tellus libero adipiscing massa. Faucibus id nulla porttitor vel in massa  volutpat cursus. Luctus orci duis vitae urna. Donec consequat egestas imperdiet augue nisi tellus sagittis amet volutpat. sodales magna orci quis a aliquet. Nibh vitae non amet vitae. Posuere aliquam venenatis in fringilla risus vel consectetur. Tempus posuere at.",
-  };
-
-  const productfeatures = [
-    "Dynamic Dashboard",
-    "Appointment Scheduling",
-    "Billing and Invoicing",
-    "Patient Management",
-    "Reporting and Analytics",
-    "Manage Multiple Clinics",
-    "Prescription Management",
-    "WA Automation",
-  ];
-
-  const perfects = [
-    "If You Have a Clinic",
-    "If You Are a Doctor",
-    "If You Are a Doctor",
-    "If You Are a Doctor",
-    "If You Are a Doctor",
-    "If You Are a Doctor",
-    "If You Are a Doctor",
-  ];
-
-  const othersoftware = [
-    { imgsrc: "/images/kivihealth.png" },
-    { imgsrc: "/images/bajajhealth.png" },
-    { imgsrc: "/images/kivihealth.png" },
-    { imgsrc: "/images/bajajhealth.png" },
-    { imgsrc: "/images/kivihealth.png" },
-  ];
-
+const ProductsPageDesign = ({
+  title,
+  content,
+  productfeatures,
+  perfects,
+  othersoftware,
+}) => {
   const [slidesToShow, setSlidesToShow] = useState(5);
   const [scroll, setScroll] = useState(false);
 
@@ -96,10 +64,7 @@ const ProductsPageDesign = () => {
 
   return (
     <div>
-      <SubPageBanner
-        heading={"Products"}
-        subheading={"Educational Consultant CRM"}
-      />
+      <SubPageBanner heading={"Products"} subheading={title} />
       <ServiceAndproductPage1stpart content={content} />
       <ServiceAndProductPageTechnologySection />
       <section className="xl:p-16 lg:p-8 sm:p-4 flex flex-col gap-8">
