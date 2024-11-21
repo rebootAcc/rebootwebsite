@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import SubPageBanner from "@/components/SubPageBanner";
 import Head from "next/head";
 import Link from "next/link";
@@ -7,7 +7,7 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { MdOutlineAddLocation, MdOutlineWatchLater } from "react-icons/md";
 import CareerApplicationPopup from "@/components/CareerApplicationPopup";
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
 
   try {
