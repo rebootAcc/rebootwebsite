@@ -11,11 +11,13 @@ export async function getStaticProps() {
   const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
 
   try {
-    const pageData = await fetch(`${backendUrl}/api/jobpost/get`)
+    const pageData = await fetch(`${backendUrl}/api/jobpost/get?active=true`)
       .then((res) => res.json())
       .then((data) => data.data);
 
-    const jobRoles = await fetch(`${backendUrl}/api/jobpost/jobroles`)
+    const jobRoles = await fetch(
+      `${backendUrl}/api/jobpost/jobroles?active=true`
+    )
       .then((res) => res.json())
       .then((data) => data.data || []); // Ensure an empty array if no roles are found
 
