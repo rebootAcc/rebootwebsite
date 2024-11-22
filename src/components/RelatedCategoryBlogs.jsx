@@ -104,12 +104,11 @@ const RelatedCategoryBlogs = ({ category, excludeBlogId }) => {
     <div className="w-full">
       <Slider {...settings}>
         {relatedBlogs.map((blog) => (
-          <div className="!flex w-full justify-center items-center">
-            <Link
-              href={`/blogs/${blog.blogId}`}
-              className="w-[95%]"
-              key={blog.blogId}
-            >
+          <div
+            key={blog.blogId}
+            className="!flex w-full justify-center items-center"
+          >
+            <Link href={`/blogs/${blog.blogId}`} className="w-[95%]">
               <BlogCards blog={blog} />
             </Link>
           </div>
