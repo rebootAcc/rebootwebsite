@@ -13,7 +13,14 @@ const Slider = dynamic(() => import("react-slick/lib/slider"), {
   ssr: false,
 });
 
-const ServicePageDesign = ({ title, content, packages, pagedesigns }) => {
+const ServicePageDesign = ({
+  title,
+  content,
+  packages,
+  pagedesigns,
+  workimg,
+  packageimg,
+}) => {
   const settings = {
     infinite: true,
     speed: 2000,
@@ -34,8 +41,8 @@ const ServicePageDesign = ({ title, content, packages, pagedesigns }) => {
       <ServiceAndProductPageTechnologySection />
 
       <section className="xl:p-16 lg:p-8 sm:p-4 flex flex-col gap-8 ">
-        <section className="flex flex-row gap-8">
-          <section className="w-[50%] flex flex-col sm:gap-4 lg:gap-10">
+        <section className="flex flex-col-reverse md:flex-row gap-8">
+          <section className="md:w-[50%] w-full flex flex-col sm:gap-4 lg:gap-10">
             <h1 className="lg:text-3xl sm:text-xl font-semibold text-[#333333]">
               How <span className="text-primary">Do </span>
               <span className="lg:text-5xl sm:text-3xl">
@@ -98,25 +105,25 @@ const ServicePageDesign = ({ title, content, packages, pagedesigns }) => {
               </div>
             </section>
           </section>
-          <div className="w-[50%]">
+          <div className="md:w-[50%] w-full">
             <Image
-              src={"/images/workimg-1.webp"}
+              src={workimg}
               alt="work"
               width={512}
               height={392}
-              className="w-full rounded-lg"
+              className="w-full  rounded-lg"
             />
           </div>
         </section>
-        <section className="flex flex-row xs:gap-4 lg:gap-4 xl:gap-8">
-          <section className="w-[50%] flex flex-col xs:gap-4 xlg:gap-8">
+        <section className="flex flex-col md:flex-row xs:gap-4 lg:gap-4 xl:gap-8">
+          <section className="md:w-[50%] w-full flex flex-col xs:gap-4 xlg:gap-8">
             <h1 className="xlg:text-3xl lg:text-lg xs:text-xl font-semibold text-[#333333]">
               See Our
               <span className="xlg:text-5xl lg:text-2xl xs:text-3xl ml-2 text-primary">
                 Package Pricing
               </span>
             </h1>
-            <div className="flex flex-col xs:gap-2 lg:gap-6 xl:gap-10">
+            <div className="flex flex-col gap-4 md:gap-2 lg:gap-6 xl:gap-10">
               {packages.map((item, index) => (
                 <div key={index} className="flex flex-col lg:gap-3 xl:gap-8">
                   <h1 className="xlg:text-3xl xs:text-xl  font-semibold text-[#333333]">
@@ -168,20 +175,22 @@ const ServicePageDesign = ({ title, content, packages, pagedesigns }) => {
               ))}
             </div>
           </section>
-          <section className="w-[50%] flex flex-col gap-4">
-            <div>
+          <section className="md:w-[50%] w-full flex flex-col gap-4">
+            <div className="md:block hidden">
               <Image
-                src={"/images/workimg-2.webp"}
+                src={packageimg}
                 alt="work"
                 width={512}
                 height={392}
-                className="w-full rounded-lg"
+                className="w-full rounded-lg "
               />
             </div>
-            <section className="flex flex-col gap-1">
+            <section className="flex flex-col gap-4 md:gap-1">
               <section className="flex flex-col gap-1">
-                <h3 className="text-xl font-medium text-[#333333]">Lets See</h3>
-                <h1 className="text-3xl font-semibold text-primary">
+                <h3 className="lg:text-xl text-sm font-medium text-[#333333]">
+                  Lets See
+                </h3>
+                <h1 className="lg:text-3xl text-xl font-semibold text-primary">
                   Some of Our Previous Designing
                 </h1>
               </section>

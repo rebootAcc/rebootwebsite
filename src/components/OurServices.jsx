@@ -68,14 +68,11 @@ const OurServices = () => {
       <section className="flex flex-row justify-between items-center">
         <section className="flex flex-col gap-2 lg:w-[35%] xlg:w-[25%] xs:w-[65%]">
           <h3 className="md:text-xl xs:text-lg font-medium text-[#333333]">
-            Services
+            Our Services
           </h3>
           <h1 className="text-primary xs:text-lg  md:text-3xl font-semibold">
-            Our services can help your problem.
+            Managed IT Services, Hassle-Free
           </h1>
-        </section>
-        <section className="md:text-xl xs:text-xs font-medium text-[#444444]">
-          See All Services &#xbb;
         </section>
       </section>
       <ServiceAndProductComponent services={services} />

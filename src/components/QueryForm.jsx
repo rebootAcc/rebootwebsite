@@ -100,7 +100,7 @@ const QueryForm = () => {
             value={formData.name}
             onChange={handleChange}
             required
-            className="border border-[rgba(67,_133,_245,_0.30)] rounded-lg bg-white outline-none px-9 py-4 xl:py-8 text-xl text-[#333]"
+            className="border border-[rgba(67,_133,_245,_0.30)] rounded-lg bg-white outline-none px-6 py-4 xl:py-6 text-xl text-[#333]"
           />
           {errors.name && <p className="text-red-500">{errors.name}</p>}
         </div>
@@ -124,7 +124,7 @@ const QueryForm = () => {
             }}
             maxLength="10"
             required
-            className="border border-[rgba(67,_133,_245,_0.30)] rounded-lg bg-white outline-none px-9 py-4 xl:py-8 text-xl text-[#333]"
+            className="border border-[rgba(67,_133,_245,_0.30)] rounded-lg bg-white outline-none px-6 py-4 xl:py-6 text-xl text-[#333]"
           />
           {errors.mobileNumber && (
             <p className="text-red-500">{errors.mobileNumber}</p>
@@ -140,7 +140,7 @@ const QueryForm = () => {
             id="email"
             value={formData.email}
             onChange={handleChange}
-            className="border border-[rgba(67,_133,_245,_0.30)] rounded-lg bg-white outline-none px-9 py-4 xl:py-8 text-xl text-[#333]"
+            className="border border-[rgba(67,_133,_245,_0.30)] rounded-lg bg-white outline-none px-6 py-4 xl:py-6 text-xl text-[#333]"
           />
         </div>
 
@@ -149,14 +149,14 @@ const QueryForm = () => {
             htmlFor="consultationFor"
             className="capitalize text-xl text-[#333]"
           >
-            Inquiry For
+            Enquiry For
           </label>
           <select
             id="consultationFor"
             value={formData.consultationFor}
             onChange={handleChange}
             required
-            className="border border-[rgba(67,_133,_245,_0.30)] rounded-lg bg-white outline-none px-9 py-4 xl:py-8 text-xl text-[#333]"
+            className="border border-[rgba(67,_133,_245,_0.30)] rounded-lg bg-white outline-none px-6 py-4 xl:py-6 text-xl text-[#333]"
           >
             <option value="">Select an option</option>
             <option value="App Development">App Development</option>
@@ -179,14 +179,14 @@ const QueryForm = () => {
             id="massage"
             value={formData.massage}
             onChange={handleChange}
-            className="border border-[rgba(67,_133,_245,_0.30)] rounded-lg bg-white outline-none px-9 py-4 xl:py-8 text-xl text-[#333]"
+            className="border border-[rgba(67,_133,_245,_0.30)] rounded-lg bg-white outline-none px-6 py-4 xl:py-6 text-xl text-[#333]"
           />
         </div>
 
         <button
           type="submit"
           disabled={loading}
-          className={`text-white text-2xl font-semibold bg-primary py-5 xl:py-7 text-center rounded-lg ${
+          className={`text-white text-2xl font-semibold bg-primary py-4 xl:py-5 text-center rounded-lg ${
             loading ? "opacity-50 cursor-not-allowed" : ""
           }`}
         >

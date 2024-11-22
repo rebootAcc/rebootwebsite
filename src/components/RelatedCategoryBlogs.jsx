@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
-import { LuCalendarClock } from "react-icons/lu";
 import Link from "next/link";
 import BlogCards from "./BlogCards";
 import dynamic from "next/dynamic";
@@ -22,10 +20,10 @@ const RelatedCategoryBlogs = ({ category, excludeBlogId }) => {
         setSlidesToShow(1);
         setAutoslide(true);
       } else if (window.innerWidth <= 560) {
-        setSlidesToShow(2);
+        setSlidesToShow(1);
         setAutoslide(true);
       } else if (window.innerWidth <= 860) {
-        setSlidesToShow(3);
+        setSlidesToShow(2);
         setAutoslide(false);
       } else if (window.innerWidth <= 1024) {
         setSlidesToShow(3);

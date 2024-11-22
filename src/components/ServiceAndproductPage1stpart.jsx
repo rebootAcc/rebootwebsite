@@ -12,33 +12,33 @@ const ServiceAndproductPage1stpart = ({ content }) => {
             alt={servicename}
             width={512}
             height={610}
-            className="w-full xs:h-full md:h-[50vh] lg:h-[80vh] object-cover rounded-md"
+            className="w-full xs:h-full md:h-[40vh] lg:h-[70vh] object-cover rounded-md"
           />
         </section>
         <section className="flex flex-col">
-          <p className="xlg:text-2xl text-xl font-medium text-[#333333]">
+          <p className="xlg:text-2xl lg:text-xl text-lg font-medium text-[#333333]">
             Are Your <span className="text-primary"> Ready,</span>
           </p>
-          <p className="xlg:text-4xl text-3xl font-semibold text-[#333333]">
-            To Grow <span className="text-primary">Your Business</span>
+          <p className="xlg:text-4xl lg:text-3xl text-xl font-semibold text-[#333333]">
+            To Lets Turn <span className="text-primary">Your Ideas</span>
           </p>
-          <p className="xlg:text-2xl text-xl font-medium text-[#333333]">
-            Make More <span className="text-primary">Benefits</span>
+          <p className="xlg:text-2xl lg:text-xl text-lg font-medium text-[#333333]">
+            into Reality <span className="text-primary">with us</span>
           </p>
         </section>
       </div>
       <section className="md:w-[55%] xs:w-full flex flex-col  gap-4 xlg:gap-6">
         <section className="flex flex-col gap-2">
-          <h2 className="xlg:text-3xl md:text-xl text-2xl font-medium ">
-            Service
+          <h2 className="xlg:text-2xl md:text-xl text-lg font-medium ">
+            About
           </h2>
-          <h1 className=" md:text-3xl text-3xl xlg:text-5xl font-semibold text-primary ">
+          <h1 className=" md:text-2xl text-2xl xlg:text-4xl font-semibold text-primary ">
             {servicename}
           </h1>
         </section>
         <section className="flex flex-col  gap-4">
           <p
-            className="xlg:text-xl/[30px] text-base/[26px] "
+            className="xlg:text-base/[27px] lg:text-xs/[20px] text-xs"
             dangerouslySetInnerHTML={{ __html: servicedesc1 }}
           ></p>
           <p

@@ -57,7 +57,7 @@ const BlogDetails = ({ blog }) => {
 
       <main className="xl:p-16 lg:p-8 p-4 flex flex-col gap-8">
         <div className="flex gap-6">
-          <div className="flex flex-col gap-4 w-[75%]">
+          <div className="flex flex-col gap-4 w-full md:w-[60%] lg:w-[75%]">
             <h1 className="text-3xl font-medium text-[#333]">
               {blog.blogTitle}
             </h1>
@@ -84,7 +84,7 @@ const BlogDetails = ({ blog }) => {
               alt="blog-cover"
               width={2400}
               height={1600}
-              className="w-full h-[25rem] object-contain rounded-lg"
+              className="w-full md:h-[25rem] object-contain rounded-lg"
             />
             <div className="flex flex-col gap-4">
               <p
@@ -102,7 +102,7 @@ const BlogDetails = ({ blog }) => {
               </ol>
             </div> */}
           </div>
-          <div className="hidden lg:flex flex-col gap-6 w-[25%]">
+          <div className="hidden md:flex flex-col gap-6 md:w-[40%] lg:w-[25%]">
             <div className="">
               <BlogCategoryList />
             </div>

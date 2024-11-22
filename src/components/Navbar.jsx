@@ -190,8 +190,8 @@ const Navbar = () => {
           heading: "Our Live Products",
           menus: [
             {
-              text: "Educational Consultant CRM",
-              href: "/products/educational_consultant_crm",
+              text: "Educational CRM Advanced",
+              href: "/products/educational_CRM_advanced",
             },
             {
               text: "Clinic Management Software",
@@ -224,8 +224,8 @@ const Navbar = () => {
       className={`${
         isScrolling
           ? "bg-black/90 lg:pb-5"
-          : "bg-[linear-gradient(180deg,_rgba(0,_0,_0,_0.80)_0%,_rgba(0,_0,_0,_0.00)_100%)] lg:pb-14"
-      } pt-5 pb-5 px-8 xlg:px-14 xl:px-16 fixed w-full top-0 left-0 z-[1100] transition-all duration-500`}
+          : "bg-[linear-gradient(180deg,_rgba(0,_0,_0,_0.80)_0%,_rgba(0,_0,_0,_0.00)_100%)] lg:pb-14 xl:pb-16"
+      } pt-5 pb-5 xl:pb-7 px-8 xlg:px-14 xl:px-16 fixed w-full top-0 left-0 z-[1100] transition-all duration-500`}
     >
       <div className="flex justify-between items-center relative">
         <Link href="/">
@@ -237,7 +237,7 @@ const Navbar = () => {
             className="w-[17.5vw]"
           />
         </Link>
-        <ul className="hidden lg:flex items-center justify-center gap-5">
+        <ul className="hidden lg:flex items-center pt-4 justify-center gap-5">
           {navLinks.map((item, index) => (
             <li key={index} className="relative group">
               <Link
@@ -285,7 +285,7 @@ const Navbar = () => {
           href="/contact-us"
           className="text-center text-sm font-semibold text-white hidden lg:inline-flex items-center justify-center bg-[#09f] gap-1 px-2 xlg:px-4 py-1 xlg:py-2 rounded"
         >
-          Book an Appointment
+          Contact Us
         </Link>
         <button
           type="button"

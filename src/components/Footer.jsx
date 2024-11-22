@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { FaGlobe, FaPhoneVolume } from "react-icons/fa6";
+import { FaGlobe, FaPhoneVolume, FaWhatsapp } from "react-icons/fa6";
 import { IoMailSharp } from "react-icons/io5";
 import { HiLocationMarker, HiOutlineCurrencyRupee } from "react-icons/hi";
 import { BsChatQuote } from "react-icons/bs";
@@ -221,11 +221,11 @@ const Footer = () => {
         <div className="flex flex-col lg:flex-row justify-between gap-8">
           {footerLinks.map((item, index) => (
             <div className="flex flex-col gap-3" key={index}>
-              <h2 className="text-base font-bold text-justify text-white flex items-center gap-1">
+              <h2 className="xlg:text-lg lg:text-sm text-lg font-bold text-justify text-white flex items-center gap-1">
                 <span>{item.head}</span>
                 <span className="bg-[linear-gradient(90deg,_#4385F5_0%,_rgba(67,_133,_245,_0.00)_100%)] w-12 h-1"></span>
               </h2>
-              <ul className="flex flex-col text-[0.75rem] leading-5">
+              <ul className="flex flex-col lg:text-xs text-base xlg:text-base gap-2 leading-5">
                 {item.links.map((link, count) => (
                   <li
                     className="flex items-center gap-2 text-white"
@@ -240,8 +240,8 @@ const Footer = () => {
           ))}
         </div>
         <div className="h-0.5 w-full bg-[rgba(139,139,139,0.6)]"></div>
-        <div className="flex flex-col lg:flex-row justify-between gap-6 lg:gap-16">
-          <div className="flex flex-col items-start gap-2">
+        <div className="flex flex-col lg:flex-row justify-between gap-6 ">
+          <div className="flex flex-col items-start gap-2 lg:w-[30%] xlg:w-[40%]">
             <Link href="/">
               <Image
                 src="/logo.svg"
@@ -251,54 +251,53 @@ const Footer = () => {
                 className="w-[17.5vw]"
               />
             </Link>
-            <p className="text-xs text-white text-wrap">
-              Lorem ipsum dolor sit amet consectetur. Pellentesque senectus
-              augue ipsum dignissim. In vitae aliquet placerat erat.
+            <p className="text-xs text-white ">
+              Reboot AI Pvt. Ltd. is most growing IT company in North East India
+              including Siliguri, Kolkata. We provide Tech & Marketing Solution
+              for your business.
             </p>
           </div>
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col gap-1 lg:w-[25%] xlg:w-[20%]">
             <h2 className="text-sm font-bold text-justify text-white flex items-center gap-1">
               <span>Our Pages</span>
               <span className="bg-[linear-gradient(90deg,_#4385F5_0%,_rgba(67,_133,_245,_0.00)_100%)] w-12 h-1"></span>
             </h2>
             <p className="text-xs text-white whitespace-nowrap">
-              CIN No: U74140WB2021PTC243170
+              CIN No: U62012WB2024PTC274361
             </p>
             <p className="text-xs text-white whitespace-nowrap">
-              GSTIN No: U74140WB2021PTC243170
+              MSME No: UDYOG-WB-14-000000
             </p>
           </div>
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col gap-1 lg:[35%] xlg:w-[20%]">
             <h2 className="text-sm font-bold text-justify text-white flex items-center gap-1">
               <span>Get in touch</span>
               <span className="bg-[linear-gradient(90deg,_#4385F5_0%,_rgba(67,_133,_245,_0.00)_100%)] w-12 h-1"></span>
             </h2>
             <p className="text-xs text-white flex items-center gap-1">
               <FaPhoneVolume className="text-primary" />{" "}
-              <Link href="tel:919024886970">+91 90248 86970</Link>
+              <Link href="tel:03534069362">03534 069362</Link>
+            </p>
+            <p className="text-xs text-white flex items-center gap-1">
+              <FaWhatsapp className="text-primary" />{" "}
+              <Link href="/">+91 9088576170</Link>
             </p>
             <p className="text-xs text-white flex items-center gap-1">
               <IoMailSharp className="text-primary" />{" "}
-              <Link href="mailTo:info@rebootmarketing.in">
-                info@rebootmarketing.in
-              </Link>
-            </p>
-            <p className="text-xs text-white flex items-center gap-1">
-              <FaGlobe className="text-primary" />{" "}
-              <Link href="/">rebootmarketing.in</Link>
+              <Link href="mailTo:info@rebootai.in">info@rebootai.in</Link>
             </p>
           </div>
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col gap-1 lg:w-[20%] xlg:w-[20%]">
             <h2 className="text-sm font-bold text-justify text-white flex items-center gap-1">
-              <span>Our Offices</span>
+              <span>Our Reg. Offices</span>
               <span className="bg-[linear-gradient(90deg,_#4385F5_0%,_rgba(67,_133,_245,_0.00)_100%)] w-12 h-1"></span>
             </h2>
-            <p className="text-xs text-white flex items-center gap-1">
-              <HiLocationMarker className="text-primary" />{" "}
-              <Link href="tel:919024886970">
-                Haren Mukherjee Road, Near Pakurta, Siliguri, West Bengal -
-                734001 India
-              </Link>
+            <p className="text-xs text-white flex gap-1">
+              <HiLocationMarker className="text-primary w-[2rem] text-xl" />
+              <div>
+                4th Floor, Shib Shankar Market, Bidhan Road Siliguri, West
+                Bengal, IN 734001
+              </div>
             </p>
           </div>
         </div>
@@ -312,7 +311,7 @@ const Footer = () => {
               className="object-contain"
             />
           </div>
-          {/* <div className="flex flex-col justify-between gap-2 xlg:gap-0">
+          <div className="flex flex-col justify-between gap-2 xlg:gap-0">
             <button
               type="button"
               className="text-sm xl:text-base font-bold text-white px-4 xl:px-10 py-3 bg-primary inline-flex items-center gap-2 rounded-lg"
@@ -325,7 +324,7 @@ const Footer = () => {
             >
               <BsChatQuote /> <span>Ge A Quote</span>
             </button>
-          </div> */}
+          </div>
           <div className="min-h-20 xlg:min-h-28 w-full lg:w-48 xlg:w-64 relative bg-white rounded-lg">
             <Image
               src="/icons/google-partner.png"
@@ -337,14 +336,6 @@ const Footer = () => {
           <div className="min-h-20 xlg:min-h-28 w-full lg:w-48 xlg:w-64 relative bg-white rounded-lg">
             <Image
               src="/icons/meta-business-partner-logo.webp"
-              alt="meta"
-              fill
-              className="object-contain"
-            />
-          </div>
-          <div className="min-h-20 xlg:min-h-28 w-full lg:w-48 xlg:w-64 relative bg-white rounded-lg">
-            <Image
-              src="/icons/makeinindia.webp"
               alt="meta"
               fill
               className="object-contain"

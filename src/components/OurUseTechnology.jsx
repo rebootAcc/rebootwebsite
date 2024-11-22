@@ -26,12 +26,9 @@ const OurUseTechnology = () => {
 
     { imgsrc: "/images/python-logo.webp", imgalt: "python" },
     { imgsrc: "/images/PostgreSQL-logo.webp", imgalt: "PostgreSQL" },
-    {
-      imgsrc: "/images/meta-business-partner-logo.webp",
-      imgalt: "meta-business-partner",
-    },
+
     { imgsrc: "/images/gpt-module.webp", imgalt: "gpt" },
-    { imgsrc: "/icons/google-partner-logo.webp", imgalt: "google" },
+
     { imgsrc: "/images/google-cloud-logo.webp", imgalt: "google" },
     { imgsrc: "/images/Go-Language-logo.webp", imgalt: "Go" },
   ];
@@ -39,8 +36,8 @@ const OurUseTechnology = () => {
   return (
     <div className="xl:p-16 lg:p-8 xs:p-4 flex flex-col gap-8">
       <HeadingComponent
-        heading1={"Lerem Ipsum simple"}
-        heading2={"Best Technologies Results"}
+        heading1={"Transforming Ideas Into Reality"}
+        heading2={"Leveraging the Latest Tech Stack"}
       />
       <div className="w-full">
         <SliderComponent slides={companys} />

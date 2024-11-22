@@ -4,10 +4,10 @@ import SliderComponent from "./SliderComponent";
 
 const OurResponsibility = ({ showsection }) => {
   const benifits = [
-    { name: "Traffic Will Increase", imgsrc: "/icons/webtrifficicon.svg" },
-    { name: "Sales Will Increase", imgsrc: "/icons/salesicon.svg" },
-    { name: "Revenew Will Increase", imgsrc: "/icons/rupeeicon.svg" },
-    { name: "Get More Leads", imgsrc: "/icons/leadicon.svg" },
+    { name: "Creating Your Own Brand", imgsrc: "/icons/webtrifficicon.svg" },
+    { name: "Get More Qualified Leads", imgsrc: "/icons/salesicon.svg" },
+    { name: "Futuristic & Scalable Design", imgsrc: "/icons/rupeeicon.svg" },
+    { name: "Highly Secure Online Solutions", imgsrc: "/icons/leadicon.svg" },
   ];
   const clients = [
     { imgsrc: "/clients/arthacredit.webp", imgalt: "Artha Credit" },

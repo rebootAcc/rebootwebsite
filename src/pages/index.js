@@ -10,14 +10,15 @@ import dynamic from "next/dynamic";
 import Head from "next/head";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { MdOutlineStarBorder, MdStarRate } from "react-icons/md";
-// import Slider from "react-slick/lib/slider";
 
 const Slider = dynamic(() => import("react-slick/lib/slider"), {
   ssr: false,
 });
 
 const QueryForm = dynamic(() => import("@/components/QueryForm"), {
+  ssr: false,
+});
+const ClientReview = dynamic(() => import("@/components/ClientReview"), {
   ssr: false,
 });
 
@@ -31,6 +32,34 @@ const HomePageBlogSection = dynamic(
 export default function Home() {
   const [slidesToShow, setSlidesToShow] = useState(3);
   const [autoslide, setAutoslide] = useState(false);
+
+  const [slidesToShowReview, setSlidesToShowRiview] = useState(3);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 560) {
+        setSlidesToShowRiview(1);
+      } else if (window.innerWidth <= 865) {
+        setSlidesToShowRiview(1);
+      } else if (window.innerWidth <= 1024) {
+        setSlidesToShowRiview(1);
+      } else if (window.innerWidth <= 1280) {
+        setSlidesToShowRiview(1);
+      } else if (window.innerWidth <= 1780) {
+        setSlidesToShowRiview(1);
+      } else {
+        setSlidesToShowRiview(1);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     const handleResize = () => {
@@ -81,8 +110,12 @@ export default function Home() {
 
   const aboutcontent = {
     aboutcontent:
-      "At Reboot AI Private Limited, our mission is to enhance the competitiveness and agility of companies through innovative software solutions. We empower individuals and organizations with exceptional design, reliable technology, and ongoing support to drive transformation within their industries. Based in Siliguri, West Bengal, we offer comprehensive services across India. Our offerings include web and app development, as well as business and IT consulting. Our development processes are designed to boost productivity and enable businesses to scale using modern techniques. </br> As a Google Partner Firm, we specialize in delivering exceptional services to enhance website security in response to the evolving landscape of organic and paid marketing. Our team comprises skilled security professionals equipped with advanced tools to identify, upgrade, and eliminate any malicious activities. We offer a comprehensive range of expertise across sales, support, marketing, and business development to meet all your business requirements. Our current projects include an Educational Consultant CRM, Clinic Management Software, and Service Centre Management solutions. With our custom development services, clients can tailor solutions to their specific needs. We foster digital innovation through user experience-driven engineering, design thinking, product accelerators for streamlined delivery, and strategic partnerships.</br> Ensure your digital products and services offer exceptional security, reliability, and performance to distinguish yourself in the online landscape.",
+      "At Reboot AI Private Limited, our mission is to enhance the competitiveness and agility of companies through innovative software solutions. We empower individuals and organizations with exceptional design, reliable technology, and ongoing support to drive transformation within their industries. Based in Kolkata, West Bengal, we offer comprehensive services across India. Our offerings include web and app development, as well as business and IT consulting. Our development processes are designed to boost productivity and enable businesses to scale using modern techniques. </br> As a Google Partner Firm, we specialize in delivering exceptional services to enhance website security in response to the evolving landscape of organic and paid marketing. Our team comprises skilled security professionals equipped with advanced tools to identify, upgrade, and eliminate any malicious activities. We offer a comprehensive range of expertise across sales, support, marketing, and business development to meet all your business requirements. Our current projects include an Educational Consultant CRM, Clinic Management Software, and Service Centre Management solutions. With our custom development services, clients can tailor solutions to their specific needs. We foster digital innovation through user experience-driven engineering, design thinking, product accelerators for streamlined delivery, and strategic partnerships <br/> Ensure your digital products and services offer exceptional security, reliability, and performance to distinguish yourself in the online landscape. If you’re looking for a Web Development, App Development or Agency for Brand Building , Performance Marketing -this is the right place for you. With Reboot’s advance AI Technologies automate your business operation & boost productivity. Please consult with our Sales Team for any kind of IT or Business Consultation.",
     heading: "Crafting Intelligent Web & App Solutions with AI",
+    img1: "/images/homeabout1.webp",
+    img2: "/images/homeabout2.webp",
+    img3: "/images/homeabout3.webp",
+    img4: "/images/homeabout4.webp",
   };
 
   return (
@@ -138,81 +171,41 @@ export default function Home() {
         <OurProjects />
         <OurResponsibility />
 
-        <section className="flex flex-col lg:flex-row px-8 xlg:px-16 gap-6 my-20">
-          <div className="lg:min-w-[30rem] xl:min-w-[40rem]">
+        <section className="flex flex-col lg:flex-row lg:p-8 p-4 xl:p-16 gap-6 ">
+          <div className="w-[50%]">
             <QueryForm />
           </div>
-          <div className="flex flex-col gap-9">
-            <div className="flex flex-col gap-4">
-              <h2 className="text-[#333] text-xl font-semibold">
+          <div className="flex flex-col gap-9 w-[50%]">
+            <div className="flex flex-col gap-2 xlg:gap-4">
+              <h2 className="text-[#333] text-lg xlg:text-xl font-semibold">
                 Let&apos;s See Some
               </h2>
-              <h1 className="text-primary text-4xl font-semibold">
+              <h1 className="text-primary text-2xl xlg:text-4xl font-semibold">
                 Our Creative Design
               </h1>
-              <div className="flex gap-6">
-                <div className="relative size-[45.25vw] lg:size-[21.25vw]">
+              <div className="grid grid-cols-2 gap-6">
+                <div className="">
                   <Image
                     src="/our-creative-design-1.webp"
                     alt="creative design"
-                    fill
+                    height={2000}
+                    width={2000}
                     className="object-cover rounded-lg"
                   />
                 </div>
-                <div className="relative size-[45.25vw] lg:size-[21.25vw]">
+                <div className="">
                   <Image
                     src="/our-creative-design-2.webp"
                     alt="creative design"
-                    fill
+                    height={2000}
+                    width={2000}
                     className="object-cover rounded-lg"
                   />
                 </div>
               </div>
             </div>
-            <div className="flex flex-col gap-4 flex-1">
-              <h2 className="text-[#333] text-xl font-semibold">
-                Let&apos;s See Some Reviews
-              </h2>
-              <h1 className="text-primary text-4xl font-semibold">
-                What Our Client Say
-              </h1>
-              <div className="flex flex-col gap-3 py-10 bg-[rgba(67,_133,_245,_0.05)] flex-1 rounded-3xl px-11">
-                <h1 className="text-[#333] text-xl font-semibold">
-                  &#183; Best&nbsp;
-                  <span className="text-primary space-x-0.5">
-                    Website Designing Company
-                  </span>
-                  &nbsp;In Siliguri
-                </h1>
-                <p className="text-base text-secondary max-w-[77ch]">
-                  Choosing Reboot Marketing Pvt. Ltd. for our website redesign
-                  was a fantastic decision. Their team crafted a visually
-                  striking and highly functional website that aligns perfectly
-                  with our brand&apos;s identity. They impressed us with their
-                  creative approach, attention to detail, and commitment to
-                  understanding our needs. The result is a site that&apos;s not
-                  only aesthetically pleasing but also user-friendly and
-                  responsive across all devices. We&apos;ve experienced a
-                  noticeable increase in engagement and traffic. Their ongoing
-                  support and expertise make them the top choice in Siliguri.
-                  Highly recommended!
-                </p>
-                <h4 className="font-medium text-base text-primary">
-                  ---- Mohna Rani
-                </h4>
-                <div>
-                  <div className="text-[#FFB800] text-2xl flex gap-1">
-                    <MdStarRate />
-                    <MdStarRate />
-                    <MdStarRate />
-                    <MdStarRate />
-                    <MdOutlineStarBorder />
-                    <span className="text-base text-[#777] ps-1">
-                      &#40;4.3&#41; 512 Reviews
-                    </span>
-                  </div>
-                </div>
-              </div>
+            <div className="w-full">
+              <ClientReview slidesToShowReview={slidesToShowReview} />
             </div>
           </div>
         </section>

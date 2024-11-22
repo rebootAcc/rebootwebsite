@@ -90,8 +90,8 @@ const OurClient = () => {
   return (
     <div className="xl:p-16 lg:p-8 xs:p-4 flex flex-col gap-8">
       <HeadingComponent
-        heading1={"Lerem Ipsum simple"}
-        heading2={"Our Client"}
+        heading1={"Our Clients"}
+        heading2={"Empowering Leaders Across Industries"}
       />
       <div className="w-full">
         <SliderComponent slides={clients} />

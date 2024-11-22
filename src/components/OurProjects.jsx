@@ -84,7 +84,7 @@ const OurProjects = () => {
   return (
     <section className="xl:p-16 lg:p-8 sm:p-4 flex flex-col gap-8">
       <HeadingComponent
-        heading1={"Lerem Ipsum simple"}
+        heading1={"From Vision to Reality"}
         heading2={"Some of Our Projects"}
       />
       <section className="w-full flex">

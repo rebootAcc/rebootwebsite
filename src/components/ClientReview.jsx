@@ -7,65 +7,26 @@ const Slider = dynamic(() => import("react-slick/lib/slider"), {
   ssr: false,
 });
 
-const ClientReview = () => {
+const ClientReview = ({ slidesToShowReview }) => {
   const reviews = [
     {
-      text: "Choosing Reboot Marketing Pvt. Ltd. for our website redesign was a fantastic decision. Their team crafted a visually striking and highly functional website that aligns perfectly with our brand’s identity. They impressed us with their creative approach, attention to detail, and commitment to understanding our needs. The result is a site that’s not only aesthetically pleasing but also user-friendly and responsive across all devices.We’ve experienced a noticeable increase in engagement and traffic. Their ongoing support and expertise make them the top choice in Siliguri.Highly recommended!",
-      name: "Mohna Rani",
-      designation: "CEO, Founder at MR Salon & Academy",
+      title: " Reliable, Supportive & Experienced",
+      text: "Choosing the right Digital Marketing Agency is very hectic today, one of our marketing staff recommended Reboot AI & we really found this company helpful. We are connected with Reboot since 3 years & from Developing Clinic Management Apps to performance marketing -they did really well. I would recommend on the basis of ROI we received, unconditional support & affordability.",
+      name: "Dr. Saikat Paul",
+      designation: "Founder ( Dentity Dental )",
     },
     {
-      text: "Choosing Reboot Marketing Pvt. Ltd. for our website redesign was a fantastic decision. Their team crafted a visually striking and highly functional website that aligns perfectly with our brand’s identity. They impressed us with their creative approach, attention to detail, and commitment to understanding our needs. The result is a site that’s not only aesthetically pleasing but also user-friendly and responsive across all devices.We’ve experienced a noticeable increase in engagement and traffic. Their ongoing support and expertise make them the top choice in Siliguri.Highly recommended!",
-      name: "Mohna Rani",
-      designation: "CEO, Founder at MR Salon & Academy",
-    },
-    {
-      text: "Choosing Reboot Marketing Pvt. Ltd. for our website redesign was a fantastic decision. Their team crafted a visually striking and highly functional website that aligns perfectly with our brand’s identity. They impressed us with their creative approach, attention to detail, and commitment to understanding our needs. The result is a site that’s not only aesthetically pleasing but also user-friendly and responsive across all devices.We’ve experienced a noticeable increase in engagement and traffic. Their ongoing support and expertise make them the top choice in Siliguri.Highly recommended!",
-      name: "Mohna Rani",
-      designation: "CEO, Founder at MR Salon & Academy",
-    },
-    {
-      text: "Choosing Reboot Marketing Pvt. Ltd. for our website redesign was a fantastic decision. Their team crafted a visually striking and highly functional website that aligns perfectly with our brand’s identity. They impressed us with their creative approach, attention to detail, and commitment to understanding our needs. The result is a site that’s not only aesthetically pleasing but also user-friendly and responsive across all devices.We’ve experienced a noticeable increase in engagement and traffic. Their ongoing support and expertise make them the top choice in Siliguri.Highly recommended!",
-      name: "Mohna Rani",
-      designation: "CEO, Founder at MR Salon & Academy",
-    },
-    {
-      text: "Choosing Reboot Marketing Pvt. Ltd. for our website redesign was a fantastic decision. Their team crafted a visually striking and highly functional website that aligns perfectly with our brand’s identity. They impressed us with their creative approach, attention to detail, and commitment to understanding our needs. The result is a site that’s not only aesthetically pleasing but also user-friendly and responsive across all devices.We’ve experienced a noticeable increase in engagement and traffic. Their ongoing support and expertise make them the top choice in Siliguri.Highly recommended!",
-      name: "Mohna Rani",
-      designation: "CEO, Founder at MR Salon & Academy",
+      title: " Reliable, Supportive & Experienced",
+      text: "We are working with Reboot since 2 years & they are very supportive. Specially these days where everyone is missguiding they provide accurate information & right direction which is very crucial in our industry. We have developed Our College Student App from Reboot & from ideas to designing to development they always guided us & delivered best. Most valueable agency for us till date.",
+      name: "Most Trusted, ROI oriented - Rana Deb ",
+      designation: "( Chairman, MIET College )",
     },
   ];
-  const [slidesToShow, setSlidesToShow] = useState(3);
 
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth <= 560) {
-        setSlidesToShow(1);
-      } else if (window.innerWidth <= 865) {
-        setSlidesToShow(1);
-      } else if (window.innerWidth <= 1024) {
-        setSlidesToShow(2);
-      } else if (window.innerWidth <= 1280) {
-        setSlidesToShow(2);
-      } else if (window.innerWidth <= 1780) {
-        setSlidesToShow(2);
-      } else {
-        setSlidesToShow(3);
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    handleResize();
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
   const settings = {
     infinite: true,
     speed: 2000,
-    slidesToShow: slidesToShow,
+    slidesToShow: slidesToShowReview,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 4000,
@@ -75,25 +36,21 @@ const ClientReview = () => {
     arrows: false,
   };
   return (
-    <section className="xl:p-16 lg:p-8 sm:p-4 ">
-      <div className="flex flex-col gap-4 flex-1">
-        <h2 className="text-[#333] text-xl font-semibold">
-          Let&apos;s See Some Reviews
+    <section className="">
+      <div className="flex flex-col gap-2 xlg:gap-4 flex-1">
+        <h2 className="text-[#333] text-lg xlg:text-xl font-semibold">
+          Discover Why Our Clients Keep Coming Back!
         </h2>
-        <h1 className="text-primary text-4xl font-semibold">
-          What Our Client Say
+        <h1 className="text-primary text-2xl xlg:text-4xl font-semibold">
+          Real Stories, Real Success!
         </h1>
         <section className="w-full">
           <Slider {...settings}>
             {reviews.map((item, index) => (
-              <div key={index} className="p-4">
-                <div className="!flex flex-col gap-3 py-10 bg-[rgba(67,_133,_245,_0.05)] rounded-3xl px-11">
+              <div key={index} className="lg:p-4 p-2">
+                <div className="!flex flex-col gap-3 xlg:p-8 lg:p-6 p-4  bg-[rgba(67,_133,_245,_0.05)] rounded-md lg:rounded-xl">
                   <h1 className="text-[#333] text-xl font-semibold">
-                    &#183; Best
-                    <span className="text-primary space-x-0.5">
-                      Website Designing Company
-                    </span>
-                    In Siliguri
+                    {item.title}
                   </h1>
                   <p className="text-base text-secondary max-w-[77ch]">
                     {item.text}

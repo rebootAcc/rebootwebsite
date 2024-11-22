@@ -40,7 +40,7 @@ const OurProduct = () => {
             Products
           </h3>
           <h1 className="text-primary xs:text-lg  md:text-3xl font-semibold">
-            Our product can help your business management problem.
+            Our product can help your Business Management problem.
           </h1>
         </section>
       </section>
