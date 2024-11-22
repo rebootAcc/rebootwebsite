@@ -104,7 +104,7 @@ const HomePageBlogSection = () => {
 
   return (
     <div className="flex flex-col gap-8 xl:p-16 lg:p-8 p-4 ">
-      <section className="flex flex-col gap-2 justify-center items-center  ">
+      <section className="flex flex-col gap-1 lg:gap-2 justify-center items-center  ">
         <h3 className="md:text-xl xs:text-lg font-medium text-[#333333]">
           Ideas to Spark your next move
         </h3>

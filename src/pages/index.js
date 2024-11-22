@@ -172,10 +172,10 @@ export default function Home() {
         <OurResponsibility />
 
         <section className="flex flex-col lg:flex-row lg:p-8 p-4 xl:p-16 gap-6 ">
-          <div className="w-[50%]">
+          <div className="lg:w-[50%] w-full">
             <QueryForm />
           </div>
-          <div className="flex flex-col gap-9 w-[50%]">
+          <div className="flex flex-col gap-9 w-full lg:w-[50%]">
             <div className="flex flex-col gap-2 xlg:gap-4">
               <h2 className="text-[#333] text-lg xlg:text-xl font-semibold">
                 Let&apos;s See Some
