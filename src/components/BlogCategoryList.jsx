@@ -42,13 +42,13 @@ const BlogCategoryList = () => {
   if (error) return <p>Error: {error}</p>;
 
   return (
-    <div className=" flex flex-col gap-5 min-w-[22vmax]">
-      <h2 className="text-xl font-medium text-[#333]">Browse Categories</h2>
+    <div className=" flex flex-col gap-5 p-5 rounded-md w-full bg-[#00000008]">
+      <h2 className="text-xl font-medium text-[#333]">Categories</h2>
       {categories.map((category, index) => (
         <div
           key={index}
           onClick={() => handleCategoryClick(category)}
-          className="flex  gap-3 bg-black/5 rounded py-5 px-6 items-center cursor-pointer p-3  hover:bg-gray-200"
+          className="flex  gap-3 bg-white border border-[#cccccc]  rounded py-4 px-5 items-center cursor-pointer p-3  hover:bg-gray-50"
         >
           <div className="text-lg font-medium text-[#555]">{category}</div>
         </div>

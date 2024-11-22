@@ -7,17 +7,17 @@ import { PiFolderSimpleUserThin } from "react-icons/pi";
 
 const BlogCards = ({ blog }) => {
   return (
-    <div className="bg-[#f3f3f3] border border-[#ccc] rounded-lg p-5 h-full flex flex-col lg:max-w-[29vw] gap-3">
+    <div className="bg-[#f3f3f3] border border-[#ccc] rounded-lg p-4 h-full flex flex-col w-full gap-3">
       <div>
-        <div className="relative min-h-[50vw] md:min-h-[20vw]">
+        <div className="relative min-h-[15rem] md:min-h-[15rem]">
           <Image
             fill
             src={blog.img}
             alt="blog cover"
-            className="rounded-t-lg"
+            className="rounded-t-lg object-cover !h-[15rem]"
           />
         </div>
-        <span className="relative bottom-4 left-4 px-6 py-0.5 bg-primary text-white rounded-full">
+        <span className="relative bottom-4 left-4 px-6 py-0.5 bg-primary text-white xl:text-sm text-xs rounded-full">
           {blog.createdAt}
         </span>
       </div>
@@ -45,11 +45,11 @@ const BlogCards = ({ blog }) => {
           </span>
         </div>
       </div>
-      <h1 className="text-[#333] text-base font-medium max-w-[30ch]">
+      <h1 className="text-[#333] text-base font-medium onelinelimit">
         {blog.heading}
       </h1>
       <p
-        className="text-[#777] text-base threelinelimit"
+        className="text-[#777] text-sm threelinelimit"
         dangerouslySetInnerHTML={{ __html: blog.description }}
       ></p>
       <div className="flex justify-between">

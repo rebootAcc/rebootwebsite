@@ -21,6 +21,13 @@ const QueryForm = dynamic(() => import("@/components/QueryForm"), {
   ssr: false,
 });
 
+const HomePageBlogSection = dynamic(
+  () => import("@/components/HomePageBlogSection"),
+  {
+    ssr: false,
+  }
+);
+
 export default function Home() {
   const [slidesToShow, setSlidesToShow] = useState(3);
   const [autoslide, setAutoslide] = useState(false);
@@ -209,6 +216,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <HomePageBlogSection />
       </main>
     </>
   );

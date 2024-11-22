@@ -27,10 +27,11 @@ import animationData from "../../public/icons/loading.json";
 const Loading = () => {
   return (
     <div className="bg-white min-h-screen flex flex-col gap-28 items-center justify-center">
-      <Lottie animationData={animationData} loop={true} />
-      <h1 className="text-5xl font-medium text-center text-[#333]">
-        Loading...
-      </h1>
+      <Lottie
+        animationData={animationData}
+        loop={true}
+        className=" !h-[8rem]"
+      />
     </div>
   );
 };

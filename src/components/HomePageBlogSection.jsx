@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
-import { LuCalendarClock } from "react-icons/lu";
 import Link from "next/link";
 import BlogCards from "./BlogCards";
 import dynamic from "next/dynamic";
+import Loading from "./loading";
 const Slider = dynamic(() => import("react-slick/lib/slider"), {
   ssr: false,
 });
 
-const RelatedCategoryBlogs = ({ category, excludeBlogId }) => {
+const HomePageBlogSection = () => {
   const [relatedBlogs, setRelatedBlogs] = useState([]);
   const [loading, setLoading] = useState(true);
   const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
@@ -22,10 +21,10 @@ const RelatedCategoryBlogs = ({ category, excludeBlogId }) => {
         setSlidesToShow(1);
         setAutoslide(true);
       } else if (window.innerWidth <= 560) {
-        setSlidesToShow(2);
+        setSlidesToShow(1);
         setAutoslide(true);
       } else if (window.innerWidth <= 860) {
-        setSlidesToShow(3);
+        setSlidesToShow(2);
         setAutoslide(false);
       } else if (window.innerWidth <= 1024) {
         setSlidesToShow(3);
@@ -61,7 +60,7 @@ const RelatedCategoryBlogs = ({ category, excludeBlogId }) => {
     const fetchRelatedBlogs = async () => {
       try {
         const response = await fetch(
-          `${backendUrl}/api/blogs/latest?category=${category}&limit=8&excludeBlogId=${excludeBlogId}`
+          `${backendUrl}/api/blogs/get?isdraft=false&active=true&limit=10`
         );
         const data = await response.json();
 
@@ -91,32 +90,46 @@ const RelatedCategoryBlogs = ({ category, excludeBlogId }) => {
       }
     };
 
-    if (category) {
-      fetchRelatedBlogs();
-    }
-  }, [category]);
+    fetchRelatedBlogs();
+  }, []);
 
-  if (loading) return <p>Loading related blogs...</p>;
+  if (loading)
+    return (
+      <p>
+        <Loading />
+      </p>
+    );
 
   if (relatedBlogs.length === 0) return <p></p>;
 
   return (
-    <div className="w-full">
-      <Slider {...settings}>
-        {relatedBlogs.map((blog) => (
-          <div className="!flex w-full justify-center items-center">
-            <Link
-              href={`/blogs/${blog.blogId}`}
-              className="w-[95%]"
-              key={blog.blogId}
-            >
-              <BlogCards blog={blog} />
-            </Link>
-          </div>
-        ))}
-      </Slider>
+    <div className="flex flex-col gap-8 xl:p-16 lg:p-8 p-4 ">
+      <section className="flex flex-col gap-2 justify-center items-center  ">
+        <h3 className="md:text-xl xs:text-lg font-medium text-[#333333]">
+          Ideas to Spark your next move
+        </h3>
+        <h1 className="text-primary xs:text-lg  md:text-3xl font-semibold">
+          Some of Our Latest Helpful Blogs
+        </h1>
+      </section>
+
+      <div className="w-full">
+        <Slider {...settings}>
+          {relatedBlogs.map((blog) => (
+            <div className="!flex w-full justify-center items-center">
+              <Link
+                href={`/blogs/${blog.blogId}`}
+                className="w-[95%]"
+                key={blog.blogId}
+              >
+                <BlogCards blog={blog} />
+              </Link>
+            </div>
+          ))}
+        </Slider>
+      </div>
     </div>
   );
 };
 
-export default RelatedCategoryBlogs;
+export default HomePageBlogSection;
