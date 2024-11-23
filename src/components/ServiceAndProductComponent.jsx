@@ -25,7 +25,7 @@ const ServiceAndProductComponent = ({ services }) => {
               {item.name}
             </h1>
           </section>
-          <section className="text-[#666666] xs:text-sm/[25px] md:text-sm/[25px] lg:text-[10px]/[17px] xlg:text-xs/[20px] xl:text-sm/[20px]">
+          <section className="text-[#666666] text-sm/[25px] md:text-sm/[25px] lg:text-[10px]/[17px] xlg:text-xs/[20px] xl:text-sm/[20px]">
             {item.details}
           </section>
           <section className="xlg:mt-3 lg:mt-2 xs:mt-2 flex items-end h-full">

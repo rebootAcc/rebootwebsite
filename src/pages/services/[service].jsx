@@ -10,6 +10,7 @@ const CustomWebsiteDevelopment = ({
   pagedesigns,
   workimg,
   packageimg,
+  benifits,
 }) => {
   return (
     <>
@@ -24,6 +25,7 @@ const CustomWebsiteDevelopment = ({
           pagedesigns={pagedesigns}
           workimg={workimg}
           packageimg={packageimg}
+          benifits={benifits}
         />
       </div>
     </>
@@ -78,6 +80,12 @@ export const getStaticProps = async ({ params }) => {
       },
       workimg: "/services23/Custom Website Development 2.webp",
       packageimg: "/services23/Custom Website Development 3.webp",
+      benifits: [
+        "100% Futuristic Design",
+        "Converts Visitors into Leads",
+        "Website Analytics Data",
+        "24*7 Live Support",
+      ],
 
       packages: [
         {
@@ -138,6 +146,12 @@ export const getStaticProps = async ({ params }) => {
       },
       workimg: "/services23/E-commerce Store Development 2.webp",
       packageimg: "/services23/E-commerce Store Development 3.webp",
+      benifits: [
+        "100% Futuristic Design",
+        "Converts Visitors into Leads",
+        "Website Analytics Data",
+        "24*7 Live Support",
+      ],
 
       packages: [
         {
@@ -195,6 +209,12 @@ export const getStaticProps = async ({ params }) => {
       },
       workimg: "/services23/Web Application Development 2.webp",
       packageimg: "/services23/Web Application Development 3.webp",
+      benifits: [
+        "Future-Ready, Scalable ",
+        "Eye-Catching Design",
+        "Seamless User Experiences",
+        "24*7 Live Support",
+      ],
 
       packages: [
         {
@@ -237,6 +257,12 @@ export const getStaticProps = async ({ params }) => {
       },
       workimg: "/services23/Dynamic Website Development 2.webp",
       packageimg: "/services23/Dynamic Website Development 3.webp",
+      benifits: [
+        "100% Futuristic Design",
+        "Converts Visitors into Leads",
+        "Website Analytics Data",
+        "24*7 Live Support",
+      ],
 
       packages: [
         {
@@ -291,6 +317,12 @@ export const getStaticProps = async ({ params }) => {
       },
       workimg: "/services23/SAAS Development 2.webp",
       packageimg: "/services23/SAAS Development 3.webp",
+      benifits: [
+        "Future-Ready, Scalable ",
+        "Eye-Catching Design",
+        "Seamless User Experiences",
+        "24*7 Live Support",
+      ],
 
       packages: [
         {
@@ -334,6 +366,12 @@ export const getStaticProps = async ({ params }) => {
       },
       workimg: "/services23/Android App Development 2.webp",
       packageimg: "/services23/Android App Development 3.webp",
+      benifits: [
+        "Expert Team Member",
+        "Eye-Catching Design",
+        "Custom Design",
+        "Live Support",
+      ],
       packages: [
         {
           heading: "Android App Development",
@@ -387,6 +425,12 @@ export const getStaticProps = async ({ params }) => {
       },
       workimg: "/services23/iOS App Development 2.webp",
       packageimg: "/services23/iOS App Development 3.webp",
+      benifits: [
+        "Expert Team Member",
+        "Eye-Catching Design",
+        "Custom Design",
+        "Live Support",
+      ],
       packages: [
         {
           heading: "Android App Development",
@@ -440,6 +484,12 @@ export const getStaticProps = async ({ params }) => {
       },
       workimg: "/services23/Flutter App Development 2.webp",
       packageimg: "/services23/Flutter App Development 3.webp",
+      benifits: [
+        "Expert Team Member",
+        "Eye-Catching Design",
+        "Custom Design",
+        "Live Support",
+      ],
 
       packages: [
         {
@@ -495,6 +545,12 @@ export const getStaticProps = async ({ params }) => {
 
       workimg: "/services23/ai and ml 2.webp",
       packageimg: "/services23/ai and ml 3.webp",
+      benifits: [
+        "Expert Team Member",
+        "Eye-Catching Design",
+        "Custom Design",
+        "Live Support",
+      ],
 
       packages: [
         {
@@ -550,6 +606,12 @@ export const getStaticProps = async ({ params }) => {
 
       workimg: "/services23/business consulting 2.webp",
       packageimg: "/services23/business consulting 3.webp",
+      benifits: [
+        "Expert Business Consultant",
+        "Right Direction for Marketing",
+        "Maximize Revenue",
+        "Live Support",
+      ],
       packages: [
         {
           heading: "Business Consultation",
@@ -592,6 +654,12 @@ export const getStaticProps = async ({ params }) => {
 
       workimg: "/services23/Performance Marketing 2.webp",
       packageimg: "/services23/Performance Marketing 3.webp",
+      benifits: [
+        "100%  Assured Satisfaction",
+        "Results Oriented Campaigns",
+        "Get More Customer",
+        "Live Support",
+      ],
 
       packages: [
         {
@@ -647,6 +715,12 @@ export const getStaticProps = async ({ params }) => {
 
       workimg: "/services23/PR & Branding 2.webp",
       packageimg: "/services23/PR & Branding 3.webp",
+      benifits: [
+        "Expert Business Consultant",
+        "Right Direction for Marketing",
+        "Maximize Revenue",
+        "Live Support",
+      ],
 
       packages: [
         {
@@ -690,6 +764,12 @@ export const getStaticProps = async ({ params }) => {
 
       workimg: "/services23/google marketing 2 (1).webp",
       packageimg: "/services23/google marketing 3 (1).webp",
+      benifits: [
+        "100%  Assured Satisfaction",
+        "Results Oriented Campaigns",
+        "Get More Customer",
+        "Live Support",
+      ],
 
       packages: [
         {
@@ -745,6 +825,12 @@ export const getStaticProps = async ({ params }) => {
 
       workimg: "/services23/social media solution 2.webp",
       packageimg: "/services23/social media solution 3.webp",
+      benifits: [
+        "100%  Assured Satisfaction",
+        "Results Oriented Campaigns",
+        "Get More Customer",
+        "Live Support",
+      ],
 
       packages: [
         {
@@ -798,6 +884,13 @@ export const getStaticProps = async ({ params }) => {
           "If you're seeking an IT consultation company in Kolkata, look no further. We specialize in evaluating your products and services to enhance overall efficiency while keeping costs in check. Our approach includes a comprehensive digital transformation strategy aimed at fostering a profitable business. We will identify potential risks and create a tailored roadmap for success. To optimize your resources and minimize waste, our team will pinpoint any obstacles, ensuring you derive maximum value from your current offerings.</br> When developing any product, we prioritize comprehensive documentation, streamlined workflows, and robust support. Our agency is equipped to implement a sophisticated security system, ensuring that no vulnerabilities exist. We are committed to being your long-term partner, addressing any challenges that could threaten your IT operations. Our emphasis is on providing cutting-edge technologies, enabling you to stay at the leading edge of innovation.</br> We are committed to analyzing your business operations and offering valuable insights, enabling you to make necessary adjustments and enhance the efficiency of your offerings.",
       },
 
+      benifits: [
+        "Expert Team Member",
+        "Eye-Catching Design",
+        "Tailored  IT Solutions",
+        "Live Support",
+      ],
+
       packages: [
         {
           heading: "IT Consultation",
@@ -840,6 +933,13 @@ export const getStaticProps = async ({ params }) => {
         servicedesc2:
           "We monitor and analyze any indications of virus attacks or security breaches in your web applications. Our team is committed to conducting regular assessments for vulnerabilities to safeguard you against hackers, cyber theft, and malware threats. Ensuring web security is crucial for the safe and efficient operation of any business. With the support of our top-tier experts, you will receive comprehensive assistance regarding CISSP and CREST CEH certifications.</br> To safeguard your company’s data, it is essential to maintain up-to-date SSL certificates and encryption methods. Our security team diligently ensures that all necessary patches are applied to mitigate any potential security vulnerabilities. To protect vital information, our team implements protocols that secure the code.  Our Web Security Agency in Kolkata offers top-notch web security solutions, safeguarding the organization against the latest cyber threats. Furthermore, we defend against hackers and bots attempting to infiltrate or steal the company's data.",
       },
+
+      benifits: [
+        "Expert Team Member",
+        "Eye-Catching Design",
+        "Tailored  IT Solutions",
+        "Live Support",
+      ],
 
       packages: [
         {
@@ -884,6 +984,13 @@ export const getStaticProps = async ({ params }) => {
           "Turn your vision into a smooth user experience centered around user-focused design principles, ensuring every product effectively serves your target audience. Our team of specialists upholds the highest standards, enabling users to benefit from our services. Embark on your digital journey with our expert support. By integrating user research methods with our offerings, we deliver a holistic UI/UX design strategy that caters to the needs of our clients. Our designers provide exceptional concepts for mobile app designs that prioritize quick loading times, appealing aesthetics, ease of use, and improved customer satisfaction.",
       },
 
+      benifits: [
+        "Expert Designs",
+        "Eye-Catching Design",
+        "100% Custom UI Design",
+        "Live Support",
+      ],
+
       packages: [
         {
           heading: "Creative UI Package",
@@ -926,6 +1033,12 @@ export const getStaticProps = async ({ params }) => {
         servicedesc2:
           "Our all-encompassing branding solutions provide the essential tools and analysis to elevate your business vision. We offer unmatched support and guidance in sourcing and cost optimization. Our strategic approaches are designed to ensure that your brand receives the necessary backing to achieve profitability. We help entrepreneurs, corporations, and non-profits develop robust brands. Additionally, we provide the expertise to navigate market trends effectively.</br> Every business is distinct, and to elevate your brand, it needs unique assets to differentiate itself in the marketplace. Our brand agency in Kolkata safeguards your brand assets and enhances your brand's value. Additionally, we assist in developing, managing, and promoting brands at every stage of their journey. Customers are essential to any business, making it vital to cultivate and nurture those relationships.",
       },
+      benifits: [
+        "Expert Designs",
+        "Eye-Catching Design",
+        "100% Custom UI Design",
+        "Live Support",
+      ],
 
       packages: [
         {
@@ -972,6 +1085,13 @@ export const getStaticProps = async ({ params }) => {
 
       workimg: "/services23/cloud server setup 2.webp",
       packageimg: "/services23/cloud server setup 3.webp",
+
+      benifits: [
+        "Expert Team Member",
+        "Eye-Catching Design",
+        "Tailored  IT Solutions",
+        "Live Support",
+      ],
 
       packages: [
         {
@@ -1023,6 +1143,7 @@ export const getStaticProps = async ({ params }) => {
       pagedesigns: data.pagedesigns,
       workimg: data.workimg,
       packageimg: data.packageimg,
+      benifits: data.benifits,
     },
   };
 };

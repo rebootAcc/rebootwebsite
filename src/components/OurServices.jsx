@@ -51,7 +51,8 @@ const OurServices = () => {
     {
       icon: "/newicons/uiuxicon.svg",
       name: "Creative UI/UX Solutions",
-      details: "",
+      details:
+        "Our Creative UI/UX services specialize in designing user interfaces and experiences for websites, applications, and various digital products. These services enhance user-friendliness, boost customer engagement, and drive revenue growth. Partner with us to turn your vision into a seamless user experience that stands out in the industry. We craft intuitive and user-centric UI/UX designs that adapt to your evolving business needs.",
       link: "/services/creative_ui_design",
     },
     {

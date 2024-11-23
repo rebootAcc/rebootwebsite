@@ -241,58 +241,58 @@ const Footer = () => {
         </div>
         <div className="h-0.5 w-full bg-[rgba(139,139,139,0.6)]"></div>
         <div className="flex flex-col lg:flex-row justify-between gap-6 ">
-          <div className="flex flex-col items-start gap-2 lg:w-[30%] xlg:w-[40%]">
+          <div className="flex flex-col items-start gap-2 lg:w-[30%] xlg:w-[30%]">
             <Link href="/">
               <Image
                 src="/logo.svg"
                 alt="logo"
                 width={253}
                 height={46}
-                className="w-[17.5vw]"
+                className=" lg:h-[2rem] h-[3rem] xlg:h-[3rem]"
               />
             </Link>
-            <p className="text-xs text-white ">
+            <p className="xlg:text-base lg:text-sm text-base text-white ">
               Reboot AI Pvt. Ltd. is most growing IT company in North East India
               including Siliguri, Kolkata. We provide Tech & Marketing Solution
               for your business.
             </p>
           </div>
-          <div className="flex flex-col gap-1 lg:w-[25%] xlg:w-[20%]">
-            <h2 className="text-sm font-bold text-justify text-white flex items-center gap-1">
+          <div className="flex flex-col gap-1 lg:w-[25%] xlg:w-[25%]">
+            <h2 className="xlg:text-lg lg:text-base text-lg font-bold text-justify text-white flex items-center gap-1">
               <span>Our Pages</span>
               <span className="bg-[linear-gradient(90deg,_#4385F5_0%,_rgba(67,_133,_245,_0.00)_100%)] w-12 h-1"></span>
             </h2>
-            <p className="text-xs text-white whitespace-nowrap">
+            <p className="xlg:text-base lg:text-sm text-base text-white whitespace-nowrap">
               CIN No: U62012WB2024PTC274361
             </p>
-            <p className="text-xs text-white whitespace-nowrap">
+            <p className="xlg:text-base lg:text-sm text-base text-white whitespace-nowrap">
               MSME No: UDYOG-WB-14-000000
             </p>
           </div>
-          <div className="flex flex-col gap-1 lg:[35%] xlg:w-[20%]">
-            <h2 className="text-sm font-bold text-justify text-white flex items-center gap-1">
+          <div className="flex flex-col gap-1 lg:[35%] xlg:w-[25%] xlg:text-base lg:text-sm text-base">
+            <h2 className="xlg:text-lg lg:text-base text-lg font-bold text-justify text-white flex items-center gap-1">
               <span>Get in touch</span>
               <span className="bg-[linear-gradient(90deg,_#4385F5_0%,_rgba(67,_133,_245,_0.00)_100%)] w-12 h-1"></span>
             </h2>
-            <p className="text-xs text-white flex items-center gap-1">
+            <p className=" text-white flex items-center gap-1">
               <FaPhoneVolume className="text-primary" />{" "}
               <Link href="tel:03534069362">03534 069362</Link>
             </p>
-            <p className="text-xs text-white flex items-center gap-1">
+            <p className=" text-white flex items-center gap-1">
               <FaWhatsapp className="text-primary" />{" "}
               <Link href="/">+91 9088576170</Link>
             </p>
-            <p className="text-xs text-white flex items-center gap-1">
+            <p className=" text-white flex items-center gap-1">
               <IoMailSharp className="text-primary" />{" "}
               <Link href="mailTo:info@rebootai.in">info@rebootai.in</Link>
             </p>
           </div>
           <div className="flex flex-col gap-1 lg:w-[20%] xlg:w-[20%]">
-            <h2 className="text-sm font-bold text-justify text-white flex items-center gap-1">
+            <h2 className="xlg:text-lg lg:text-base text-lg font-bold text-justify text-white flex items-center gap-1">
               <span>Our Reg. Offices</span>
               <span className="bg-[linear-gradient(90deg,_#4385F5_0%,_rgba(67,_133,_245,_0.00)_100%)] w-12 h-1"></span>
             </h2>
-            <p className="text-xs text-white flex gap-1">
+            <p className="xlg:text-base lg:text-sm text-base text-white flex gap-1">
               <HiLocationMarker className="text-primary w-[2rem] text-xl" />
               <div>
                 4th Floor, Shib Shankar Market, Bidhan Road Siliguri, West

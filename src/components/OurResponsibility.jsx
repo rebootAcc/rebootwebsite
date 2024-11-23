@@ -101,7 +101,7 @@ const OurResponsibility = ({ showsection }) => {
               <span className="text-primary"> Your Business</span>
             </h1>
           </section>
-          <p className="xlg:text-sm/[20px] xl:text-base  lg:text-xs/[18px] md:text-[10px]/[15px] text-xs/[20px] text-[#333333]">
+          <p className="xlg:text-sm/[20px] xl:text-base  lg:text-xs/[18px] md:text-[10px]/[15px] text-sm/[25px] text-[#333333]">
             When it comes to driving business growth and increasing revenue, we
             can be your trusted long-term partner in elevating your position in
             the industry. Our technology advisors are here to help you develop

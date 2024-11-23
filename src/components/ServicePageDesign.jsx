@@ -20,6 +20,7 @@ const ServicePageDesign = ({
   pagedesigns,
   workimg,
   packageimg,
+  benifits,
 }) => {
   const settings = {
     infinite: true,
@@ -38,7 +39,7 @@ const ServicePageDesign = ({
     <section>
       <SubPageBanner heading={"Service"} subheading={title} />
       <ServiceAndproductPage1stpart content={content} />
-      <ServiceAndProductPageTechnologySection />
+      <ServiceAndProductPageTechnologySection benifits={benifits} />
 
       <section className="xl:p-16 lg:p-8 sm:p-4 flex flex-col gap-8 ">
         <section className="flex flex-col-reverse md:flex-row gap-8">

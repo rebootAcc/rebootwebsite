@@ -7,22 +7,22 @@ const OurProduct = () => {
       icon: "/icons/educationcrm.svg",
       name: "Educational CRM Advanced",
       details:
-        "We provide cutting-edge web development services designed to enhance your business revenue. Our tailored website and web application development solutions focus on your unique needs. With specialized skills in E-commerce store development and dynamic website creation, we also support the development of B2B applications and SaaS application development. Our team delivers fully functional, robust, and scalable software products that stand the test of time.",
-      link: "",
+        "A CRM for Education is a comprehensive student management solution tailored to meet the specific needs of educational institutions such as universities, schools, coaching centers, consultancies, and other organizations within the education sector. Our CRM enhances the productivity of the admission process and improves conversion rates for these organizations. With our platform, you can manage multiple leads in one place and prioritize them effectively.",
+      link: "/products/educational_CRM_advanced",
     },
     {
       icon: "/icons/servicecentercrm.svg",
       name: "Service Center Solutions",
       details:
-        "Whether you need a native or hybrid platform, we provide the best unique technologies for both Android and iOS. Our team specializes in developing comprehensive Flutter applications and offers AI and ML integration services. With a strong and adaptable architecture, our web applications ensure stability and scalability. Collaborate with us to develop cross-platform and hybrid apps, helping you to lower the overall costs of your business project.",
-      link: "",
+        "Leverage the capabilities of Service Centre Solutions to cultivate a loyal customer base through automated services. We can assist you in optimizing your backend operations to provide exceptional, customer-centric experiences. Today, our service solutions can be a major business asset with a robust service center platform. Our software is integrated, multi-user, online, and modular in design. ",
+      link: "/products/service_center_management_crm",
     },
     {
       icon: "/icons/doctorclinic.svg",
       name: "Doctor Clinic Management",
       details:
-        "Our marketing solutions are designed to assist businesses of all sizes in generating more leads. We provide business consulting and performance marketing services. We also manage our client’s PR and branding strategies. As a Google Partner Firm, we specialize in Google Marketing and Social Media Solutions, ensuring that brands gain visibility and audience on a global scale.",
-      link: "",
+        "Doctor Clinic Management is designed to efficiently maintain records of prescriptions, bills, and other essential information. This software offers a range of features, including an appointment scheduler, electronic health records, SMS notifications, medical billing, and more. If you're in search of reliable practice management software, look no further. Our Doctor Clinic Management solution facilitates the creation of doctor profiles and the management of patient records and consultations.",
+      link: "/products/clinic_management_software",
     },
     {
       icon: "/icons/chatbot.svg",
