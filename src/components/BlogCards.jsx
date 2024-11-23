@@ -33,7 +33,7 @@ const BlogCards = ({ blog }) => {
             <BsChatLeftText />
           </span>
           <span className="text-[#888] font-medium">
-            {blog.comments} Comments
+            {blog.comments} Min Read
           </span>
         </div>
         <div className="flex items-center gap-1 text-xs">

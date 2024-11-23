@@ -156,7 +156,7 @@ export const getStaticProps = async ({ params }) => {
         { imgsrc: "/images/bajajhealth.png" },
         { imgsrc: "/images/kivihealth.png" },
       ],
-      doubtsimg: "/images/bookdemo.png",
+      doubtsimg: "/images/clinicmanagementdoubt.webp",
       doubtstext:
         "If you’re facing issue with your existing doctor clinic management crm or whether you don’t know which CRM will be suite for your clinic, let’s connect with us for a free Business consultation - where we will guide you in the right direction.",
       productreviews: [

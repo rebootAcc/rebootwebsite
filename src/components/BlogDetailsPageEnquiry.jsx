@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { FiChevronDown } from "react-icons/fi";
 
 const BlogDetailsPageEnquiry = ({ firstlinecss }) => {
   const [formData, setFormData] = useState({
@@ -84,7 +85,7 @@ const BlogDetailsPageEnquiry = ({ firstlinecss }) => {
           placeholder="Name"
           value={formData.name}
           onChange={handleChange}
-          className="h-[3.5rem] bg-white border outline-none border-[#cccccc] rounded px-2"
+          className="h-[3.5rem] bg-white border outline-none border-[#cccccc] rounded px-3 lg:px-6"
         />
         {errors.name && <p className="text-red-500">{errors.name}</p>}
 
@@ -99,7 +100,7 @@ const BlogDetailsPageEnquiry = ({ firstlinecss }) => {
               handleChange(e);
             }
           }}
-          className="h-[3.5rem] bg-white border outline-none border-[#cccccc] rounded px-2"
+          className="h-[3.5rem] bg-white border outline-none border-[#cccccc] rounded px-3 lg:px-6"
         />
         {errors.mobileNumber && (
           <p className="text-red-500">{errors.mobileNumber}</p>
@@ -111,33 +112,39 @@ const BlogDetailsPageEnquiry = ({ firstlinecss }) => {
           placeholder="Email"
           value={formData.email}
           onChange={handleChange}
-          className="h-[3.5rem] bg-white border outline-none border-[#cccccc] rounded px-2"
+          className="h-[3.5rem] bg-white border outline-none border-[#cccccc] rounded px-3 lg:px-6"
         />
 
-        <select
-          id="consultationFor"
-          value={formData.consultationFor}
-          onChange={handleChange}
-          className="h-[3.5rem] bg-white border outline-none border-[#cccccc] rounded px-2"
-        >
-          <option value="">Enquiry For</option>
-          <option value="App Development">App Development</option>
-          <option value="Web Development">Web Development</option>
-          <option value="SAAS">SAAS</option>
-          <option value="Branding">Branding</option>
-          <option value="Marketing">Marketing</option>
-          <option value="Others">Others</option>
-        </select>
-        {errors.consultationFor && (
-          <p className="text-red-500">{errors.consultationFor}</p>
-        )}
+        <div className="relative">
+          <select
+            id="consultationFor"
+            value={formData.consultationFor}
+            onChange={handleChange}
+            className="h-[3.5rem] bg-white border outline-none border-[#cccccc] rounded px-4 pr-10 py-2 lg:px-6 appearance-none w-full"
+          >
+            <option value="">Enquiry For</option>
+            <option value="App Development">App Development</option>
+            <option value="Web Development">Web Development</option>
+            <option value="SAAS">SAAS</option>
+            <option value="Branding">Branding</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Others">Others</option>
+          </select>
+
+          <div className="absolute inset-y-0 right-3 flex items-center pointer-events-none">
+            <FiChevronDown className="text-gray-600 w-5 h-5" />
+          </div>
+          {errors.consultationFor && (
+            <p className="text-red-500">{errors.consultationFor}</p>
+          )}
+        </div>
 
         <textarea
           id="massage"
           placeholder="Write a message"
           value={formData.massage}
           onChange={handleChange}
-          className="min-h-[6.5rem] max-h-[6.5rem] outline-none bg-white border border-[#cccccc] rounded p-2"
+          className="min-h-[6.5rem] max-h-[6.5rem] outline-none bg-white border border-[#cccccc] rounded px-3 lg:px-6"
         ></textarea>
 
         <div className="flex justify-center items-center">

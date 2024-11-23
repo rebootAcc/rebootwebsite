@@ -107,7 +107,7 @@ const ContactUs = () => {
             <div className="md:w-[50%] w-full">
               <BlogDetailsPageEnquiry
                 firstlinecss={
-                  " xl:p-16 lg:p-8 p-4 flex flex-col gap-4 rounded-md bg-[#4385F50D]"
+                  " xl:p-16 lg:p-8 p-4 flex flex-col gap-4 rounded-xl bg-[#4385F50D]"
                 }
               />
             </div>

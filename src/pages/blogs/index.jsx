@@ -27,7 +27,7 @@ export async function getServerSideProps({ query }) {
               day: "numeric",
             }),
             category: blog.category,
-            comments: 12,
+            comments: 1,
             viewsCount: 132,
             heading: blog.blogTitle,
             description: blog.writeBlog || "",

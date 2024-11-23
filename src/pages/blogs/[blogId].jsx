@@ -4,12 +4,18 @@ import Image from "next/image";
 import Head from "next/head";
 import SubPageBanner from "@/components/SubPageBanner";
 import { CiYoutube } from "react-icons/ci";
-import { FaFacebookF, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
+import {
+  FaFacebookF,
+  FaLinkedin,
+  FaLinkedinIn,
+  FaXTwitter,
+} from "react-icons/fa6";
 import { FaRegCalendarAlt, FaSearch, FaUserCircle } from "react-icons/fa";
 import RelatedCategoryBlogs from "@/components/RelatedCategoryBlogs";
 import BlogCategoryList from "@/components/BlogCategoryList";
 import { MdOutlineCategory } from "react-icons/md";
 import dynamic from "next/dynamic";
+import Link from "next/link";
 
 const BlogDetailsPageEnquiry = dynamic(
   () => import("@/components/BlogDetailsPageEnquiry"),
@@ -61,11 +67,23 @@ const BlogDetails = ({ blog }) => {
             <h1 className="text-3xl font-medium text-[#333]">
               {blog.blogTitle}
             </h1>
-            <section className="flex flex-wrap gap-4">
+            <section className="flex flex-wrap items-center gap-4">
               <h2 className="flex flex-row gap-2 items-center text-[#888888]">
                 <FaUserCircle className="text-[#0061FF] size-5" />{" "}
                 {blog.publisherName}
               </h2>
+              <div>
+                {blog.publisherProfileLink ? (
+                  <Link href={blog.publisherProfileLink} target="_blank">
+                    <FaLinkedin className="text-[#0061FF] size-5" />
+                  </Link>
+                ) : (
+                  <FaLinkedin
+                    className="text-gray-400 size-5"
+                    title="Profile link unavailable"
+                  />
+                )}
+              </div>
               <h2 className="flex flex-row gap-2 items-center text-[#888888]">
                 <FaRegCalendarAlt className="text-[#0061FF] size-5" />{" "}
                 {new Date(blog.createdAt).toLocaleDateString("en-GB", {

@@ -218,7 +218,7 @@ const Footer = () => {
         />
       </div>
       <div className="bg-[#222]/85 relative z-10 p-8 xlg:p-16 flex flex-col gap-11">
-        <div className="flex flex-col lg:flex-row justify-between gap-8">
+        <div className="grid lg:grid-cols-4 grid-cols-1 gap-8">
           {footerLinks.map((item, index) => (
             <div className="flex flex-col gap-3" key={index}>
               <h2 className="xlg:text-lg lg:text-sm text-lg font-bold text-justify text-white flex items-center gap-1">
@@ -240,8 +240,8 @@ const Footer = () => {
           ))}
         </div>
         <div className="h-0.5 w-full bg-[rgba(139,139,139,0.6)]"></div>
-        <div className="flex flex-col lg:flex-row justify-between gap-6 ">
-          <div className="flex flex-col items-start gap-2 lg:w-[30%] xlg:w-[30%]">
+        <div className="grid lg:grid-cols-4 grid-cols-1 gap-6 ">
+          <div className="flex flex-col items-start gap-2 ">
             <Link href="/">
               <Image
                 src="/logo.svg"
@@ -257,7 +257,7 @@ const Footer = () => {
               for your business.
             </p>
           </div>
-          <div className="flex flex-col gap-1 lg:w-[25%] xlg:w-[25%]">
+          <div className="flex flex-col gap-1 ">
             <h2 className="xlg:text-lg lg:text-base text-lg font-bold text-justify text-white flex items-center gap-1">
               <span>Our Pages</span>
               <span className="bg-[linear-gradient(90deg,_#4385F5_0%,_rgba(67,_133,_245,_0.00)_100%)] w-12 h-1"></span>
@@ -269,7 +269,7 @@ const Footer = () => {
               MSME No: UDYOG-WB-14-000000
             </p>
           </div>
-          <div className="flex flex-col gap-1 lg:[35%] xlg:w-[25%] xlg:text-base lg:text-sm text-base">
+          <div className="flex flex-col gap-1  xlg:text-base lg:text-sm text-base">
             <h2 className="xlg:text-lg lg:text-base text-lg font-bold text-justify text-white flex items-center gap-1">
               <span>Get in touch</span>
               <span className="bg-[linear-gradient(90deg,_#4385F5_0%,_rgba(67,_133,_245,_0.00)_100%)] w-12 h-1"></span>
@@ -287,7 +287,7 @@ const Footer = () => {
               <Link href="mailTo:info@rebootai.in">info@rebootai.in</Link>
             </p>
           </div>
-          <div className="flex flex-col gap-1 lg:w-[20%] xlg:w-[20%]">
+          <div className="flex flex-col gap-1">
             <h2 className="xlg:text-lg lg:text-base text-lg font-bold text-justify text-white flex items-center gap-1">
               <span>Our Reg. Offices</span>
               <span className="bg-[linear-gradient(90deg,_#4385F5_0%,_rgba(67,_133,_245,_0.00)_100%)] w-12 h-1"></span>
@@ -314,15 +314,26 @@ const Footer = () => {
           <div className="flex flex-col justify-between gap-2 xlg:gap-0">
             <button
               type="button"
-              className="text-sm xl:text-base font-bold text-white px-4 xl:px-10 py-3 bg-primary inline-flex items-center gap-2 rounded-lg"
+              className="text-sm xl:text-base font-bold text-white px-4 xl:px-10 py-2 bg-primary inline-flex items-center gap-2 rounded-lg"
             >
               <HiOutlineCurrencyRupee /> <span>Pay Online</span>
             </button>
             <button
               type="button"
-              className="text-sm xl:text-base font-bold text-white px-4 xl:px-10 py-3 bg-primary inline-flex items-center gap-2 rounded-lg"
+              className="text-sm xl:text-base font-bold text-white px-4 xl:px-10 py-2 bg-primary inline-flex items-center gap-2 rounded-lg"
             >
               <BsChatQuote /> <span>Ge A Quote</span>
+            </button>
+            <button
+              type="button"
+              className="text-sm xl:text-base font-bold text-white px-4 xl:px-10 py-2 bg-primary inline-flex items-center gap-2 rounded-lg"
+            >
+              <img
+                src="/icons/complainus.svg"
+                alt="meta"
+                className="object-contain h-[1.5rem]"
+              />{" "}
+              <span>Complain Us!</span>
             </button>
           </div>
           <div className="min-h-20 xlg:min-h-28 w-full lg:w-48 xlg:w-64 relative bg-white rounded-lg">
@@ -344,6 +355,37 @@ const Footer = () => {
         </div>
         <div className="h-0.5 w-full bg-[rgba(139,139,139,0.6)]"></div>
         <div className="flex items-center lg:items-stretch flex-col gap-4 lg:flex-row justify-between">
+          <h1 className="flex flex-row gap-2 text-xs items-center font-medium text-white">
+            Find Us On :
+            <div className="">
+              <img
+                src="/icons/Linkedin.svg"
+                alt="meta"
+                className="object-contain h-[1.5rem]"
+              />
+            </div>
+            <div className="">
+              <img
+                src="/icons/instagram.svg"
+                alt="meta"
+                className="object-contain h-[1.5rem]"
+              />
+            </div>
+            <div className="">
+              <img
+                src="/icons/xtwitter.svg"
+                alt="meta"
+                className="object-contain h-[1.5rem]"
+              />
+            </div>
+            <div className="">
+              <img
+                src="/icons/youtube.svg"
+                alt="meta"
+                className="object-contain h-[1.5rem]"
+              />
+            </div>
+          </h1>
           <h1 className="text-white text-xs">
             &copy;{" "}
             <span className="font-bold">Reboot Marketing Private Limited.</span>{" "}
