@@ -11,6 +11,7 @@ const CustomWebsiteDevelopment = ({
   workimg,
   packageimg,
   benifits,
+  pagedesignheading,
 }) => {
   return (
     <>
@@ -26,6 +27,7 @@ const CustomWebsiteDevelopment = ({
           workimg={workimg}
           packageimg={packageimg}
           benifits={benifits}
+          pagedesignheading={pagedesignheading}
         />
       </div>
     </>
@@ -125,12 +127,19 @@ export const getStaticProps = async ({ params }) => {
           ],
         },
       ],
-
+      pagedesignheading: "Crafting Cutting-Edge Websites",
       pagedesigns: [
+        "/customwebdev/website view 1.webp",
+        "/customwebdev/website view 2.webp",
         "/customwebdev/website view 3.webp",
         "/customwebdev/website view 4.webp",
         "/customwebdev/website view 5.webp",
         "/customwebdev/website view 6.webp",
+        "/customwebdev/website view 7.webp",
+        "/customwebdev/website view 8.webp",
+        "/customwebdev/website view 9.webp",
+        "/customwebdev/website view 10.webp",
+        "/customwebdev/website view 11.webp",
       ],
     },
 
@@ -191,6 +200,7 @@ export const getStaticProps = async ({ params }) => {
           ],
         },
       ],
+      pagedesignheading: "Crafting Cutting-Edge Websites",
 
       pagedesigns: [
         "/ecomweb/E-commerce website.webp",
@@ -242,8 +252,13 @@ export const getStaticProps = async ({ params }) => {
           ],
         },
       ],
+      pagedesignheading: "Crafting Cutting-Edge Websites",
 
-      pagedesigns: ["/images/pagedesign.png", "/images/pagedesign.png"],
+      pagedesigns: [
+        "/images/Web Application 1.webp",
+        "/images/Web Application 2.webp",
+        "/images/Web Application 3.webp",
+      ],
     },
     dynamic_website_development: {
       title: "Dynamic Website Development",
@@ -302,14 +317,27 @@ export const getStaticProps = async ({ params }) => {
           ],
         },
       ],
+      pagedesignheading: "Crafting Cutting-Edge Websites",
 
-      pagedesigns: ["/images/pagedesign.png", "/images/pagedesign.png"],
+      pagedesigns: [
+        "/customwebdev/website view 1.webp",
+        "/customwebdev/website view 2.webp",
+        "/customwebdev/website view 3.webp",
+        "/customwebdev/website view 4.webp",
+        "/customwebdev/website view 5.webp",
+        "/customwebdev/website view 6.webp",
+        "/customwebdev/website view 7.webp",
+        "/customwebdev/website view 8.webp",
+        "/customwebdev/website view 9.webp",
+        "/customwebdev/website view 10.webp",
+        "/customwebdev/website view 11.webp",
+      ],
     },
     saas_application_development: {
       title: "Sass Application Development",
       content: {
         serviceimg: "/servicesfast/SAAS Application Development 1.webp",
-        servicename: " Web Development",
+        servicename: "SAAS Application Development",
         servicedesc1:
           "SAAS Applications are accessed over the internet through a browser or a dedicated client. Such applications require security, integration, proper deployment, and of course maintenance. At Reboot AI Private Limited, we offer the best SAAS developer in Kolkata who can develop SAAS apps with protection against increasing cyber threats. It is one of the fastest-growing business models in the industry that can meet customer demands.",
         servicedesc2:
@@ -350,8 +378,13 @@ export const getStaticProps = async ({ params }) => {
           ],
         },
       ],
+      pagedesignheading: "Crafting Cutting-Edge Websites",
 
-      pagedesigns: ["/images/pagedesign.png", "/images/pagedesign.png"],
+      pagedesigns: [
+        "/images/Web Application 1.webp",
+        "/images/Web Application 2.webp",
+        "/images/Web Application 3.webp",
+      ],
     },
 
     android_app_development: {
@@ -410,8 +443,13 @@ export const getStaticProps = async ({ params }) => {
           ],
         },
       ],
+      pagedesignheading: "Crafting Cutting-Edge Websites",
 
-      pagedesigns: ["/images/pagedesign.png", "/images/pagedesign.png"],
+      pagedesigns: [
+        "/images/app development 1.webp",
+        "/images/app development 2.webp",
+        "/images/app development 3.webp",
+      ],
     },
     ios_app_development: {
       title: "iOS App Development",
@@ -469,8 +507,13 @@ export const getStaticProps = async ({ params }) => {
           ],
         },
       ],
+      pagedesignheading: "Crafting Cutting-Edge Websites",
 
-      pagedesigns: ["/images/pagedesign.png", "/images/pagedesign.png"],
+      pagedesigns: [
+        "/images/app development 1.webp",
+        "/images/app development 2.webp",
+        "/images/app development 3.webp",
+      ],
     },
     flutter_app_development: {
       title: "Flutter App Development",
@@ -529,8 +572,13 @@ export const getStaticProps = async ({ params }) => {
           ],
         },
       ],
+      pagedesignheading: "Crafting Cutting-Edge Websites",
 
-      pagedesigns: ["/images/pagedesign.png", "/images/pagedesign.png"],
+      pagedesigns: [
+        "/images/app development 1.webp",
+        "/images/app development 2.webp",
+        "/images/app development 3.webp",
+      ],
     },
     ai_ml_integration: {
       title: "AI & ML Integration",
@@ -590,8 +638,12 @@ export const getStaticProps = async ({ params }) => {
           ],
         },
       ],
+      pagedesignheading: "Crafting Cutting-Edge Websites",
 
-      pagedesigns: ["/images/pagedesign.png", "/images/pagedesign.png"],
+      pagedesigns: [
+        "/images/ai and ml slide 1.webp",
+        "/images/ai and ml slide 2.webp",
+      ],
     },
     business_consultation: {
       title: "Business Consultation",
@@ -638,8 +690,13 @@ export const getStaticProps = async ({ params }) => {
           ],
         },
       ],
+      pagedesignheading: "Rank 24*7 on Top of Google",
 
-      pagedesigns: ["/images/pagedesign.png", "/images/pagedesign.png"],
+      pagedesigns: [
+        "/images/consulting 1.webp",
+        "/images/consulting 2.webp",
+        "/images/consulting 3.webp",
+      ],
     },
     performance_marketing: {
       title: "Performance Marketing",
@@ -699,8 +756,8 @@ export const getStaticProps = async ({ params }) => {
           ],
         },
       ],
-
-      pagedesigns: ["/images/pagedesign.png", "/images/pagedesign.png"],
+      pagedesignheading: "Rank 24*7 on Top of Google",
+      pagedesigns: ["/images/marketing 1.webp", "/images/marketing 2.webp"],
     },
     pr_brand_building: {
       title: "PR & Brand Building",
@@ -748,8 +805,14 @@ export const getStaticProps = async ({ params }) => {
           ],
         },
       ],
+      pagedesignheading: "Rank 24*7 on Top of Google",
 
-      pagedesigns: ["/images/pagedesign.png", "/images/pagedesign.png"],
+      pagedesigns: [
+        "/images/award 1.webp",
+        "/images/award 2.webp",
+        "/images/award 3.webp",
+        "/images/award 4.webp",
+      ],
     },
     google_marketing: {
       title: "Google Marketing",
@@ -809,8 +872,9 @@ export const getStaticProps = async ({ params }) => {
           ],
         },
       ],
+      pagedesignheading: "Rank 24*7 on Top of Google",
 
-      pagedesigns: ["/images/pagedesign.png", "/images/pagedesign.png"],
+      pagedesigns: ["/images/marketing 1.webp", "/images/marketing 2.webp"],
     },
     social_media_solutions: {
       title: "Social Media Solutions",
@@ -870,8 +934,13 @@ export const getStaticProps = async ({ params }) => {
           ],
         },
       ],
+      pagedesignheading: "Rank 24*7 on Top of Google",
 
-      pagedesigns: ["/images/pagedesign.png", "/images/pagedesign.png"],
+      pagedesigns: [
+        "/images/social media 1.webp",
+        "/images/social media 2.webp",
+        "/images/social media 3.webp",
+      ],
     },
     it_consultation: {
       title: "IT Consultation",
@@ -921,7 +990,11 @@ export const getStaticProps = async ({ params }) => {
       workimg: "/services23/IT Consulting 2.webp",
       packageimg: "/services23/IT Consulting 3.webp",
 
-      pagedesigns: ["/images/pagedesign.png", "/images/pagedesign.png"],
+      pagedesigns: [
+        "/images/consulting 1.webp",
+        "/images/consulting 2.webp",
+        "/images/consulting 3.webp",
+      ],
     },
     web_and_apps_security: {
       title: "Web & Apps Security",
@@ -967,11 +1040,12 @@ export const getStaticProps = async ({ params }) => {
           ],
         },
       ],
+      pagedesignheading: "Crafting Cutting-Edge Websites",
 
       workimg: "/services23/Web & Apps Security 2.webp",
       packageimg: "/services23/Web & Apps Security 3.webp",
 
-      pagedesigns: ["/images/pagedesign.png", "/images/pagedesign.png"],
+      pagedesigns: ["/images/Websecurity 1.webp", "/images/Websecurity 2.webp"],
     },
     creative_ui_design: {
       title: "Creative UI/UX Design",
@@ -1020,8 +1094,13 @@ export const getStaticProps = async ({ params }) => {
 
       workimg: "/services23/creative ui design 2.webp",
       packageimg: "/services23/creative ui design 3.webp",
+      pagedesignheading: "Crafting Cutting-Edge Websites",
 
-      pagedesigns: ["/images/pagedesign.png", "/images/pagedesign.png"],
+      pagedesigns: [
+        "/images/creativeui 1.webp",
+        "/images/creativeui 2.webp",
+        "/images/creativeui 3.webp",
+      ],
     },
     brand_starter_solution: {
       title: "Brand Starter Solution",
@@ -1069,8 +1148,15 @@ export const getStaticProps = async ({ params }) => {
 
       workimg: "/services23/Brand Starter Solution 2.webp",
       packageimg: "/services23/Brand Starter Solution 3.webp",
+      pagedesignheading: "Crafting Cutting-Edge Websites",
 
-      pagedesigns: ["/images/pagedesign.png", "/images/pagedesign.png"],
+      pagedesigns: [
+        "/images/Brand Starter 1.webp",
+        "/images/Brand Starter 2.webp",
+        "/images/Brand Starter 3.webp",
+        "/images/Brand Starter 4.webp",
+        "/images/Brand Starter 5.webp",
+      ],
     },
     cloud_server_setup: {
       title: "Cloud Server Setup",
@@ -1119,8 +1205,9 @@ export const getStaticProps = async ({ params }) => {
           ],
         },
       ],
+      pagedesignheading: "Crafting Cutting-Edge Websites",
 
-      pagedesigns: ["/images/pagedesign.png", "/images/pagedesign.png"],
+      pagedesigns: ["/images/cloudserver 1.webp", "/images/cloudserver 2.webp"],
     },
   };
 
@@ -1144,6 +1231,7 @@ export const getStaticProps = async ({ params }) => {
       workimg: data.workimg,
       packageimg: data.packageimg,
       benifits: data.benifits,
+      pagedesignheading: data.pagedesignheading,
     },
   };
 };

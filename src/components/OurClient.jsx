@@ -85,6 +85,22 @@ const OurClient = () => {
       imgsrc: "/clients/siliguricarrental.webp",
       imgalt: "Siliguri Car Rental",
     },
+    {
+      imgsrc: "/clients/fillsaqualogo.webp",
+      imgalt: "fillsaqualogo",
+    },
+    {
+      imgsrc: "/clients/goutamindustrieslogo.webp",
+      imgalt: "goutamindustrieslogo",
+    },
+    {
+      imgsrc: "/clients/pdesislogo.webp",
+      imgalt: "pdesislogo",
+    },
+    {
+      imgsrc: "/clients/sglogo.webp",
+      imgalt: "sglogo",
+    },
   ];
 
   return (

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-const BlogDetailsPageEnquiry = () => {
+const BlogDetailsPageEnquiry = ({ firstlinecss }) => {
   const [formData, setFormData] = useState({
     name: "",
     mobileNumber: "",
@@ -76,7 +76,7 @@ const BlogDetailsPageEnquiry = () => {
   };
 
   return (
-    <div className="p-5 flex flex-col gap-4 rounded-md bg-[#F7F7F7]">
+    <div className={firstlinecss}>
       <form className="flex flex-col gap-6" onSubmit={handleSubmit}>
         <input
           type="text"

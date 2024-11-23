@@ -1,57 +1,29 @@
-import CaseComponent from "@/components/CaseComponent";
+import { useState } from "react";
+import CaseSatudiesMobileApps from "@/components/CaseSatudiesMobileApps";
+import CaseStudiesBrands from "@/components/CaseStudiesBrands";
+import CaseStudiesWebApps from "@/components/CaseStudiesWebApps";
+import CaseStudiesWebsite from "@/components/CaseStudiesWebsite";
 import SubPageBanner from "@/components/SubPageBanner";
 import Head from "next/head";
-import React from "react";
 
-export async function getStaticProps() {
-  const pageData = [
-    {
-      site: "www.yourwebsite.com",
-      img: "/case_studies/case-studies-1.webp",
-      clientlogo: "/clients/mahabirdoctorhub.webp",
-      category: "Institute/College",
-    },
-    {
-      site: "www.yourwebsite.com",
-      img: "/case_studies/case-studies-2.webp",
-      clientlogo: "/clients/siliguricarrental.webp",
-      category: "Car Rental Services",
-    },
-    {
-      site: "www.yourwebsite.com",
-      img: "/case_studies/case-studies-3.webp",
-      clientlogo: "/clients/chiangdentalclinic.webp",
-      category: "Doctor Dental Clinic",
-    },
-    {
-      site: "www.yourwebsite.com",
-      img: "/case_studies/case-studies-4.webp",
-      clientlogo: "/clients/edunethub.webp",
-      category: "Educational",
-    },
-    {
-      site: "www.yourwebsite.com",
-      img: "/case_studies/case-studies-5.webp",
-      clientlogo: "/clients/gravitas.webp",
-      category: "Interior Studio",
-    },
-    {
-      site: "www.yourwebsite.com",
-      img: "/case_studies/case-studies-6.webp",
-      clientlogo: "/clients/mietcollege.webp",
-      category: "Educational",
-    },
-    {
-      site: "www.yourwebsite.com",
-      img: "/case_studies/case-studies-7.webp",
-      clientlogo: "/clients/smilecaredentalclinic.webp",
-      category: "Doctor Dental Clinic",
-    },
-  ];
-  return { props: { pageData } };
-}
+const CaseStudies = () => {
+  const [activeTab, setActiveTab] = useState("website"); // Default tab is "website"
 
-const CaseStudies = ({ pageData }) => {
+  const renderComponent = () => {
+    switch (activeTab) {
+      case "website":
+        return <CaseStudiesWebsite />;
+      case "webapps":
+        return <CaseStudiesWebApps />;
+      case "mobileapps":
+        return <CaseSatudiesMobileApps />;
+      case "brands":
+        return <CaseStudiesBrands />;
+      default:
+        return <CaseStudiesWebsite />;
+    }
+  };
+
   return (
     <>
       <Head>
@@ -59,44 +31,54 @@ const CaseStudies = ({ pageData }) => {
       </Head>
       <SubPageBanner heading={"Case Studies"} />
       <main className="py-11 px-8 md:px-12 xlg:px-16 flex flex-col gap-6">
-        <div className="flex gap-6 justify-between overflow-hidden lg:overflow-visible overflow-x-scroll lg:overflow-x-visible">
+        <div className="flex sm:gap-2 md:gap-6 md:justify-between  flex-wrap">
           <button
             type="button"
-            className="text-base lg:text-xl xlg:text-2xl font-medium text-center text-nowrap px-10 xlg:px-14 py-2 bg-primary hover:bg-primary text-white rounded-lg border-2 border-primary hover:text-white transition-all duration-300"
-          >
-            View All
-          </button>
-          <button
-            type="button"
-            className="text-xl xlg:text-2xl font-medium text-center px-10 xlg:px-14 py-2 bg-primary/10 text-primary hover:bg-primary rounded-lg border-2 border-primary hover:text-white transition-all duration-300"
+            className={`lg:text-xl  text-base md:text-lg xlg:text-2xl md:font-medium text-center px-4 lg:px-10 xlg:px-14 py-1 md:py-2 ${
+              activeTab === "website"
+                ? "bg-primary text-white"
+                : "bg-primary/10 text-primary"
+            } hover:bg-primary rounded-lg border-2 border-primary hover:text-white transition-all duration-300`}
+            onClick={() => setActiveTab("website")}
           >
             Website
           </button>
           <button
             type="button"
-            className="text-xl xlg:text-2xl font-medium text-center px-10 xlg:px-14 py-2 bg-primary/10 text-primary hover:bg-primary rounded-lg border-2 border-primary hover:text-white transition-all duration-300"
+            className={`lg:text-xl  text-base md:text-lg xlg:text-2xl md:font-medium text-center px-4 lg:px-10 xlg:px-14 py-1 md:py-2 ${
+              activeTab === "webapps"
+                ? "bg-primary text-white"
+                : "bg-primary/10 text-primary"
+            } hover:bg-primary rounded-lg border-2 border-primary hover:text-white transition-all duration-300`}
+            onClick={() => setActiveTab("webapps")}
           >
-            Webapps
+            Web Apps
           </button>
           <button
             type="button"
-            className="text-xl xlg:text-2xl font-medium text-center px-10 xlg:px-14 py-2 bg-primary/10 text-primary hover:bg-primary rounded-lg border-2 border-primary hover:text-white transition-all duration-300"
+            className={`lg:text-xl  text-base md:text-lg xlg:text-2xl md:font-medium text-center px-4 lg:px-10 xlg:px-14 py-1 md:py-2 ${
+              activeTab === "mobileapps"
+                ? "bg-primary text-white"
+                : "bg-primary/10 text-primary"
+            } hover:bg-primary rounded-lg border-2 border-primary hover:text-white transition-all duration-300`}
+            onClick={() => setActiveTab("mobileapps")}
           >
-            Mobile
+            Mobile Apps
           </button>
           <button
             type="button"
-            className="text-xl xlg:text-2xl font-medium text-center px-10 xlg:px-14 py-2 bg-primary/10 text-primary hover:bg-primary rounded-lg border-2 border-primary hover:text-white transition-all duration-300"
+            className={`lg:text-xl  text-base md:text-lg xlg:text-2xl md:font-medium text-center px-4 lg:px-10 xlg:px-14 py-1 md:py-2 ${
+              activeTab === "brands"
+                ? "bg-primary text-white"
+                : "bg-primary/10 text-primary"
+            } hover:bg-primary rounded-lg border-2 border-primary hover:text-white transition-all duration-300`}
+            onClick={() => setActiveTab("brands")}
           >
             Brands
           </button>
         </div>
         <div className="w-full h-0.5 bg-[#aaa]"></div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {pageData.map((dtat, index) => (
-            <CaseComponent cases={dtat} key={index} />
-          ))}
-        </div>
+        {renderComponent()}
       </main>
     </>
   );

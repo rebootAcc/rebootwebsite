@@ -350,7 +350,7 @@ const Footer = () => {
             All Rights Reserved
           </h1>
           <h1 className="text-white text-xs">
-            Terms and Conditions | Privacy Policy
+            Terms and Conditions | Refund Policy | Privacy Policy
           </h1>
         </div>
       </div>

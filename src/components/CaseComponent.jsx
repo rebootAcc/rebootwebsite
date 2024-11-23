@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { TiPlus } from "react-icons/ti";
 
@@ -36,12 +37,13 @@ const CaseComponent = ({ cases }) => {
           className="w-[10.5vmax] bg-white border border-primary rounded-lg p-3 object-contain xlg:object-fill"
         />
         <div className="flex flex-col justify-between flex-1">
-          <button
+          <Link
+            href={cases.link}
             type="button"
             className="bg-primary shadow-[0_1px_1.5px_0] shadow-black text-sm xlg:text-base text-center font-semibold p-1 xlg:p-3 rounded-xl text-white"
           >
             Live Preview
-          </button>
+          </Link>
           <p className="max-w-[16ch] inline-flex items-start flex-col text-[#666] text-sm xlg:text-base">
             <span>Website Category</span>{" "}
             <span className="font-semibold">{cases.category}</span>

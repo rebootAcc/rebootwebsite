@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React, { useRef, useEffect, useState } from "react";
 
 const ServiceAndproductPage1stpart = ({ content }) => {
@@ -36,8 +37,8 @@ const ServiceAndproductPage1stpart = ({ content }) => {
         <Image
           src={serviceimg}
           alt={servicename}
-          width={512}
-          height={0}
+          width={1024}
+          height={1220}
           className="w-full h-full object-cover rounded-md"
         />
       </div>
@@ -54,14 +55,18 @@ const ServiceAndproductPage1stpart = ({ content }) => {
         </section>
         <section className="flex flex-col gap-4">
           <p
-            className="xlg:text-base/[27px] lg:text-xs/[20px] md:text-sm text-xs"
+            className="xlg:text-base/[27px] lg:text-[15px]/[25px] md:text-sm text-xs"
             dangerouslySetInnerHTML={{ __html: servicedesc1 }}
           ></p>
           <p
-            className="xlg:text-base/[27px] lg:text-xs/[20px] md:text-sm text-xs"
+            className="xlg:text-base/[27px] lg:text-[15px]/[25px] md:text-sm text-xs"
             dangerouslySetInnerHTML={{ __html: servicedesc2 }}
           ></p>
-          <div className="w-full h-[3.5rem] xlg:h-[4rem] rounded-lg flex justify-center items-center xlg:mt-4 bg-primary text-white">
+          <Link
+            href={"https://api.whatsapp.com/send?phone=919088576170"}
+            target="_blank"
+            className="w-full h-[3.5rem] xlg:h-[4rem] rounded-lg flex justify-center items-center xlg:mt-4 bg-primary text-white"
+          >
             <span className="xlg:text-2xl lg:text-xl md:text-xl text-xl font-semibold text-white flex items-center w-full justify-center gap-2">
               <Image
                 src={"/icons/talkicon.svg"}
@@ -72,7 +77,7 @@ const ServiceAndproductPage1stpart = ({ content }) => {
               />
               Talk To Our Experts Now!
             </span>
-          </div>
+          </Link>
         </section>
       </section>
     </section>

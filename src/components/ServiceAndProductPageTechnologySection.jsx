@@ -33,7 +33,7 @@ const ServiceAndProductPageTechnologySection = ({ benifits }) => {
           <section className="flex flex-col gap-1">
             <h1 className="xlg:text-2xl text-xl font-semibold text-[#333333]">
               We Are
-              <span className="text-primary">Using</span>
+              <span className="text-primary ml-2"> Using</span>
             </h1>
             <h1 className="text-[#333333] text-2xl xlg:text-4xl font-semibold">
               Latest Technology <br />

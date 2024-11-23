@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import SubPageBanner from "./SubPageBanner";
 import ServiceAndproductPage1stpart from "./ServiceAndproductPage1stpart";
 import ServiceAndProductPageTechnologySection from "./ServiceAndProductPageTechnologySection";
@@ -8,8 +8,12 @@ import { IoLogoWhatsapp } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 // import Slider from "react-slick/lib/slider";
 import dynamic from "next/dynamic";
+import { FaRegWindowClose } from "react-icons/fa";
 
 const Slider = dynamic(() => import("react-slick/lib/slider"), {
+  ssr: false,
+});
+const EnquiryPopup = dynamic(() => import("./EnquiryPopup"), {
   ssr: false,
 });
 
@@ -21,7 +25,19 @@ const ServicePageDesign = ({
   workimg,
   packageimg,
   benifits,
+  pagedesignheading,
 }) => {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedComponent, setSelectedComponent] = useState(null);
+
+  const openModal = (componentName) => {
+    setSelectedComponent(componentName);
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+  };
   const settings = {
     infinite: true,
     speed: 2000,
@@ -110,8 +126,8 @@ const ServicePageDesign = ({
             <Image
               src={workimg}
               alt="work"
-              width={512}
-              height={392}
+              width={1024}
+              height={784}
               className="w-full  rounded-lg"
             />
           </div>
@@ -142,18 +158,24 @@ const ServicePageDesign = ({
                   </section>
                   <section className="flex items-center xs:gap-2 lg:gap-4 text-white xs:text-sm md:text-sm lg:text-lg font-medium">
                     <Link
-                      href={""}
+                      href={"https://api.whatsapp.com/send?phone=919088576170"}
+                      target="_blank"
                       className="xs:h-[2rem] lg:h-[2.5rem] xs:px-2 lg:px-4 flex justify-center items-center bg-[#25D366] rounded-md"
                     >
                       <IoLogoWhatsapp />
                     </Link>
                     <Link
-                      href={""}
+                      href={"mailto:info@rebootai.in"}
+                      target="_blank"
                       className=" xs:h-[2rem] lg:h-[2.5rem] xs:px-2 lg:px-4 flex justify-center items-center bg-[#FFB800] rounded-md"
                     >
                       <MdEmail />
                     </Link>
-                    <button className=" xs:h-[2rem] lg:h-[2.5rem] xs:px-2 lg:px-4 flex justify-center items-center gap-2 bg-[#4385F5] rounded-md">
+                    <Link
+                      href={"https://api.whatsapp.com/send?phone=919088576170"}
+                      target="_blank"
+                      className=" xs:h-[2rem] lg:h-[2.5rem] xs:px-2 lg:px-4 flex justify-center items-center gap-2 bg-[#4385F5] rounded-md"
+                    >
                       <Image
                         width={17}
                         height={17}
@@ -161,8 +183,11 @@ const ServicePageDesign = ({
                         alt=" get a quote icon"
                       />
                       Get A Quote
-                    </button>
-                    <button className=" xs:h-[2rem] lg:h-[2.5rem] xs:px-2 lg:px-4 flex justify-center items-center gap-2 bg-[#4385F5] rounded-md">
+                    </Link>
+                    <button
+                      onClick={() => openModal("EnquiryBoxComponent")}
+                      className=" xs:h-[2rem] lg:h-[2.5rem] xs:px-2 lg:px-4 flex justify-center items-center gap-2 bg-[#4385F5] rounded-md"
+                    >
                       <Image
                         width={17}
                         height={17}
@@ -181,8 +206,8 @@ const ServicePageDesign = ({
               <Image
                 src={packageimg}
                 alt="work"
-                width={512}
-                height={392}
+                width={1024}
+                height={784}
                 className="w-full rounded-lg "
               />
             </div>
@@ -192,7 +217,7 @@ const ServicePageDesign = ({
                   Lets See
                 </h3>
                 <h1 className="lg:text-3xl text-xl font-semibold text-primary">
-                  Some of Our Previous Designing
+                  {pagedesignheading}
                 </h1>
               </section>
               <div className="w-full">
@@ -205,8 +230,8 @@ const ServicePageDesign = ({
                       <Image
                         src={item}
                         alt="page design"
-                        height={512}
-                        width={567}
+                        height={1134}
+                        width={1024}
                         className="w-[90%] rounded-lg"
                       />
                     </section>
@@ -217,6 +242,23 @@ const ServicePageDesign = ({
           </section>
         </section>
       </section>
+      {modalOpen && (
+        <div className="fixed top-0 z-[1300] left-0 w-full h-full flex items-center justify-center overflow-y-scroll bg-black bg-opacity-50">
+          <div className=" w-full sm:h-[50vh] lg:h-[100vh] justify-center items-center flex flex-col  rounded-lg">
+            <div className="w-full flex p-4 justify-end items-center">
+              <button
+                className="bg-primary text-white lg:w-16 absolute top-14 lg:h-10 sm:w-12 sm:h-8 flex items-center justify-center rounded-lg hover:bg-white hover:text-primary border-2 border-primary"
+                onClick={closeModal}
+              >
+                <FaRegWindowClose className="lg:text-2xl sm:text-xl" />
+              </button>
+            </div>
+            <div className=" w-[95%] md:w-[90%] lg:w-[80%] xl:w-[70%] z-[1300]">
+              {selectedComponent === "EnquiryBoxComponent" && <EnquiryPopup />}
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 };

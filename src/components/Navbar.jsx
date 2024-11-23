@@ -253,7 +253,7 @@ const Navbar = () => {
                   <div className="absolute top-full bg-black/90 left-1/2 -translate-x-1/2 duration-500 transition-all origin-top-right opacity-0 group-hover:opacity-100 w-0 group-hover:w-auto overflow-hidden flex rounded">
                     {item.subMenu.map((menu, con) => (
                       <div
-                        className="text-white flex flex-col gap-6 whitespace-nowrap p-4"
+                        className="text-white flex flex-col gap-6 whitespace-nowrap p-2 py-4 xlg:p-4"
                         key={con}
                       >
                         <h1 className="text-base xlg:text-lg font-semibold flex items-center gap-2">

@@ -107,7 +107,9 @@ const BlogDetails = ({ blog }) => {
               <BlogCategoryList />
             </div>
             <div>
-              <BlogDetailsPageEnquiry />
+              <BlogDetailsPageEnquiry
+                firstlinecss={"p-5 flex flex-col gap-4 rounded-md bg-[#F7F7F7]"}
+              />
             </div>
           </div>
         </div>
