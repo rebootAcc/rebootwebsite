@@ -989,6 +989,7 @@ export const getStaticProps = async ({ params }) => {
 
       workimg: "/services23/IT Consulting 2.webp",
       packageimg: "/services23/IT Consulting 3.webp",
+      pagedesignheading: "Rank 24*7 on Top of Google",
 
       pagedesigns: [
         "/images/consulting 1.webp",
