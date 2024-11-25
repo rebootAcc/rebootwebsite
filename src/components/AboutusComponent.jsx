@@ -60,10 +60,10 @@ const AboutusComponent = ({ showsection, content }) => {
           <h1 className="text-primary text-3xl xlg:text-2xl lg:text-xl xl:text-[2rem] font-semibold">
             {heading}
           </h1>
-          <p
+          <div
             className="text-secondary xlg:text-sm/[22px] lg:text-xs text-sm  xl:text-base  "
             dangerouslySetInnerHTML={{ __html: aboutcontent }}
-          ></p>
+          ></div>
           {showsection && (
             <div className="w-full h-[4.5rem]  rounded-lg flex justify-center items-center  bg-primary text-white">
               <span className="xl:text-3xl lg:text-2xl md:text-xl text-lg font-semibold text-white flex items-center w-full justify-center gap-2">

@@ -114,10 +114,10 @@ const Career = ({ pageData, jobRoles }) => {
                     <h1 className="lg:text-2xl text-xl font-semibold text-[#333333]">
                       {item.jobPostName}
                     </h1>
-                    <p
+                    <div
                       className="lg:text-lg text-sm text-[#666666]"
                       dangerouslySetInnerHTML={{ __html: item.jobDescription }}
-                    ></p>
+                    ></div>
                   </section>
                   <section className="w-full flex md:flex-row flex-col md:gap-0 gap-6 md:justify-between md:items-center">
                     <section className="flex gap-4 flex-wrap">

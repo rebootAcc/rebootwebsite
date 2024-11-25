@@ -61,10 +61,10 @@ const ProductReviews = ({ productreviews }) => {
                     </div>
                   </section>
                 </section>
-                <p
+                <div
                   className="xlg:text-base/[22px] lg:text-sm/[18px] text-xs/[20px] md:text-xs/[18px]"
                   dangerouslySetInnerHTML={{ __html: item.text }}
-                ></p>
+                ></div>
               </section>
             </section>
           ))}

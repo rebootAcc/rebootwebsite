@@ -105,7 +105,7 @@ const BlogDetails = ({ blog }) => {
               className="w-full md:h-[25rem] object-contain rounded-lg"
             />
             <div className="flex flex-col gap-4">
-              <p
+              <div
                 className="text-[#555]  text-lg"
                 dangerouslySetInnerHTML={{ __html: blog.writeBlog }}
               />

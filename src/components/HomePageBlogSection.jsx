@@ -3,6 +3,7 @@ import Link from "next/link";
 import BlogCards from "./BlogCards";
 import dynamic from "next/dynamic";
 import Loading from "./loading";
+import { useRouter } from "next/navigation";
 const Slider = dynamic(() => import("react-slick/lib/slider"), {
   ssr: false,
 });
@@ -11,6 +12,7 @@ const HomePageBlogSection = () => {
   const [relatedBlogs, setRelatedBlogs] = useState([]);
   const [loading, setLoading] = useState(true);
   const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
+  const router = useRouter();
 
   const [slidesToShow, setSlidesToShow] = useState(3);
   const [autoslide, setAutoslide] = useState(false);
@@ -95,9 +97,9 @@ const HomePageBlogSection = () => {
 
   if (loading)
     return (
-      <p>
+      <div>
         <Loading />
-      </p>
+      </div>
     );
 
   if (relatedBlogs.length === 0) return <p></p>;
@@ -108,7 +110,7 @@ const HomePageBlogSection = () => {
         <h3 className="md:text-xl xs:text-lg font-medium text-[#333333]">
           Ideas to Spark your next move
         </h3>
-        <h1 className="text-primary xs:text-lg  md:text-3xl font-semibold">
+        <h1 className="text-primary xs:text-lg md:text-3xl font-semibold">
           Some of Our Latest Helpful Blogs
         </h1>
       </section>
@@ -120,9 +122,12 @@ const HomePageBlogSection = () => {
               key={blog.blogId}
               className="!flex w-full justify-center items-center"
             >
-              <Link href={`/blogs/${blog.blogId}`} className="w-[95%]">
+              <div
+                onClick={() => router.push(`/blogs/${blog.blogId}`)}
+                className="w-[95%] cursor-pointer"
+              >
                 <BlogCards blog={blog} />
-              </Link>
+              </div>
             </div>
           ))}
         </Slider>

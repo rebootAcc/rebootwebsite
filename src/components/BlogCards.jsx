@@ -6,6 +6,7 @@ import { MdOutlineRemoveRedEye } from "react-icons/md";
 import { PiFolderSimpleUserThin } from "react-icons/pi";
 
 const BlogCards = ({ blog }) => {
+
   return (
     <div className="bg-[#f3f3f3] border border-[#ccc] rounded-lg p-4 h-full flex flex-col w-full gap-3">
       <div>
@@ -48,10 +49,10 @@ const BlogCards = ({ blog }) => {
       <h1 className="text-[#333] text-base font-medium onelinelimit">
         {blog.heading}
       </h1>
-      <p
+      <div
         className="text-[#777] text-sm threelinelimit"
         dangerouslySetInnerHTML={{ __html: blog.description }}
-      ></p>
+      ></div>
       <div className="flex justify-between">
         <span className="font-medium text-[#888] text-sm">
           - By {blog.postedBy}
