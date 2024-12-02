@@ -78,7 +78,7 @@ const Career = ({ pageData, jobRoles }) => {
               <span className="text-primary"> Reboot</span>
             </h1>
             <p className="lg:text-lg text-sm text-[#666666] ">
-              We're looking for young passionate people to join us on our
+              We&apos;re looking for young passionate people to join us on our
               mission. We value experience, clear communication, and full
               ownership and responsibility.
             </p>

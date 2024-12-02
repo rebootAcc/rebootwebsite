@@ -94,7 +94,7 @@ export default function Blogs({ pageData, totalPages, currentPage }) {
   return (
     <>
       <Head>
-        <title>Blogs - Reboot's Advance Insights</title>
+        <title>Blogs - Reboot&apos;s Advance Insights</title>
         <meta
           name="description"
           content="Where Ideas meets with reality. Read Reboot AI's Advance Blog to understand you business scope"
