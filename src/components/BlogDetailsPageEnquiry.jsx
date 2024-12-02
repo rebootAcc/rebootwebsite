@@ -155,7 +155,7 @@ const BlogDetailsPageEnquiry = ({ firstlinecss }) => {
               loading ? "opacity-50 cursor-not-allowed" : ""
             }`}
           >
-            {loading ? "Submitting..." : "Send Query"}
+            {loading ? "Submitting..." : "Submit"}
           </button>
         </div>
         {errors.form && <p className="text-red-500 mt-3">{errors.form}</p>}

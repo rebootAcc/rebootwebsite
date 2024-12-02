@@ -1,210 +1,212 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { FaGlobe, FaPhoneVolume, FaWhatsapp } from "react-icons/fa6";
 import { IoMailSharp } from "react-icons/io5";
 import { HiLocationMarker, HiOutlineCurrencyRupee } from "react-icons/hi";
 import { BsChatQuote } from "react-icons/bs";
+import { FaRegWindowClose } from "react-icons/fa";
+import dynamic from "next/dynamic";
+
+const EnquiryPopup = dynamic(() => import("./EnquiryPopup"), {
+  ssr: false,
+});
 
 const Footer = () => {
   const footerLinks = [
     {
-      head: "Quick Web Services",
+      head: "Web & APP Services",
       links: [
         {
-          text: "Website Development In Kolkata",
-          src: "",
+          text: "Custom Website Development",
+          href: "/services/custom_website_development",
         },
         {
-          text: "App Development In Siliguri",
-          src: "",
+          text: "E-commerce Store Development",
+          href: "/services/e-commerce_store_development",
         },
         {
-          text: "Website Development In Siliguri",
-          src: "",
+          text: "Web Application Development",
+          href: "/services/web_application_development",
         },
         {
-          text: "Website Development In Darjeeling",
-          src: "",
+          text: "Dynamic Website Development",
+          href: "/services/dynamic_website_development",
         },
         {
-          text: "App Development In Kolkata",
-          src: "",
+          text: "Saas Application Development",
+          href: "/services/saas_application_development",
         },
         {
-          text: "App Development In West Bengal",
-          src: "",
+          text: "Web Apps Development",
+          href: "/services/web_application_development",
         },
         {
-          text: "App Development In Cooch Behar",
-          src: "",
+          text: "Android App Development",
+          href: "/services/android_app_development",
         },
         {
-          text: "Website Development In Cooch Behar",
-          src: "",
+          text: " iOS App Development",
+          href: "/services/ios_app_development",
         },
         {
-          text: "Graphic Design Services",
-          src: "",
+          text: "Flutter App Development",
+          href: "/services/flutter_app_development",
         },
         {
-          text: "Digital Marketing Services",
-          src: "",
-        },
-        {
-          text: "Social Media Marketing",
-          src: "",
+          text: "AI & ML Integration",
+          href: "/services/ai_ml_integration",
         },
       ],
     },
     {
-      head: "Quick Web Services",
+      head: "Marketing Solutions",
       links: [
         {
-          text: "Website Development In Kolkata",
-          src: "",
+          text: "Business Consultation",
+          href: "/services/business_consultation",
         },
         {
-          text: "App Development In Siliguri",
-          src: "",
+          text: "Performance Marketing",
+          href: "/services/performance_marketing",
         },
         {
-          text: "Website Development In Siliguri",
-          src: "",
+          text: "PR & Brand Building",
+          href: "/services/pr_brand_building",
         },
         {
-          text: "Website Development In Darjeeling",
-          src: "",
+          text: "Google Marketing",
+          href: "/services/google_marketing",
         },
         {
-          text: "App Development In Kolkata",
-          src: "",
+          text: "Social Media Solutions",
+          href: "/services/social_media_solutions",
         },
         {
-          text: "App Development In West Bengal",
-          src: "",
+          text: " IT Consultation",
+          href: "/services/it_consultation",
         },
         {
-          text: "App Development In Cooch Behar",
-          src: "",
+          text: "Web & Apps Security",
+          href: "/services/web_and_apps_security",
         },
         {
-          text: "Website Development In Cooch Behar",
-          src: "",
+          text: "Creative UI Design",
+          href: "/services/creative_ui_design",
         },
         {
-          text: "Graphic Design Services",
-          src: "",
+          text: "Brand Starter Solution",
+          href: "/services/brand_starter_solution",
         },
         {
-          text: "Digital Marketing Services",
-          src: "",
-        },
-        {
-          text: "Social Media Marketing",
-          src: "",
+          text: "Cloud Server Setup",
+          href: "/services/cloud_server_setup",
         },
       ],
     },
     {
-      head: "Quick Web Services",
+      head: "Our Products",
       links: [
         {
-          text: "Website Development In Kolkata",
-          src: "",
+          text: "Educational CRM Advanced",
+          href: "/products/educational_CRM_advanced",
         },
         {
-          text: "App Development In Siliguri",
-          src: "",
+          text: "Clinic Management Software",
+          href: "/products/clinic_management_software",
         },
         {
-          text: "Website Development In Siliguri",
-          src: "",
+          text: "Service Center Management CRM ",
+          href: "/products/service_center_management_crm",
         },
         {
-          text: "Website Development In Darjeeling",
-          src: "",
+          text: "Engineering Student App",
+          href: "",
         },
         {
-          text: "App Development In Kolkata",
-          src: "",
+          text: "Ecommerce Application",
+          href: "",
         },
         {
-          text: "App Development In West Bengal",
-          src: "",
+          text: "Pharma Company Management",
+          href: "",
         },
         {
-          text: "App Development In Cooch Behar",
-          src: "",
+          text: "Doctor Video Consultation",
+          href: "",
         },
         {
-          text: "Website Development In Cooch Behar",
-          src: "",
+          text: "WhatsApp Oficial API",
+          href: "",
         },
         {
-          text: "Graphic Design Services",
-          src: "",
+          text: "Food Delivery App",
+          href: "",
         },
         {
-          text: "Digital Marketing Services",
-          src: "",
-        },
-        {
-          text: "Social Media Marketing",
-          src: "",
+          text: "OTT Streaming App",
+          href: "",
         },
       ],
     },
     {
-      head: "Quick Web Services",
+      head: "Quick Links",
       links: [
         {
-          text: "Website Development In Kolkata",
-          src: "",
+          text: "home",
+          href: "/",
         },
         {
-          text: "App Development In Siliguri",
-          src: "",
+          text: "About Us",
+          href: "/about",
         },
         {
-          text: "Website Development In Siliguri",
-          src: "",
+          text: "Life at Reboot",
+          href: "/life_at_reboot",
         },
         {
-          text: "Website Development In Darjeeling",
-          src: "",
+          text: "Privacy Policy",
+          href: "/privacy_policy",
         },
         {
-          text: "App Development In Kolkata",
-          src: "",
+          text: "Refund Policy",
+          href: "/refund_policy",
         },
         {
-          text: "App Development In West Bengal",
-          src: "",
+          text: "Terms of Services",
+          href: "/terms_of_services",
         },
         {
-          text: "App Development In Cooch Behar",
-          src: "",
+          text: "Portfolios",
+          href: "/portfolios",
         },
         {
-          text: "Website Development In Cooch Behar",
-          src: "",
+          text: "career",
+          href: "/career",
         },
         {
-          text: "Graphic Design Services",
-          src: "",
+          text: "blogs",
+          href: "/blogs",
         },
         {
-          text: "Digital Marketing Services",
-          src: "",
-        },
-        {
-          text: "Social Media Marketing",
-          src: "",
+          text: "Contact Us",
+          href: "/contact-us",
         },
       ],
     },
   ];
+
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedComponent, setSelectedComponent] = useState(null);
+
+  const openModal = (componentName) => {
+    setSelectedComponent(componentName);
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+  };
 
   return (
     <footer className=" relative">
@@ -227,13 +229,14 @@ const Footer = () => {
               </h2>
               <ul className="flex flex-col lg:text-xs text-base xlg:text-base gap-2 leading-5">
                 {item.links.map((link, count) => (
-                  <li
-                    className="flex items-center gap-2 text-white"
+                  <Link
+                    href={link.href}
+                    className="flex items-center capitalize gap-2 text-white"
                     key={count}
                   >
                     <span className="text-primary">&gt;</span>
                     <span>{link.text}</span>
-                  </li>
+                  </Link>
                 ))}
               </ul>
             </div>
@@ -280,7 +283,9 @@ const Footer = () => {
             </p>
             <p className=" text-white flex items-center gap-1">
               <FaWhatsapp className="text-primary" />{" "}
-              <Link href="/">+91 9088576170</Link>
+              <Link href="https://api.whatsapp.com/send?phone=919088576170">
+                91 9088576170
+              </Link>
             </p>
             <p className=" text-white flex items-center gap-1">
               <IoMailSharp className="text-primary" />{" "}
@@ -319,12 +324,14 @@ const Footer = () => {
               <HiOutlineCurrencyRupee /> <span>Pay Online</span>
             </button>
             <button
+              onClick={() => openModal("EnquiryBoxComponent")}
               type="button"
               className="text-sm xl:text-base font-bold text-white px-4 xl:px-10 py-2 bg-primary inline-flex items-center gap-2 rounded-lg"
             >
               <BsChatQuote /> <span>Ge A Quote</span>
             </button>
-            <button
+            <Link
+              href={"/contact-us"}
               type="button"
               className="text-sm xl:text-base font-bold text-white px-4 xl:px-10 py-2 bg-primary inline-flex items-center gap-2 rounded-lg"
             >
@@ -334,7 +341,7 @@ const Footer = () => {
                 className="object-contain h-[1.5rem]"
               />{" "}
               <span>Complain Us!</span>
-            </button>
+            </Link>
           </div>
           <div className="min-h-20 xlg:min-h-28 w-full lg:w-48 xlg:w-64 relative bg-white rounded-lg">
             <Image
@@ -357,38 +364,38 @@ const Footer = () => {
         <div className="flex items-center lg:items-stretch flex-col gap-4 lg:flex-row justify-between">
           <h1 className="flex flex-row gap-2 text-xs items-center font-medium text-white">
             Find Us On :
-            <div className="">
+            <Link href={""} className="">
               <img
                 src="/icons/Linkedin.svg"
                 alt="meta"
                 className="object-contain h-[1.5rem]"
               />
-            </div>
-            <div className="">
+            </Link>
+            <Link href={""} className="">
               <img
                 src="/icons/instagram.svg"
                 alt="meta"
                 className="object-contain h-[1.5rem]"
               />
-            </div>
-            <div className="">
+            </Link>
+            <Link href={"https://x.com/reboot_ai"} className="">
               <img
                 src="/icons/xtwitter.svg"
                 alt="meta"
                 className="object-contain h-[1.5rem]"
               />
-            </div>
-            <div className="">
+            </Link>
+            <Link href={""} className="">
               <img
                 src="/icons/youtube.svg"
                 alt="meta"
                 className="object-contain h-[1.5rem]"
               />
-            </div>
+            </Link>
           </h1>
           <h1 className="text-white text-xs">
-            &copy;{" "}
-            <span className="font-bold">Reboot Marketing Private Limited.</span>{" "}
+            &copy;
+            <span className="font-bold">Reboot AI Private Limited.</span>
             All Rights Reserved
           </h1>
           <h1 className="text-white text-xs">
@@ -396,6 +403,24 @@ const Footer = () => {
           </h1>
         </div>
       </div>
+
+      {modalOpen && (
+        <div className="fixed top-0 z-[1300] left-0 w-full h-full flex items-center justify-center overflow-y-scroll bg-black bg-opacity-50">
+          <div className=" w-full sm:h-[50vh] lg:h-[100vh] justify-center items-center flex flex-col  rounded-lg">
+            <div className="w-full flex p-4 justify-end items-center">
+              <button
+                className="bg-primary text-white lg:w-16 absolute top-14 lg:h-10 sm:w-12 sm:h-8 flex items-center justify-center rounded-lg hover:bg-white hover:text-primary border-2 border-primary z-[1400]"
+                onClick={closeModal}
+              >
+                <FaRegWindowClose className="lg:text-2xl sm:text-xl" />
+              </button>
+            </div>
+            <div className=" w-[95%] md:w-[90%] lg:w-[80%] xl:w-[70%] z-[1300]">
+              {selectedComponent === "EnquiryBoxComponent" && <EnquiryPopup />}
+            </div>
+          </div>
+        </div>
+      )}
     </footer>
   );
 };

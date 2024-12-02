@@ -60,7 +60,11 @@ const Career = ({ pageData, jobRoles }) => {
   return (
     <>
       <Head>
-        <title>Reboot AI | Career</title>
+        <title>We are Hiring - Rewarding Career at Reboot AI Pvt Ltd</title>
+        <meta
+          name="description"
+          content="We are looking for active young working professionals who can uplift their career along with organisation goals. Our packages are lubricative, contact HR for more."
+        />
       </Head>
       <SubPageBanner heading={"Career"} />
       <main className="xl:p-16 lg:p-8 p-4 flex flex-col gap-8">
@@ -74,16 +78,14 @@ const Career = ({ pageData, jobRoles }) => {
               <span className="text-primary"> Reboot</span>
             </h1>
             <p className="lg:text-lg text-sm text-[#666666] ">
-              We&#x27;re looking for passionate people to join us on our
-              mission. We value flat hierarchies, clear communication, and full
-              ownership and responsibility. We&#x27;re looking for passionate
-              people to join us on our mission. We value flat hierarchies, clear
-              communication, and full ownership and responsibility.
+              We're looking for young passionate people to join us on our
+              mission. We value experience, clear communication, and full
+              ownership and responsibility.
             </p>
           </div>
         </section>
         <section className="flex flex-col gap-4">
-          <div className="py-4 grid md:grid-cols-4 grid-cols-3 lg:grid-cols-6 gap-4 lg:gap-8 border-b border-[#AAAAAA]">
+          <div className="py-4 grid md:grid-cols-4 grid-cols-3 lg:grid-cols-5 xlg:grid-cols-6 gap-4 lg:gap-8 border-b border-[#AAAAAA]">
             {/* Category Buttons (Job Roles) */}
             {[
               { name: "View All" },
@@ -92,7 +94,7 @@ const Career = ({ pageData, jobRoles }) => {
               <button
                 key={index}
                 onClick={() => handleCategoryClick(item.name)}
-                className={`lg:text-lg text-sm font-medium flex justify-center gap-4 items-center text-center px-2 md:px-4 lg:px-8 h-[2.5rem] ${
+                className={`lg:text-lg text-sm font-medium flex justify-center gap-4 items-center text-center px-2 md:px-4 xlg:px-6 h-[2.5rem] ${
                   selectedCategory === item.name
                     ? "bg-primary text-white"
                     : "bg-primary/10 text-primary"

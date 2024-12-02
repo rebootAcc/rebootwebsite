@@ -57,6 +57,7 @@ const BlogDetails = ({ blog }) => {
     <>
       <Head>
         <title>{`RebootAi | ${blog.blogTitle}`}</title>
+        <meta name="description" content={blog.metadescription} />
       </Head>
 
       <SubPageBanner heading="Our Blogs" subheading={blog.blogTitle} />

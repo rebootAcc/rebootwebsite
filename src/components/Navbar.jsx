@@ -32,7 +32,7 @@ const Navbar = () => {
       href: "/",
     },
     {
-      text: "about us",
+      text: "about",
 
       subMenu: [
         {
@@ -46,10 +46,7 @@ const Navbar = () => {
               text: "Life at Reboot",
               href: "/life_at_reboot",
             },
-            {
-              text: "Recognition",
-              href: "/recognition",
-            },
+
             {
               text: "Privacy Policy",
               href: "/privacy_policy",
@@ -196,8 +193,8 @@ const Navbar = () => {
       ],
     },
     {
-      text: "case studies",
-      href: "/case-studies",
+      text: "Portfolios",
+      href: "/portfolios",
     },
     {
       text: "career",

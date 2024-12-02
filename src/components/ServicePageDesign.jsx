@@ -52,214 +52,223 @@ const ServicePageDesign = ({
   };
 
   return (
-    <section>
-      <SubPageBanner heading={"Service"} subheading={title} />
-      <ServiceAndproductPage1stpart content={content} />
-      <ServiceAndProductPageTechnologySection benifits={benifits} />
+    <main>
+      <section>
+        <SubPageBanner heading={"Service"} subheading={title} />
+        <ServiceAndproductPage1stpart content={content} />
+        <ServiceAndProductPageTechnologySection benifits={benifits} />
 
-      <section className="xl:p-16 lg:p-8 sm:p-4 flex flex-col gap-8 ">
-        <section className="flex flex-col-reverse md:flex-row gap-8">
-          <section className="md:w-[50%] w-full flex flex-col sm:gap-4 lg:gap-10">
-            <h1 className="lg:text-3xl sm:text-xl font-semibold text-[#333333]">
-              How <span className="text-primary">Do </span>
-              <span className="lg:text-5xl sm:text-3xl">
-                We <span className="text-primary">Work</span>
-              </span>
-            </h1>
-            <section className="flex flex-col sm:gap-4 lg:gap-6 xlg:gap-12">
-              <section className="flex flex-row items-center gap-4">
-                <div className="border-2 w-[40%] border-primary bg-[#4385F51A] border-dashed rounded-md px-8 xl:h-[4rem] sm:h-[2.5rem] lg:h-[3rem] flex justify-center items-center text-primary sm:text-sm lg:text-base xlg:text-xl font-semibold">
-                  Start
+        <section className="xl:p-16 lg:p-8 sm:p-4 flex flex-col gap-8 ">
+          <section className="flex flex-col-reverse md:flex-row gap-8">
+            <section className="md:w-[50%] w-full flex flex-col sm:gap-4 lg:gap-10">
+              <h1 className="lg:text-3xl sm:text-xl font-semibold text-[#333333]">
+                How <span className="text-primary">Do </span>
+                <span className="lg:text-5xl sm:text-3xl">
+                  We <span className="text-primary">Work</span>
+                </span>
+              </h1>
+              <section className="flex flex-col sm:gap-4 lg:gap-6 xlg:gap-12">
+                <section className="flex flex-row items-center gap-4">
+                  <div className="border-2 w-[40%] border-primary bg-[#4385F51A] border-dashed rounded-md px-8 xl:h-[4rem] sm:h-[2.5rem] lg:h-[3rem] flex justify-center items-center text-primary sm:text-sm lg:text-base xlg:text-xl font-semibold">
+                    Start
+                  </div>
+                  <div className="text-primary w-[15%] sm:text-sm lg:text-base xlg:text-xl">
+                    - - - -&#x203A;
+                  </div>
+                  <div className="border-2 w-[50%] border-primary bg-[#4385F51A] border-dashed rounded-md lg:px-8 sm:h-[2.5rem] xl:h-[4rem] lg:h-[3rem] flex justify-center items-center text-primary sm:text-sm lg:text-base xlg:text-xl font-semibold">
+                    Step 1 : Analysis
+                  </div>
+                </section>
+                <div className="flex flex-row relative items-center gap-4">
+                  <div className=" absolute inset-0 top-4 left-2">
+                    <Image
+                      width={41}
+                      height={8}
+                      src="/icons/downarrow.svg"
+                      alt=""
+                      className="lg:h-[2.5rem] xl:h-[3rem] sm:h-[2rem]"
+                    />
+                  </div>
+                  <div className="border-2 w-[60%] sm:ml-10 lg:ml-16 border-primary bg-[#4385F51A] border-dashed rounded-md px-8 sm:h-[2.5rem] xl:h-[4rem] lg:h-[3rem] flex justify-center items-center text-primary sm:text-sm lg:text-base xlg:text-xl font-semibold">
+                    Step 2 : Ideation
+                  </div>
+                  <div className="absolute inset-0 -top-4 left-[75%] ">
+                    <Image
+                      width={78}
+                      height={38}
+                      src="/icons/leftarrow.svg"
+                      alt=""
+                      className="lg:h-[2.5rem] xl:h-[3rem] sm:h-[2rem]"
+                    />
+                  </div>
                 </div>
-                <div className="text-primary w-[15%] sm:text-sm lg:text-base xlg:text-xl">
-                  - - - -&#x203A;
+                <div className="">
+                  <div className="border-2 w-full border-primary bg-[#4385F51A] border-dashed rounded-md px-8 sm:h-[2.5rem] xl:h-[4rem] lg:h-[3rem] flex justify-center items-center text-primary sm:text-sm lg:text-base xlg:text-xl font-semibold">
+                    Step 3 : Designing & Development
+                  </div>
                 </div>
-                <div className="border-2 w-[50%] border-primary bg-[#4385F51A] border-dashed rounded-md lg:px-8 sm:h-[2.5rem] xl:h-[4rem] lg:h-[3rem] flex justify-center items-center text-primary sm:text-sm lg:text-base xlg:text-xl font-semibold">
-                  Step 1 : Analysis
+                <div className="flex flex-row relative items-center gap-4">
+                  <div className="border-2 w-[70%]  border-primary bg-[#4385F51A] border-dashed rounded-md px-8 sm:h-[2.5rem] xl:h-[4rem] lg:h-[3rem] flex justify-center items-center text-primary sm:text-sm lg:text-base xlg:text-xl font-semibold">
+                    Final Delivery Step
+                  </div>
+                  <div className="absolute inset-0 -top-2 left-[75%] ">
+                    <Image
+                      width={78}
+                      height={38}
+                      src="/icons/leftarrow.svg"
+                      alt=""
+                      className="lg:h-[2.5rem] xl:h-[3rem] sm:h-[2rem]"
+                    />
+                  </div>
                 </div>
               </section>
-              <div className="flex flex-row relative items-center gap-4">
-                <div className=" absolute inset-0 top-4 left-2">
-                  <Image
-                    width={41}
-                    height={8}
-                    src="/icons/downarrow.svg"
-                    alt=""
-                    className="lg:h-[2.5rem] xl:h-[3rem] sm:h-[2rem]"
-                  />
-                </div>
-                <div className="border-2 w-[60%] sm:ml-10 lg:ml-16 border-primary bg-[#4385F51A] border-dashed rounded-md px-8 sm:h-[2.5rem] xl:h-[4rem] lg:h-[3rem] flex justify-center items-center text-primary sm:text-sm lg:text-base xlg:text-xl font-semibold">
-                  Step 2 : Ideation
-                </div>
-                <div className="absolute inset-0 -top-4 left-[75%] ">
-                  <Image
-                    width={78}
-                    height={38}
-                    src="/icons/leftarrow.svg"
-                    alt=""
-                    className="lg:h-[2.5rem] xl:h-[3rem] sm:h-[2rem]"
-                  />
-                </div>
-              </div>
-              <div className="">
-                <div className="border-2 w-full border-primary bg-[#4385F51A] border-dashed rounded-md px-8 sm:h-[2.5rem] xl:h-[4rem] lg:h-[3rem] flex justify-center items-center text-primary sm:text-sm lg:text-base xlg:text-xl font-semibold">
-                  Step 3 : Designing & Development
-                </div>
-              </div>
-              <div className="flex flex-row relative items-center gap-4">
-                <div className="border-2 w-[70%]  border-primary bg-[#4385F51A] border-dashed rounded-md px-8 sm:h-[2.5rem] xl:h-[4rem] lg:h-[3rem] flex justify-center items-center text-primary sm:text-sm lg:text-base xlg:text-xl font-semibold">
-                  Final Delivery Step
-                </div>
-                <div className="absolute inset-0 -top-2 left-[75%] ">
-                  <Image
-                    width={78}
-                    height={38}
-                    src="/icons/leftarrow.svg"
-                    alt=""
-                    className="lg:h-[2.5rem] xl:h-[3rem] sm:h-[2rem]"
-                  />
-                </div>
-              </div>
             </section>
-          </section>
-          <div className="md:w-[50%] w-full">
-            <Image
-              src={workimg}
-              alt="work"
-              width={1024}
-              height={784}
-              className="w-full  rounded-lg"
-            />
-          </div>
-        </section>
-        <section className="flex flex-col md:flex-row xs:gap-4 lg:gap-4 xl:gap-8">
-          <section className="md:w-[50%] w-full flex flex-col xs:gap-4 xlg:gap-8">
-            <h1 className="xlg:text-3xl lg:text-lg xs:text-xl font-semibold text-[#333333]">
-              See Our
-              <span className="xlg:text-5xl lg:text-2xl xs:text-3xl ml-2 text-primary">
-                Package Pricing
-              </span>
-            </h1>
-            <div className="flex flex-col gap-4 md:gap-2 lg:gap-6 xl:gap-10">
-              {packages.map((item, index) => (
-                <div key={index} className="flex flex-col lg:gap-3 xl:gap-8">
-                  <h1 className="xlg:text-3xl xs:text-xl  font-semibold text-[#333333]">
-                    {item.heading}
-                  </h1>
-                  <section className="flex flex-col gap-2">
-                    {item.details.map((item, index) => (
-                      <p
-                        className="xlg:text-xl lg:text-sm font-medium flex items-center gap-2 text-[#666666]"
-                        key={index}
-                      >
-                        <span className="text-2xl/[0px]"> &#x2022;</span> {item}
-                      </p>
-                    ))}
-                  </section>
-                  <section className="flex items-center xs:gap-2 lg:gap-4 text-white xs:text-sm md:text-sm lg:text-lg font-medium">
-                    <Link
-                      href={"https://api.whatsapp.com/send?phone=919088576170"}
-                      target="_blank"
-                      className="xs:h-[2rem] lg:h-[2.5rem] xs:px-2 lg:px-4 flex justify-center items-center bg-[#25D366] rounded-md"
-                    >
-                      <IoLogoWhatsapp />
-                    </Link>
-                    <Link
-                      href={"mailto:info@rebootai.in"}
-                      target="_blank"
-                      className=" xs:h-[2rem] lg:h-[2.5rem] xs:px-2 lg:px-4 flex justify-center items-center bg-[#FFB800] rounded-md"
-                    >
-                      <MdEmail />
-                    </Link>
-                    <Link
-                      href={"https://api.whatsapp.com/send?phone=919088576170"}
-                      target="_blank"
-                      className=" xs:h-[2rem] lg:h-[2.5rem] xs:px-2 lg:px-4 flex justify-center items-center gap-2 bg-[#4385F5] rounded-md"
-                    >
-                      <Image
-                        width={17}
-                        height={17}
-                        src="/icons/quote.svg"
-                        alt=" get a quote icon"
-                      />
-                      Get A Quote
-                    </Link>
-                    <button
-                      onClick={() => openModal("EnquiryBoxComponent")}
-                      className=" xs:h-[2rem] lg:h-[2.5rem] xs:px-2 lg:px-4 flex justify-center items-center gap-2 bg-[#4385F5] rounded-md"
-                    >
-                      <Image
-                        width={17}
-                        height={17}
-                        src="/icons/booknow.svg"
-                        alt="book now icon"
-                      />
-                      Book Now
-                    </button>
-                  </section>
-                </div>
-              ))}
-            </div>
-          </section>
-          <section className="md:w-[50%] w-full flex flex-col gap-4">
-            <div className="md:block hidden">
+            <div className="md:w-[50%] w-full">
               <Image
-                src={packageimg}
+                src={workimg}
                 alt="work"
                 width={1024}
                 height={784}
-                className="w-full rounded-lg "
+                className="w-full  rounded-lg"
               />
             </div>
-            <section className="flex flex-col gap-4 md:gap-1">
-              <section className="flex flex-col gap-1">
-                <h3 className="lg:text-xl text-sm font-medium text-[#333333]">
-                  Lets See
-                </h3>
-                <h1 className="lg:text-3xl text-xl font-semibold text-primary">
-                  {pagedesignheading}
-                </h1>
-              </section>
-              <div className="w-full">
-                <Slider {...settings}>
-                  {pagedesigns.map((item, index) => (
-                    <section
-                      className="!flex justify-center items-center"
-                      key={index}
-                    >
-                      <Image
-                        src={item}
-                        alt="page design"
-                        height={1134}
-                        width={1024}
-                        className="w-[90%] rounded-lg"
-                      />
+          </section>
+          <section className="flex flex-col md:flex-row xs:gap-4 lg:gap-4 xl:gap-8">
+            <section className="md:w-[50%] w-full flex flex-col xs:gap-4 xlg:gap-8">
+              <h1 className="xlg:text-3xl lg:text-lg xs:text-xl font-semibold text-[#333333]">
+                See Our
+                <span className="xlg:text-5xl lg:text-2xl xs:text-3xl ml-2 text-primary">
+                  Package Pricing
+                </span>
+              </h1>
+              <div className="flex flex-col gap-4 md:gap-2 lg:gap-6 xl:gap-10">
+                {packages.map((item, index) => (
+                  <div key={index} className="flex flex-col lg:gap-3 xl:gap-8">
+                    <h1 className="xlg:text-3xl xs:text-xl  font-semibold text-[#333333]">
+                      {item.heading}
+                    </h1>
+                    <section className="flex flex-col gap-2">
+                      {item.details.map((item, index) => (
+                        <p
+                          className="xlg:text-xl lg:text-sm font-medium flex items-center gap-2 text-[#666666]"
+                          key={index}
+                        >
+                          <span className="text-2xl/[0px]"> &#x2022;</span>{" "}
+                          {item}
+                        </p>
+                      ))}
                     </section>
-                  ))}
-                </Slider>
+                    <section className="flex items-center xs:gap-2 lg:gap-4 text-white xs:text-sm md:text-sm lg:text-lg font-medium">
+                      <Link
+                        href={
+                          "https://api.whatsapp.com/send?phone=919088576170"
+                        }
+                        target="_blank"
+                        className="xs:h-[2rem] lg:h-[2.5rem] xs:px-2 lg:px-4 flex justify-center items-center bg-[#25D366] rounded-md"
+                      >
+                        <IoLogoWhatsapp />
+                      </Link>
+                      <Link
+                        href={"mailto:info@rebootai.in"}
+                        target="_blank"
+                        className=" xs:h-[2rem] lg:h-[2.5rem] xs:px-2 lg:px-4 flex justify-center items-center bg-[#FFB800] rounded-md"
+                      >
+                        <MdEmail />
+                      </Link>
+                      <Link
+                        href={
+                          "https://api.whatsapp.com/send?phone=919088576170"
+                        }
+                        target="_blank"
+                        className=" xs:h-[2rem] lg:h-[2.5rem] xs:px-2 lg:px-4 flex justify-center items-center gap-2 bg-[#4385F5] rounded-md"
+                      >
+                        <Image
+                          width={17}
+                          height={17}
+                          src="/icons/quote.svg"
+                          alt=" get a quote icon"
+                        />
+                        Get A Quote
+                      </Link>
+                      <button
+                        onClick={() => openModal("EnquiryBoxComponent")}
+                        className=" xs:h-[2rem] lg:h-[2.5rem] xs:px-2 lg:px-4 flex justify-center items-center gap-2 bg-[#4385F5] rounded-md"
+                      >
+                        <Image
+                          width={17}
+                          height={17}
+                          src="/icons/booknow.svg"
+                          alt="book now icon"
+                        />
+                        Book Now
+                      </button>
+                    </section>
+                  </div>
+                ))}
               </div>
+            </section>
+            <section className="md:w-[50%] w-full flex flex-col gap-4">
+              <div className="md:block hidden">
+                <Image
+                  src={packageimg}
+                  alt="work"
+                  width={1024}
+                  height={784}
+                  className="w-full rounded-lg "
+                />
+              </div>
+              <section className="flex flex-col gap-4 md:gap-1">
+                <section className="flex flex-col gap-1">
+                  <h3 className="lg:text-xl text-sm font-medium text-[#333333]">
+                    Lets See
+                  </h3>
+                  <h1 className="lg:text-3xl text-xl font-semibold text-primary">
+                    {pagedesignheading}
+                  </h1>
+                </section>
+                <div className="w-full">
+                  <Slider {...settings}>
+                    {pagedesigns.map((item, index) => (
+                      <section
+                        className="!flex justify-center items-center"
+                        key={index}
+                      >
+                        <Image
+                          src={item}
+                          alt="page design"
+                          height={1134}
+                          width={1024}
+                          className="w-[90%] rounded-lg"
+                        />
+                      </section>
+                    ))}
+                  </Slider>
+                </div>
+              </section>
             </section>
           </section>
         </section>
-      </section>
-      {modalOpen && (
-        <div className="fixed top-0 z-[1300] left-0 w-full h-full flex items-center justify-center overflow-y-scroll bg-black bg-opacity-50">
-          <div className=" w-full sm:h-[50vh] lg:h-[100vh] justify-center items-center flex flex-col  rounded-lg">
-            <div className="w-full flex p-4 justify-end items-center">
-              <button
-                className="bg-primary text-white lg:w-16 absolute top-14 lg:h-10 sm:w-12 sm:h-8 flex items-center justify-center rounded-lg hover:bg-white hover:text-primary border-2 border-primary"
-                onClick={closeModal}
-              >
-                <FaRegWindowClose className="lg:text-2xl sm:text-xl" />
-              </button>
-            </div>
-            <div className=" w-[95%] md:w-[90%] lg:w-[80%] xl:w-[70%] z-[1300]">
-              {selectedComponent === "EnquiryBoxComponent" && <EnquiryPopup />}
+        {modalOpen && (
+          <div className="fixed top-0 z-[1300] left-0 w-full h-full flex items-center justify-center overflow-y-scroll bg-black bg-opacity-50">
+            <div className=" w-full sm:h-[50vh] lg:h-[100vh] justify-center items-center flex flex-col  rounded-lg">
+              <div className="w-full flex p-4 justify-end items-center">
+                <button
+                  className="bg-primary text-white lg:w-16 absolute top-14 lg:h-10 sm:w-12 sm:h-8 flex items-center justify-center rounded-lg hover:bg-white hover:text-primary border-2 border-primary"
+                  onClick={closeModal}
+                >
+                  <FaRegWindowClose className="lg:text-2xl sm:text-xl" />
+                </button>
+              </div>
+              <div className=" w-[95%] md:w-[90%] lg:w-[80%] xl:w-[70%] z-[1300]">
+                {selectedComponent === "EnquiryBoxComponent" && (
+                  <EnquiryPopup />
+                )}
+              </div>
             </div>
           </div>
-        </div>
-      )}
-    </section>
+        )}
+      </section>
+    </main>
   );
 };
 

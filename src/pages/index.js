@@ -121,7 +121,13 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Reboot Ai</title>
+        <title>
+          Welcome to Reboot AI Pvt Ltd - Top Web, App Development Company
+        </title>
+        <meta
+          name="description"
+          content="IT Solutions for the Future, Most Trusted Startups for Web, Apps & Performance Marketing Services."
+        />
       </Head>
       <main>
         <video

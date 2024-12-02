@@ -42,7 +42,11 @@ const ContactUs = () => {
   return (
     <>
       <Head>
-        <title>Reboot AI | Contact Us</title>
+        <title>Contact Us today! Building your brand now</title>
+        <meta
+          name="description"
+          content="Contact us to building your dream brand globally."
+        />
       </Head>
       <main>
         <SubPageBanner heading={"Contact Us"} />
@@ -50,12 +54,7 @@ const ContactUs = () => {
           <div className="flex flex-col gap-4">
             <h1 className="text-3xl font-bold text-primary">Get In Touch!</h1>
             <p className="text-secondary xl:font-medium lg:text-lg text-base xlg:text-xl">
-              Today visual content is gaining importance as it creates your
-              brand&apos;s image in the audience&apos;s mind and so, the need
-              for graphic design has increased among all types of businesses.
-              The reason is graphic design helps to make your business stand out
-              different from its competition. In other words, it helps in
-              engaging the audience with your brand.
+              Contact us to building your dream Brand globally.
             </p>
           </div>
           <div className="flex flex-col gap-4">

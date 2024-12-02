@@ -93,7 +93,13 @@ const About = () => {
   return (
     <>
       <Head>
-        <title>Reboot AI | About Us</title>
+        <title>
+          About Reboot AI Pvt Ltd - Let's Turn Your Ideas into Reality
+        </title>
+        <meta
+          name="description"
+          content="Reboot AI Pvt Ltd is a IT startup company based on West Bengal. The company has vision of providing Technology at affordable rate to everyone."
+        />
       </Head>
       <section>
         <SubPageBanner heading={"About Us"} />

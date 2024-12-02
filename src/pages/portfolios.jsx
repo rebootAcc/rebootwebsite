@@ -27,9 +27,15 @@ const CaseStudies = () => {
   return (
     <>
       <Head>
-        <title>Reboot AI | Case Studies</title>
+        <title>
+          Check our Real Client's Real Stories - Portfolios of Web & Apps
+        </title>
+        <meta
+          name="description"
+          content="Are you looking for a branded content & top noth agency for your vision, you are in the right place.Check all our portfolios to get a clear vision."
+        />
       </Head>
-      <SubPageBanner heading={"Case Studies"} />
+      <SubPageBanner heading={"Portfolios"} />
       <main className="py-11 px-8 md:px-12 xlg:px-16 flex flex-col gap-6">
         <div className="flex sm:gap-2 md:gap-6 md:justify-between  flex-wrap">
           <button
