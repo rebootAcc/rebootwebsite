@@ -106,7 +106,12 @@ const RelatedCategoryBlogs = ({ category, excludeBlogId }) => {
             key={blog.blogId}
             className="!flex w-full justify-center items-center"
           >
-            <Link href={`/blogs/${blog.blogId}`} className="w-[95%]">
+            <Link
+              href={`/blogs/${blog.blogId}-${blog.heading
+                .replace(/\s+/g, "-")
+                .toLowerCase()}`}
+              className="w-[95%]"
+            >
               <BlogCards blog={blog} />
             </Link>
           </div>

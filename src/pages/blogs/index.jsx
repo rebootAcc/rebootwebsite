@@ -104,7 +104,13 @@ export default function Blogs({ pageData, totalPages, currentPage }) {
       <main className="xl:p-16 lg:p-8 p-4 flex flex-col gap-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-items-stretch gap-6">
           {pageData.map((blog, index) => (
-            <Link className="h-full" key={index} href={`/blogs/${blog.blogId}`}>
+            <Link
+              className="h-full"
+              key={index}
+              href={`/blogs/${blog.blogId}-${blog.heading
+                .replace(/\s+/g, "-")
+                .toLowerCase()}`}
+            >
               <BlogCards blog={blog} />
             </Link>
           ))}
