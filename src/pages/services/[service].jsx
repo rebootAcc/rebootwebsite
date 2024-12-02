@@ -43,25 +43,25 @@ export default CustomWebsiteDevelopment;
 export const getStaticPaths = async () => {
   // Define 5 static paths for your services
   const paths = [
-    { params: { service: "custom_website_development" } },
-    { params: { service: "e-commerce_store_development" } },
-    { params: { service: "web_application_development" } },
-    { params: { service: "dynamic_website_development" } },
-    { params: { service: "saas_application_development" } },
-    { params: { service: "android_app_development" } },
-    { params: { service: "ios_app_development" } },
-    { params: { service: "flutter_app_development" } },
-    { params: { service: "ai_ml_integration" } },
-    { params: { service: "business_consultation" } },
-    { params: { service: "performance_marketing" } },
-    { params: { service: "pr_brand_building" } },
-    { params: { service: "google_marketing" } },
-    { params: { service: "social_media_solutions" } },
-    { params: { service: "it_consultation" } },
-    { params: { service: "web_and_apps_security" } },
-    { params: { service: "creative_ui_design" } },
-    { params: { service: "brand_starter_solution" } },
-    { params: { service: "cloud_server_setup" } },
+    { params: { service: "custom-website-development" } },
+    { params: { service: "e-commerce-store-development" } },
+    { params: { service: "web-application-development" } },
+    { params: { service: "dynamic-website-development" } },
+    { params: { service: "saas-application-development" } },
+    { params: { service: "android-app-development" } },
+    { params: { service: "ios-app-development" } },
+    { params: { service: "flutter-app-development" } },
+    { params: { service: "ai-ml-integration" } },
+    { params: { service: "business-consultation" } },
+    { params: { service: "performance-marketing" } },
+    { params: { service: "pr-brand-building" } },
+    { params: { service: "google-marketing" } },
+    { params: { service: "social-media-solutions" } },
+    { params: { service: "it-consultation" } },
+    { params: { service: "web-and-apps-security" } },
+    { params: { service: "creative-ui-design" } },
+    { params: { service: "brand-starter-solution" } },
+    { params: { service: "cloud-server-setup" } },
   ];
 
   return {
@@ -73,7 +73,7 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async ({ params }) => {
   // Mock data for services
   const serviceData = {
-    custom_website_development: {
+    "custom-website-development": {
       metatitle:
         "Website Development Company  in Kolkata - Custom Website Development",
       metadescription:
@@ -151,7 +151,7 @@ export const getStaticProps = async ({ params }) => {
       ],
     },
 
-    "e-commerce_store_development": {
+    "e-commerce-store-development": {
       metatitle:
         "E-commerce Developer in Kolkata - custom eCommerce development",
       metadescription:
@@ -219,7 +219,7 @@ export const getStaticProps = async ({ params }) => {
         "/ecomweb/E-commerce website 4.webp",
       ],
     },
-    web_application_development: {
+    "web-application-development": {
       metatitle:
         "Web Application Development Services in Kolkata - Reboot AI Pvt Ltd",
       metadescription:
@@ -276,7 +276,7 @@ export const getStaticProps = async ({ params }) => {
         "/images/Web Application 3.webp",
       ],
     },
-    dynamic_website_development: {
+    "dynamic-website-development": {
       metatitle: "Website Development Services in Siliguri - Reboot AI Pvt Ltd",
       metadescription:
         "Create dynamic, engaging websites with Reboot AI's Dynamic Website Development services. Enhance user experience and SEO with flexible, responsive designs.",
@@ -352,7 +352,7 @@ export const getStaticProps = async ({ params }) => {
         "/customwebdev/website view 11.webp",
       ],
     },
-    saas_application_development: {
+    "saas-application-development": {
       metatitle:
         "SAAS Application Development Services in Kolkata - Reboot AI Pvt Ltd",
       metadescription:
@@ -410,7 +410,7 @@ export const getStaticProps = async ({ params }) => {
       ],
     },
 
-    android_app_development: {
+    "android-app-development": {
       metatitle: "App Developer in Kolkata - Android App Development Company",
       metadescription:
         "Experienced & Certified App Development agency in Kolkata, East India. Custom apps that engage users, improve brand visibility, and boost customer satisfaction.",
@@ -477,7 +477,7 @@ export const getStaticProps = async ({ params }) => {
         "/images/app development 3.webp",
       ],
     },
-    ios_app_development: {
+    "ios-app-development": {
       metatitle: "iOS App Development Company in Siliguri | Reboot AI Pvt Ltd",
       metadescription:
         "Get a high-performing, user-friendly iOS app with Reboot AI's iOS App Development services. Deliver exceptional experiences to your iPhone and iPad users.",
@@ -544,7 +544,7 @@ export const getStaticProps = async ({ params }) => {
         "/images/app development 3.webp",
       ],
     },
-    flutter_app_development: {
+    "flutter-app-development": {
       metatitle: "Flutter App Development Company in India - Reboot AI Pvt Ltd",
       metadescription:
         "Cross-platform app development made easy with Flutter. Reboot AI offers Flutter App Development to create visually stunning apps for both Android and iOS.",
@@ -612,7 +612,7 @@ export const getStaticProps = async ({ params }) => {
         "/images/app development 3.webp",
       ],
     },
-    ai_ml_integration: {
+    "ai-ml-integration": {
       metatitle: "AI & ML Integration Services in Kolkata - Reboot AI Pvt Ltd",
       metadescription:
         "Unlock the power of Artificial Intelligence and Machine Learning with Reboot AI's integration services. Drive innovation and improve business processes with AI solutions.",
@@ -680,7 +680,7 @@ export const getStaticProps = async ({ params }) => {
         "/images/ai and ml slide 2.webp",
       ],
     },
-    business_consultation: {
+    "business-consultation": {
       metatitle:
         "Business Consultation Services in Kolkata - Reboot AI Pvt Ltd",
       metadescription:
@@ -737,7 +737,7 @@ export const getStaticProps = async ({ params }) => {
         "/images/consulting 3.webp",
       ],
     },
-    performance_marketing: {
+    "performance-marketing": {
       metatitle:
         "Digital Marketing Agency in Kolkata - Performance Marketing Agency",
       metadescription:
@@ -802,7 +802,7 @@ export const getStaticProps = async ({ params }) => {
       pagedesignheading: "Rank 24*7 on Top of Google",
       pagedesigns: ["/images/marketing 1.webp", "/images/marketing 2.webp"],
     },
-    pr_brand_building: {
+    "pr-brand-building": {
       metatitle: "PR & Branding Agency in Kolkata - Reboot AI Pvt Ltd",
       metadescription:
         "Boost your brand image and create lasting impressions with our PR & Branding services. Build trust and authority in your industry with expert PR strategies.",
@@ -860,7 +860,7 @@ export const getStaticProps = async ({ params }) => {
         "/images/award 4.webp",
       ],
     },
-    google_marketing: {
+    "google-marketing": {
       metatitle: "SEO Agency in Kolkata - Google Marketing Service ",
       metadescription:
         "Enhance your digital presence with Google Marketing services. Leverage Google Ads and SEO strategies to increase visibility, drive traffic, and boost sales.",
@@ -925,7 +925,7 @@ export const getStaticProps = async ({ params }) => {
 
       pagedesigns: ["/images/marketing 1.webp", "/images/marketing 2.webp"],
     },
-    social_media_solutions: {
+    "social-media-solutions": {
       metatitle:
         "Social Media Agency in Siliguri - influencer marketing agency",
       metadescription:
@@ -995,7 +995,7 @@ export const getStaticProps = async ({ params }) => {
         "/images/social media 3.webp",
       ],
     },
-    it_consultation: {
+    "it-consultation": {
       metatitle: "IT Consultation Services in Kolkata - Reboot AI Pvt Ltd",
       metadescription:
         "Reboot AI offers professional IT Consultation services to help businesses navigate tech challenges, optimize infrastructure, and implement cutting-edge solutions.",
@@ -1053,7 +1053,7 @@ export const getStaticProps = async ({ params }) => {
         "/images/consulting 3.webp",
       ],
     },
-    web_and_apps_security: {
+    "web-and-apps-security": {
       metatitle: "Web Apps & Security Services in Kolkata - Reboot AI Pvt Ltd",
       metadescription:
         "Protect your business with our Web Apps & Security services. We provide end-to-end security solutions to secure your web applications from potential threats.",
@@ -1107,7 +1107,7 @@ export const getStaticProps = async ({ params }) => {
 
       pagedesigns: ["/images/Websecurity 1.webp", "/images/Websecurity 2.webp"],
     },
-    creative_ui_design: {
+    "creative-ui-design": {
       metatitle:
         "UI/UX Development Agency in Kolkata- Creative Designing Agency",
       metadescription:
@@ -1166,7 +1166,7 @@ export const getStaticProps = async ({ params }) => {
         "/images/creativeui 3.webp",
       ],
     },
-    brand_starter_solution: {
+    "brand-starter-solution": {
       metatitle: "Brand Building  Agency Kolkata - Reboot AI Pvt Ltd",
       metadescription:
         "Kickstart your brand with Reboot AI's Brand Starter Solutions. From logo design to marketing strategies, we provide everything to launch your brand successfully.",
@@ -1225,7 +1225,7 @@ export const getStaticProps = async ({ params }) => {
         "/images/Brand Starter 5.webp",
       ],
     },
-    cloud_server_setup: {
+    "cloud-server-setup": {
       metatitle: "Cloud Server Support in Kolkata - Reboot AI Pvt Ltd",
       metadescription:
         "Optimize your business operations with secure and reliable Cloud Server Setup services. Reboot AI offers customized cloud solutions to enhance scalability and performance.",

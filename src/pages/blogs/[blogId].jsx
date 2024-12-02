@@ -60,7 +60,11 @@ const BlogDetails = ({ blog }) => {
         <meta name="description" content={blog.metadescription} />
       </Head>
 
-      <SubPageBanner heading="Our Blogs" subheading={blog.blogTitle} />
+      <SubPageBanner
+        heading="Our Blogs"
+        headinglink={"/blog"}
+        subheading={blog.blogTitle}
+      />
 
       <main className="xl:p-16 lg:p-8 p-4 flex flex-col gap-8">
         <div className="flex gap-6">

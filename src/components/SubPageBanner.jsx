@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const SubPageBanner = ({ heading, subheading }) => {
+const SubPageBanner = ({ heading, headinglink, subheading }) => {
   return (
     <div className="relative">
       <Image
@@ -19,7 +19,8 @@ const SubPageBanner = ({ heading, subheading }) => {
           {heading}
         </h1>
         <h2 className="lg:text-lg md:text-sm text-xs font-medium text-white">
-          <Link href={"/"}>Home</Link> &#x203A; {heading}{" "}
+          <Link href={"/"}>Home</Link> &#x203A;{" "}
+          <Link href={headinglink}>{heading}</Link>{" "}
           {subheading && <>&#x203A; {subheading}</>}
         </h2>
       </div>

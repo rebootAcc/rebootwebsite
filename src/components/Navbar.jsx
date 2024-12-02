@@ -42,22 +42,18 @@ const Navbar = () => {
               text: "About Us",
               href: "/about",
             },
-            {
-              text: "Life at Reboot",
-              href: "/life_at_reboot",
-            },
 
             {
               text: "Privacy Policy",
-              href: "/privacy_policy",
+              href: "/images/Privacy Policy.pdf",
             },
             {
               text: "Refund Policy",
-              href: "/refund_policy",
+              href: "/images/Refund Policy.pdf",
             },
             {
               text: "Terms of Services",
-              href: "/terms_of_services",
+              href: "/images/Terms & Conditions.pdf",
             },
           ],
         },
@@ -72,23 +68,23 @@ const Navbar = () => {
           menus: [
             {
               text: "Custom Website Development",
-              href: "/services/custom_website_development",
+              href: "/services/custom-website-development",
             },
             {
               text: "E-commerce Store Development",
-              href: "/services/e-commerce_store_development",
+              href: "/services/e-commerce-store-development",
             },
             {
               text: "Web Application Development",
-              href: "/services/web_application_development",
+              href: "/services/web-application-development",
             },
             {
               text: "Dynamic Website Development",
-              href: "/services/dynamic_website_development",
+              href: "/services/dynamic-website-development",
             },
             {
               text: "Saas Application Development",
-              href: "/services/saas_application_development",
+              href: "/services/saas-application-development",
             },
           ],
         },
@@ -97,23 +93,23 @@ const Navbar = () => {
           menus: [
             {
               text: "Web Apps Development",
-              href: "/services/web_application_development",
+              href: "/services/web-application-development",
             },
             {
               text: "Android App Development",
-              href: "/services/android_app_development",
+              href: "/services/android-app-development",
             },
             {
               text: " iOS App Development",
-              href: "/services/ios_app_development",
+              href: "/services/ios-app-development",
             },
             {
               text: "Flutter App Development",
-              href: "/services/flutter_app_development",
+              href: "/services/flutter-app-development",
             },
             {
               text: "AI & ML Integration",
-              href: "/services/ai_ml_integration",
+              href: "/services/ai-ml-integration",
             },
           ],
         },
@@ -122,23 +118,23 @@ const Navbar = () => {
           menus: [
             {
               text: "Business Consultation",
-              href: "/services/business_consultation",
+              href: "/services/business-consultation",
             },
             {
               text: "Performance Marketing",
-              href: "/services/performance_marketing",
+              href: "/services/performance-marketing",
             },
             {
               text: "PR & Brand Building",
-              href: "/services/pr_brand_building",
+              href: "/services/pr-brand-building",
             },
             {
               text: "Google Marketing",
-              href: "/services/google_marketing",
+              href: "/services/google-marketing",
             },
             {
               text: "Social Media Solutions",
-              href: "/services/social_media_solutions",
+              href: "/services/social-media-solutions",
             },
           ],
         },
@@ -147,23 +143,23 @@ const Navbar = () => {
           menus: [
             {
               text: " IT Consultation",
-              href: "/services/it_consultation",
+              href: "/services/it-consultation",
             },
             {
               text: "Web & Apps Security",
-              href: "/services/web_and_apps_security",
+              href: "/services/web-and-apps-security",
             },
             {
               text: "Creative UI Design",
-              href: "/services/creative_ui_design",
+              href: "/services/creative-ui-design",
             },
             {
               text: "Brand Starter Solution",
-              href: "/services/brand_starter_solution",
+              href: "/services/brand-starter-solution",
             },
             {
               text: "Cloud Server Setup",
-              href: "/services/cloud_server_setup",
+              href: "/services/cloud-server-setup",
             },
           ],
         },
@@ -178,15 +174,15 @@ const Navbar = () => {
           menus: [
             {
               text: "Educational CRM Advanced",
-              href: "/products/educational_CRM_advanced",
+              href: "/products/educational-CRM-advanced",
             },
             {
               text: "Clinic Management Software",
-              href: "/products/clinic_management_software",
+              href: "/products/clinic-management-software",
             },
             {
               text: "Service Center Management CRM ",
-              href: "/products/service_center_management_crm",
+              href: "/products/service-center-management-crm",
             },
           ],
         },

@@ -47,9 +47,9 @@ export default Educationalconsultantcrm;
 export const getStaticPaths = async () => {
   return {
     paths: [
-      { params: { product: "educational_CRM_advanced" } },
-      { params: { product: "clinic_management_software" } },
-      { params: { product: "service_center_management_crm" } },
+      { params: { product: "educational-CRM-advanced" } },
+      { params: { product: "clinic-management-software" } },
+      { params: { product: "service-center-management-crm" } },
     ],
 
     fallback: false,
@@ -59,7 +59,7 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async ({ params }) => {
   // Mock data for services
   const serviceData = {
-    educational_CRM_advanced: {
+    "educational-CRM-advanced": {
       metatitle: "Educational Consultancy Sales Calling  Marketing Automation",
       metadescription:
         "A CRM for Education is a comprehensive student management solution tailored to meet the specific needs of educational institutions such as universities, schools, coaching centers, consultancies, and other organizations within the education sector.",
@@ -119,7 +119,7 @@ export const getStaticProps = async ({ params }) => {
         },
       ],
     },
-    clinic_management_software: {
+    "clinic-management-software": {
       metatitle:
         "Doctor Clinic Management Software - Easy to Use with 100% Customizations",
       metadescription:
@@ -184,7 +184,7 @@ export const getStaticProps = async ({ params }) => {
         },
       ],
     },
-    service_center_management_crm: {
+    "service-center-management-crm": {
       metatitle: "Service Center CRM - Daily Call Process Automations",
       metadescription:
         "Leverage the capabilities of Service Centre Solutions to cultivate a loyal customer base through automated services. We can assist you in optimizing your backend operations to provide exceptional, customer-centric experiences.",

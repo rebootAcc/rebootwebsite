@@ -66,7 +66,7 @@ const Career = ({ pageData, jobRoles }) => {
           content="We are looking for active young working professionals who can uplift their career along with organisation goals. Our packages are lubricative, contact HR for more."
         />
       </Head>
-      <SubPageBanner heading={"Career"} />
+      <SubPageBanner heading={"Career"} headinglink={"/career"} />
       <main className="xl:p-16 lg:p-8 p-4 flex flex-col gap-8">
         <section className="flex flex-col gap-4">
           <div className="px-8 h-[2.5rem] w-fit flex justify-center items-center bg-primary text-white text-lg font-semibold rounded-md ">

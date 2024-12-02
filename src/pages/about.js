@@ -94,7 +94,7 @@ const About = () => {
     <>
       <Head>
         <title>
-          About Reboot AI Pvt Ltd - Let's Turn Your Ideas into Reality
+          About Reboot AI Pvt Ltd - Let&apos;s Turn Your Ideas into Reality
         </title>
         <meta
           name="description"
@@ -102,7 +102,7 @@ const About = () => {
         />
       </Head>
       <section>
-        <SubPageBanner heading={"About Us"} />
+        <SubPageBanner heading={"About Us"} headinglink={"/about"} />
 
         <AboutusComponent showsection={true} content={aboutcontent} />
 

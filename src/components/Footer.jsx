@@ -19,43 +19,43 @@ const Footer = () => {
       links: [
         {
           text: "Custom Website Development",
-          href: "/services/custom_website_development",
+          href: "/services/custom-website-development",
         },
         {
           text: "E-commerce Store Development",
-          href: "/services/e-commerce_store_development",
+          href: "/services/e-commerce-store-development",
         },
         {
           text: "Web Application Development",
-          href: "/services/web_application_development",
+          href: "/services/web-application-development",
         },
         {
           text: "Dynamic Website Development",
-          href: "/services/dynamic_website_development",
+          href: "/services/dynamic-website-development",
         },
         {
           text: "Saas Application Development",
-          href: "/services/saas_application_development",
+          href: "/services/saas-application-development",
         },
         {
           text: "Web Apps Development",
-          href: "/services/web_application_development",
+          href: "/services/web-application-development",
         },
         {
           text: "Android App Development",
-          href: "/services/android_app_development",
+          href: "/services/android-app-development",
         },
         {
           text: " iOS App Development",
-          href: "/services/ios_app_development",
+          href: "/services/ios-app-development",
         },
         {
           text: "Flutter App Development",
-          href: "/services/flutter_app_development",
+          href: "/services/flutter-app-development",
         },
         {
           text: "AI & ML Integration",
-          href: "/services/ai_ml_integration",
+          href: "/services/ai-ml-integration",
         },
       ],
     },
@@ -64,43 +64,43 @@ const Footer = () => {
       links: [
         {
           text: "Business Consultation",
-          href: "/services/business_consultation",
+          href: "/services/business-consultation",
         },
         {
           text: "Performance Marketing",
-          href: "/services/performance_marketing",
+          href: "/services/performance-marketing",
         },
         {
           text: "PR & Brand Building",
-          href: "/services/pr_brand_building",
+          href: "/services/pr-brand-building",
         },
         {
           text: "Google Marketing",
-          href: "/services/google_marketing",
+          href: "/services/google-marketing",
         },
         {
           text: "Social Media Solutions",
-          href: "/services/social_media_solutions",
+          href: "/services/social-media-solutions",
         },
         {
           text: " IT Consultation",
-          href: "/services/it_consultation",
+          href: "/services/it-consultation",
         },
         {
           text: "Web & Apps Security",
-          href: "/services/web_and_apps_security",
+          href: "/services/web-and-apps-security",
         },
         {
           text: "Creative UI Design",
-          href: "/services/creative_ui_design",
+          href: "/services/creative-ui-design",
         },
         {
           text: "Brand Starter Solution",
-          href: "/services/brand_starter_solution",
+          href: "/services/brand-starter-solution",
         },
         {
           text: "Cloud Server Setup",
-          href: "/services/cloud_server_setup",
+          href: "/services/cloud-server-setup",
         },
       ],
     },
@@ -109,15 +109,15 @@ const Footer = () => {
       links: [
         {
           text: "Educational CRM Advanced",
-          href: "/products/educational_CRM_advanced",
+          href: "/products/educational-CRM-advanced",
         },
         {
           text: "Clinic Management Software",
-          href: "/products/clinic_management_software",
+          href: "/products/clinic-management-software",
         },
         {
           text: "Service Center Management CRM ",
-          href: "/products/service_center_management_crm",
+          href: "/products/service-center-management-crm",
         },
         {
           text: "Engineering Student App",
@@ -162,19 +162,19 @@ const Footer = () => {
         },
         {
           text: "Life at Reboot",
-          href: "/life_at_reboot",
+          href: "",
         },
         {
           text: "Privacy Policy",
-          href: "/privacy_policy",
+          href: "/images/Privacy Policy.pdf",
         },
         {
           text: "Refund Policy",
-          href: "/refund_policy",
+          href: "/images/Refund Policy.pdf",
         },
         {
           text: "Terms of Services",
-          href: "/terms_of_services",
+          href: "/images/Terms & Conditions.pdf",
         },
         {
           text: "Portfolios",
@@ -364,28 +364,36 @@ const Footer = () => {
         <div className="flex items-center lg:items-stretch flex-col gap-4 lg:flex-row justify-between">
           <h1 className="flex flex-row gap-2 text-xs items-center font-medium text-white">
             Find Us On :
-            <Link href={""} className="">
+            <Link href={""} target="_blank" className="">
               <img
                 src="/icons/Linkedin.svg"
                 alt="meta"
                 className="object-contain h-[1.5rem]"
               />
             </Link>
-            <Link href={""} className="">
+            <Link
+              href={"https://www.instagram.com/therebootai/"}
+              target="_blank"
+              className=""
+            >
               <img
                 src="/icons/instagram.svg"
                 alt="meta"
                 className="object-contain h-[1.5rem]"
               />
             </Link>
-            <Link href={"https://x.com/reboot_ai"} className="">
+            <Link href={"https://x.com/reboot_ai"} target="_blank" className="">
               <img
                 src="/icons/xtwitter.svg"
                 alt="meta"
                 className="object-contain h-[1.5rem]"
               />
             </Link>
-            <Link href={""} className="">
+            <Link
+              href={"https://www.youtube.com/@therebootai"}
+              target="_blank"
+              className=""
+            >
               <img
                 src="/icons/youtube.svg"
                 alt="meta"
@@ -399,7 +407,17 @@ const Footer = () => {
             All Rights Reserved
           </h1>
           <h1 className="text-white text-xs">
-            Terms and Conditions | Refund Policy | Privacy Policy
+            <Link href={"/images/Terms & Conditions.pdf"} target="_blank">
+              Terms and Conditions
+            </Link>{" "}
+            |{" "}
+            <Link href={"/images/Refund Policy.pdf"} target="_blank">
+              Refund Policy
+            </Link>{" "}
+            |{" "}
+            <Link href={"/images/Privacy Policy.pdf"} target="_blank">
+              Privacy Policy
+            </Link>
           </h1>
         </div>
       </div>

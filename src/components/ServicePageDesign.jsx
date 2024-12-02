@@ -54,7 +54,11 @@ const ServicePageDesign = ({
   return (
     <main>
       <section>
-        <SubPageBanner heading={"Service"} subheading={title} />
+        <SubPageBanner
+          heading={"Service"}
+          headinglink={""}
+          subheading={title}
+        />
         <ServiceAndproductPage1stpart content={content} />
         <ServiceAndProductPageTechnologySection benifits={benifits} />
 
