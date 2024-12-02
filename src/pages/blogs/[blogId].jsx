@@ -62,7 +62,7 @@ const BlogDetails = ({ blog }) => {
 
       <SubPageBanner
         heading="Our Blogs"
-        headinglink={"/blog"}
+        headinglink={"/blogs"}
         subheading={blog.blogTitle}
       />
 

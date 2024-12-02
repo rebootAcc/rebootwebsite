@@ -11,7 +11,7 @@ const Custom404 = () => {
       <Head>
         <title>RebootAi | Page Not Found</title>
       </Head>
-      <SubPageBanner heading={"404 Page Not Found"} />
+      <SubPageBanner heading={"404 Page Not Found"} headinglink={""} />
       <main className="px-8 md:px-12 xlg:px-16 xl:px-20 py-11 flex flex-col gap-16">
         <Image
           src="/icons/404.svg"
