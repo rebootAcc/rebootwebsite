@@ -27,16 +27,16 @@ const HomePageBlogSection = () => {
         setAutoslide(true);
       } else if (window.innerWidth <= 860) {
         setSlidesToShow(2);
-        setAutoslide(false);
+        setAutoslide(true);
       } else if (window.innerWidth <= 1024) {
         setSlidesToShow(3);
-        setAutoslide(false);
+        setAutoslide(true);
       } else if (window.innerWidth <= 1780) {
         setSlidesToShow(4);
-        setAutoslide(false);
+        setAutoslide(true);
       } else {
         setSlidesToShow(4);
-        setAutoslide(false);
+        setAutoslide(true);
       }
     };
 
@@ -53,7 +53,7 @@ const HomePageBlogSection = () => {
     slidesToShow: slidesToShow,
     slidesToScroll: 1,
     autoplay: autoslide,
-    speed: 6000,
+    speed: 5000,
     autoplaySpeed: 2000,
     arrows: false,
   };

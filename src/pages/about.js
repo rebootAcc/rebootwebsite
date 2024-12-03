@@ -1,5 +1,3 @@
-import AboutusComponent from "@/components/AboutusComponent";
-import ClientReview from "@/components/ClientReview";
 import OurClient from "@/components/OurClient";
 import OurUseTechnology from "@/components/OurUseTechnology";
 import SubPageBanner from "@/components/SubPageBanner";
@@ -12,6 +10,13 @@ import React, { useEffect, useState } from "react";
 const Slider = dynamic(() => import("react-slick/lib/slider"), {
   ssr: false,
 });
+
+const AboutusComponent = dynamic(
+  () => import("@/components/AboutusComponent"),
+  {
+    ssr: false,
+  }
+);
 const About = () => {
   const vissionmission = [
     {

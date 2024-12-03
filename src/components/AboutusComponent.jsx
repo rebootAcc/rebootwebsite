@@ -9,7 +9,7 @@ const AboutusComponent = ({ showsection, content }) => {
         <div className="flex flex-col gap-4">
           <div className="flex gap-2 md:gap-4">
             <div className="flex flex-col justify-between gap-2 md:gap-6 lg:gap-4">
-              <div className=" min-w-[50vw] min-h-[20vmax] md:min-w-[60vw] lg:min-w-0 lg:w-[30vw] xl:w-[22vw] md:min-h-[30vmax] lg:min-h-[23.83vmax] xl:min-h-[20.83vmax] relative">
+              <div className=" w-[50vw] h-[20vmax] md:w-[60vw] lg:min-w-0 lg:w-[30vw] xl:w-[22vw] md:min-h-[30vmax] lg:min-h-[23.83vmax] xl:min-h-[20.83vmax] relative">
                 <Image
                   src={img1}
                   alt="about-us"
