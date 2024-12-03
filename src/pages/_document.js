@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <link rel="preload" as="video" href="/videos/header-cover.mp4" />
-        <link rel="preload" as="image" href="/images/subbannerbg.png" />
+        <link rel="preload" as="image" href="/images/subbannerbg.webp" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
       </Head>
       <body className="antialiased">

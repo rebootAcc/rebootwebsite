@@ -131,15 +131,17 @@ export default function Home() {
       </Head>
       <main>
         <video
-          src="/videos/header-cover.mp4"
           width={960}
           height={540}
           autoPlay
           loop
           muted
           preload="auto"
-          className="w-full h-full "
-        />
+          className="w-full h-full"
+        >
+          <source src="/videos/header-cover.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <section className="flex xl:gap-8 lg:gap-6 gap-4 justify-evenly  items-center xl:p-16 lg:p-8 p-4">
           <h1 className="text-[#333] w-[20%] md:w-[15%] font-semibold  md:text-lg text-sm lg:text-2xl xlg:text-3xl xl:text-4xl">
             Awards &amp; Recognitions
