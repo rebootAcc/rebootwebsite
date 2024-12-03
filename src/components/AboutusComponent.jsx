@@ -13,8 +13,8 @@ const AboutusComponent = ({ showsection, content }) => {
                 <Image
                   src={img1}
                   alt="about-us"
-                  height={915}
-                  width={1627}
+                  height={450}
+                  width={800}
                   priority
                   className="object-cover rounded-lg h-full w-full"
                 />
@@ -24,8 +24,8 @@ const AboutusComponent = ({ showsection, content }) => {
                   <Image
                     src={img2}
                     alt="about us"
-                    height={1149}
-                    width={1627}
+                    height={565}
+                    width={800}
                     priority
                     className="object-cover rounded-lg w-full h-full"
                   />
@@ -34,8 +34,8 @@ const AboutusComponent = ({ showsection, content }) => {
                   <Image
                     src={img3}
                     alt="about us"
-                    height={632}
-                    width={1024}
+                    height={494}
+                    width={800}
                     priority
                     className="object-cover rounded-lg w-full h-full"
                   />
@@ -46,8 +46,8 @@ const AboutusComponent = ({ showsection, content }) => {
               <Image
                 src={img4}
                 alt="about us"
-                height={1314}
-                width={1970}
+                height={534}
+                width={800}
                 priority
                 className="object-cover rounded-lg w-full h-full"
               />
