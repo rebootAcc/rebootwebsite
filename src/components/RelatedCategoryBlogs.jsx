@@ -95,6 +95,22 @@ const RelatedCategoryBlogs = ({ category, excludeBlogId }) => {
     }
   }, [category]);
 
+  const handleBlogClick = async (blog) => {
+    try {
+      await fetch(`${backendUrl}/api/blogs/${blog.blogId}/view`, {
+        method: "PATCH",
+      });
+
+      router.push(
+        `/blogs/${blog.blogId}-${blog.heading
+          .replace(/\s+/g, "-")
+          .toLowerCase()}`
+      );
+    } catch (error) {
+      console.error("Error incrementing view count:", error);
+    }
+  };
+
   if (loading) return <p>Loading related blogs...</p>;
 
   if (relatedBlogs.length === 0) return <p></p>;
@@ -108,13 +124,7 @@ const RelatedCategoryBlogs = ({ category, excludeBlogId }) => {
             className="!flex w-full justify-center items-center"
           >
             <div
-              onClick={() =>
-                router.push(
-                  `/blogs/${blog.blogId}-${blog.heading
-                    .replace(/\s+/g, "-")
-                    .toLowerCase()}`
-                )
-              }
+              onClick={() => handleBlogClick(blog)}
               className="w-[95%] cursor-pointer"
             >
               <BlogCards blog={blog} />

@@ -28,7 +28,7 @@ export async function getServerSideProps({ query }) {
             }),
             category: blog.category,
             comments: 1,
-            viewsCount: 132,
+            viewsCount: blog.viewsCount || 0,
             heading: blog.blogTitle,
             description: blog.writeBlog || "",
             postedBy: blog.publisherName || "Unknown",
@@ -81,6 +81,22 @@ export default function Blogs({ pageData, totalPages, currentPage }) {
     router.push(`/blogs?page=${page}`);
   };
 
+  const handleBlogClick = async (blog) => {
+    try {
+      await fetch(`${backendUrl}/api/blogs/${blog.blogId}/view`, {
+        method: "PATCH",
+      });
+
+      router.push(
+        `/blogs/${blog.blogId}-${blog.heading
+          .replace(/\s+/g, "-")
+          .toLowerCase()}`
+      );
+    } catch (error) {
+      console.error("Error incrementing view count:", error);
+    }
+  };
+
   const pageNumbers = [];
   for (let i = 1; i <= totalPages; i++) {
     pageNumbers.push(i);
@@ -107,13 +123,7 @@ export default function Blogs({ pageData, totalPages, currentPage }) {
             <div
               className="h-full cursor-pointer"
               key={index}
-              onClick={() =>
-                router.push(
-                  `/blogs/${blog.blogId}-${blog.heading
-                    .replace(/\s+/g, "-")
-                    .toLowerCase()}`
-                )
-              }
+              onClick={() => handleBlogClick(blog)}
             >
               <BlogCards blog={blog} />
             </div>

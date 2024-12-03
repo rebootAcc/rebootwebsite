@@ -1,5 +1,3 @@
-import OurClient from "@/components/OurClient";
-import OurUseTechnology from "@/components/OurUseTechnology";
 import SubPageBanner from "@/components/SubPageBanner";
 import dynamic from "next/dynamic";
 import Head from "next/head";
@@ -13,6 +11,16 @@ const Slider = dynamic(() => import("react-slick/lib/slider"), {
 
 const AboutusComponent = dynamic(
   () => import("@/components/AboutusComponent"),
+  {
+    ssr: false,
+  }
+);
+
+const OurClient = dynamic(() => import("@/components/OurClient"), {
+  ssr: false,
+});
+const OurUseTechnology = dynamic(
+  () => import("@/components/OurUseTechnology"),
   {
     ssr: false,
   }
