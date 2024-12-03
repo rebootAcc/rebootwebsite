@@ -26,7 +26,10 @@ const BlogCards = ({ blog }) => {
           <span className="p-1 inline-flex items-center justify-center rounded-full bg-[rgba(67,_133,_245,_0.10)] text-primary">
             <PiFolderSimpleUserThin />
           </span>
-          <span className="text-[#888] font-medium">{blog.category}</span>
+          <span className="text-[#888] font-medium">
+            {" "}
+            {blog.category.split(" ").slice(0, 2).join(" ")}
+          </span>
         </div>
         <div className="flex items-center gap-1 text-xs">
           <span className="p-1 inline-flex items-center justify-center rounded-full bg-[rgba(67,_133,_245,_0.10)] text-primary">
@@ -56,13 +59,10 @@ const BlogCards = ({ blog }) => {
         <span className="font-medium text-[#888] text-sm">
           - By {blog.postedBy}
         </span>
-        <Link
-          href={`/blogs/${blog.blogId}`}
-          className="text-primary text-sm inline-flex items-center gap-1"
-        >
+        <div className="text-primary text-sm inline-flex items-center gap-1">
           <span>Read More</span>
           <BsBoxArrowUpRight className="size-2" />
-        </Link>
+        </div>
       </div>
     </div>
   );

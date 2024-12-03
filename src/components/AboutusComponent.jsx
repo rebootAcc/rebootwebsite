@@ -13,39 +13,43 @@ const AboutusComponent = ({ showsection, content }) => {
                 <Image
                   src={img1}
                   alt="about-us"
-                  fill
+                  height={915}
+                  width={1627}
                   priority
-                  className="object-cover rounded-lg"
+                  className="object-cover rounded-lg h-full w-full"
                 />
               </div>
               <div className="flex justify-between gap-2 md:gap-4">
                 <div className="md:w-[30vw] w-[25vw] lg:w-[14.3vw] xl:w-[10.3vw] min-h-[16vmax] md:min-h-[25.7vmax] lg:min-h-[11.7vmax] relative">
                   <Image
-                    fill
                     src={img2}
                     alt="about us"
+                    height={1149}
+                    width={1627}
                     priority
-                    className="object-cover rounded-lg"
+                    className="object-cover rounded-lg w-full h-full"
                   />
                 </div>
                 <div className="relative md:w-[30vw] w-[25vw]  lg:w-[14.3vw] xl:w-[10.3vw] min-h-[16vmax] md:min-h-[25.7vmax] lg:min-h-[11.7vmax]">
                   <Image
-                    fill
                     src={img3}
                     alt="about us"
+                    height={632}
+                    width={1024}
                     priority
-                    className="object-cover rounded-lg"
+                    className="object-cover rounded-lg w-full h-full"
                   />
                 </div>
               </div>
             </div>
             <div className="w-full flex-1 lg:w-[13.125vw] min-h-[33.8vmax] relative">
               <Image
-                fill
                 src={img4}
                 alt="about us"
+                height={1314}
+                width={1970}
                 priority
-                className="object-cover rounded-lg"
+                className="object-cover rounded-lg w-full h-full"
               />
             </div>
           </div>

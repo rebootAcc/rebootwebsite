@@ -3,6 +3,7 @@ import Link from "next/link";
 import BlogCards from "./BlogCards";
 import dynamic from "next/dynamic";
 import Loading from "./loading";
+import { useRouter } from "next/router";
 const Slider = dynamic(() => import("react-slick/lib/slider"), {
   ssr: false,
 });
@@ -14,6 +15,7 @@ const HomePageBlogSection = () => {
 
   const [slidesToShow, setSlidesToShow] = useState(3);
   const [autoslide, setAutoslide] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
     const handleResize = () => {
@@ -120,14 +122,18 @@ const HomePageBlogSection = () => {
               key={blog.blogId}
               className="!flex w-full justify-center items-center"
             >
-              <Link
-                href={`/blogs/${blog.blogId}-${blog.heading
-                  .replace(/\s+/g, "-")
-                  .toLowerCase()}`}
-                className="w-[95%]"
+              <div
+                onClick={() =>
+                  router.push(
+                    `/blogs/${blog.blogId}-${blog.heading
+                      .replace(/\s+/g, "-")
+                      .toLowerCase()}`
+                  )
+                }
+                className="w-[95%] cursor-pointer"
               >
                 <BlogCards blog={blog} />
-              </Link>
+              </div>
             </div>
           ))}
         </Slider>

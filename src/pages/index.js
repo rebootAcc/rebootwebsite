@@ -1,10 +1,9 @@
 import AboutusComponent from "@/components/AboutusComponent";
-import OurClient from "@/components/OurClient";
+
 import OurProduct from "@/components/OurProduct";
 import OurProjects from "@/components/OurProjects";
 import OurResponsibility from "@/components/OurResponsibility";
 import OurServices from "@/components/OurServices";
-import OurUseTechnology from "@/components/OurUseTechnology";
 
 import dynamic from "next/dynamic";
 import Head from "next/head";
@@ -12,6 +11,17 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const Slider = dynamic(() => import("react-slick/lib/slider"), {
+  ssr: false,
+});
+
+const OurUseTechnology = dynamic(
+  () => import("@/components/OurUseTechnology"),
+  {
+    ssr: false,
+  }
+);
+
+const OurClient = dynamic(() => import("@/components/OurClient"), {
   ssr: false,
 });
 
