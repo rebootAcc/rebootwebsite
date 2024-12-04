@@ -1,15 +1,37 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 const AboutusComponent = ({ showsection, content }) => {
   const { aboutcontent, heading, img1, img2, img3, img4 } = content;
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const renderContent = () => {
+    // Check for small screens and toggle "Read More" behavior
+    const isSmallScreen =
+      typeof window !== "undefined" && window.innerWidth < 768;
+    if (isSmallScreen && !isExpanded) {
+      return (
+        <>
+          {aboutcontent.split(" ").slice(0, 50).join(" ")}...
+          <button
+            onClick={() => setIsExpanded(true)}
+            className="text-primary font-semibold ml-2"
+          >
+            Read More
+          </button>
+        </>
+      );
+    }
+    return aboutcontent;
+  };
+
   return (
     <section className="flex flex-col gap-4 xl:p-16 lg:p-8 p-4">
-      <section className="flex flex-col-reverse lg:flex-row justify-between  gap-9">
+      <section className="flex flex-col-reverse lg:flex-row justify-between gap-9">
         <div className="flex flex-col gap-4">
           <div className="flex gap-2 md:gap-4">
             <div className="flex flex-col justify-between gap-2 md:gap-6 lg:gap-4">
-              <div className=" w-[50vw] h-[20vmax] md:w-[60vw] lg:min-w-0 lg:w-[30vw] xl:w-[22vw] md:min-h-[30vmax] lg:min-h-[23.83vmax] xl:min-h-[20.83vmax] relative">
+              <div className="w-[50vw] h-[20vmax] md:w-[60vw] lg:min-w-0 lg:w-[30vw] xl:w-[22vw] md:min-h-[30vmax] lg:min-h-[23.83vmax] xl:min-h-[20.83vmax] relative">
                 <Image
                   src={img1}
                   alt="about-us"
@@ -30,7 +52,7 @@ const AboutusComponent = ({ showsection, content }) => {
                     className="object-cover rounded-lg w-full h-full"
                   />
                 </div>
-                <div className="relative md:w-[30vw] w-[25vw]  lg:w-[14.3vw] xl:w-[10.3vw] min-h-[16vmax] md:min-h-[25.7vmax] lg:min-h-[11.7vmax]">
+                <div className="relative md:w-[30vw] w-[25vw] lg:w-[14.3vw] xl:w-[10.3vw] min-h-[16vmax] md:min-h-[25.7vmax] lg:min-h-[11.7vmax]">
                   <Image
                     src={img3}
                     alt="about us"
@@ -64,12 +86,11 @@ const AboutusComponent = ({ showsection, content }) => {
           <h1 className="text-primary text-3xl xlg:text-2xl lg:text-xl xl:text-[2rem] font-semibold">
             {heading}
           </h1>
-          <p
-            className="text-secondary xlg:text-sm/[22px] lg:text-xs text-sm  xl:text-base  "
-            dangerouslySetInnerHTML={{ __html: aboutcontent }}
-          ></p>
+          <p className="text-secondary xlg:text-sm/[22px] lg:text-xs text-sm  xl:text-base">
+            {renderContent()}
+          </p>
           {showsection && (
-            <div className="w-full h-[4.5rem]  rounded-lg flex justify-center items-center  bg-primary text-white">
+            <div className="w-full h-[4.5rem] rounded-lg flex justify-center items-center bg-primary text-white">
               <span className="xl:text-3xl lg:text-2xl md:text-xl text-lg font-semibold text-white flex items-center w-full justify-center gap-2">
                 <Image
                   src={"/icons/talkicon.svg"}
