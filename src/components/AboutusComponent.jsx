@@ -1,36 +1,8 @@
 import Image from "next/image";
-import React, { useState } from "react";
+import React from "react";
 
 const AboutusComponent = ({ showsection, content }) => {
   const { aboutcontent, heading, img1, img2, img3, img4 } = content;
-  // const [isExpanded, setIsExpanded] = useState(false);
-
-  // const renderContent = () => {
-  //   const isSmallScreen =
-  //     typeof window !== "undefined" && window.innerWidth < 768;
-
-  //   // Initially render a truncated version for small screens but avoid delaying the LCP
-  //   const contentToDisplay =
-  //     isSmallScreen && !isExpanded
-  //       ? aboutcontent.split(" ").slice(0, 50).join(" ") + "..."
-  //       : aboutcontent;
-
-  //   return (
-  //     <>
-  //       <section className="text-secondary xlg:text-sm/[22px] lg:text-xs text-sm xl:text-base">
-  //         {contentToDisplay}
-  //       </section>
-  //       {isSmallScreen && !isExpanded && (
-  //         <button
-  //           onClick={() => setIsExpanded(true)}
-  //           className="text-primary font-semibold ml-2"
-  //         >
-  //           Read More
-  //         </button>
-  //       )}
-  //     </>
-  //   );
-  // };
 
   return (
     <section className="flex flex-col gap-4 xl:p-16 lg:p-8 p-4">

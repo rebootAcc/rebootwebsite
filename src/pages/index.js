@@ -1,3 +1,5 @@
+import AboutusComponent from "@/components/AboutusComponent";
+import AwardAndRecognitions from "@/components/AwardAndRecognitions";
 import OurProduct from "@/components/OurProduct";
 import OurProjects from "@/components/OurProjects";
 import OurResponsibility from "@/components/OurResponsibility";
@@ -5,7 +7,7 @@ import OurResponsibility from "@/components/OurResponsibility";
 import dynamic from "next/dynamic";
 import Head from "next/head";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 
 const OurUseTechnology = dynamic(
   () => import("@/components/OurUseTechnology"),
@@ -18,19 +20,19 @@ const OurServices = dynamic(() => import("@/components/OurServices"), {
   ssr: false,
 });
 
-const AwardAndRecognitions = dynamic(
-  () => import("@/components/AwardAndRecognitions"),
-  {
-    ssr: false,
-  }
-);
+// const AwardAndRecognitions = dynamic(
+//   () => import("@/components/AwardAndRecognitions"),
+//   {
+//     ssr: false,
+//   }
+// );
 
-const AboutusComponent = dynamic(
-  () => import("@/components/AboutusComponent"),
-  {
-    ssr: false,
-  }
-);
+// const AboutusComponent = dynamic(
+//   () => import("@/components/AboutusComponent"),
+//   {
+//     ssr: false,
+//   }
+// );
 
 const OurClient = dynamic(() => import("@/components/OurClient"), {
   ssr: false,
@@ -99,6 +101,10 @@ export default function Home() {
           name="description"
           content="IT Solutions for the Future, Most Trusted Startups for Web, Apps & Performance Marketing Services."
         />
+        <link rel="preload" href="/images/homeabout1.webp" as="image" />
+        <link rel="preload" href="/images/homeabout2.webp" as="image" />
+        <link rel="preload" href="/images/homeabout3.webp" as="image" />
+        <link rel="preload" href="/images/homeabout4.webp" as="image" />
       </Head>
       <main>
         <video
@@ -116,7 +122,9 @@ export default function Home() {
 
         <AwardAndRecognitions />
 
-        <AboutusComponent showsection={false} content={aboutcontent} />
+        <Suspense fallback={<div></div>}>
+          <AboutusComponent showsection={false} content={aboutcontent} />
+        </Suspense>
 
         <OurUseTechnology />
         <OurServices />
