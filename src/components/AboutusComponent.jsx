@@ -6,23 +6,30 @@ const AboutusComponent = ({ showsection, content }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const renderContent = () => {
-    // Check for small screens and toggle "Read More" behavior
     const isSmallScreen =
       typeof window !== "undefined" && window.innerWidth < 768;
-    if (isSmallScreen && !isExpanded) {
-      return (
-        <>
-          {aboutcontent.split(" ").slice(0, 50).join(" ")}...
+
+    // Initially render a truncated version for small screens but avoid delaying the LCP
+    const contentToDisplay =
+      isSmallScreen && !isExpanded
+        ? aboutcontent.split(" ").slice(0, 50).join(" ") + "..."
+        : aboutcontent;
+
+    return (
+      <>
+        <p className="text-secondary xlg:text-sm/[22px] lg:text-xs text-sm xl:text-base">
+          {contentToDisplay}
+        </p>
+        {isSmallScreen && !isExpanded && (
           <button
             onClick={() => setIsExpanded(true)}
             className="text-primary font-semibold ml-2"
           >
             Read More
           </button>
-        </>
-      );
-    }
-    return aboutcontent;
+        )}
+      </>
+    );
   };
 
   return (
@@ -86,9 +93,7 @@ const AboutusComponent = ({ showsection, content }) => {
           <h1 className="text-primary text-3xl xlg:text-2xl lg:text-xl xl:text-[2rem] font-semibold">
             {heading}
           </h1>
-          <p className="text-secondary xlg:text-sm/[22px] lg:text-xs text-sm  xl:text-base">
-            {renderContent()}
-          </p>
+          <div>{renderContent()}</div>
           {showsection && (
             <div className="w-full h-[4.5rem] rounded-lg flex justify-center items-center bg-primary text-white">
               <span className="xl:text-3xl lg:text-2xl md:text-xl text-lg font-semibold text-white flex items-center w-full justify-center gap-2">
