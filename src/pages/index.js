@@ -7,7 +7,7 @@ import OurResponsibility from "@/components/OurResponsibility";
 import dynamic from "next/dynamic";
 import Head from "next/head";
 import Image from "next/image";
-import { Suspense, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const OurUseTechnology = dynamic(
   () => import("@/components/OurUseTechnology"),
@@ -19,20 +19,6 @@ const OurUseTechnology = dynamic(
 const OurServices = dynamic(() => import("@/components/OurServices"), {
   ssr: false,
 });
-
-// const AwardAndRecognitions = dynamic(
-//   () => import("@/components/AwardAndRecognitions"),
-//   {
-//     ssr: false,
-//   }
-// );
-
-// const AboutusComponent = dynamic(
-//   () => import("@/components/AboutusComponent"),
-//   {
-//     ssr: false,
-//   }
-// );
 
 const OurClient = dynamic(() => import("@/components/OurClient"), {
   ssr: false,
@@ -122,9 +108,7 @@ export default function Home() {
 
         <AwardAndRecognitions />
 
-        <Suspense fallback={<div></div>}>
-          <AboutusComponent showsection={false} content={aboutcontent} />
-        </Suspense>
+        <AboutusComponent showsection={false} content={aboutcontent} />
 
         <OurUseTechnology />
         <OurServices />

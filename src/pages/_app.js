@@ -33,6 +33,9 @@ export default function App({ Component, pageProps }) {
         html {
           font-family: ${jost.style.fontFamily};
         }
+        body {
+          font-family: ${jost.style.fontFamily};
+        }
       `}</style>
 
       {pageLoading ? (
