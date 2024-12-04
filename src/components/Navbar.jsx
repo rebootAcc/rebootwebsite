@@ -286,6 +286,7 @@ const Navbar = () => {
           type="button"
           className="inline-flex lg:hidden text-3xl"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
+          title="menu-open"
         >
           <svg width="0" height="0">
             <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">

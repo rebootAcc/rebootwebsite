@@ -1,7 +1,6 @@
 import OurProduct from "@/components/OurProduct";
 import OurProjects from "@/components/OurProjects";
 import OurResponsibility from "@/components/OurResponsibility";
-import OurServices from "@/components/OurServices";
 
 import dynamic from "next/dynamic";
 import Head from "next/head";
@@ -14,6 +13,10 @@ const OurUseTechnology = dynamic(
     ssr: false,
   }
 );
+
+const OurServices = dynamic(() => import("@/components/OurServices"), {
+  ssr: false,
+});
 
 const AwardAndRecognitions = dynamic(
   () => import("@/components/AwardAndRecognitions"),
@@ -105,7 +108,7 @@ export default function Home() {
           loop
           muted
           preload="auto"
-          className="w-full h-full"
+          className="w-full md:h-full h-[50vh] object-cover"
         >
           <source src="/videos/header-cover.mp4" type="video/mp4" />
           Your browser does not support the video tag.

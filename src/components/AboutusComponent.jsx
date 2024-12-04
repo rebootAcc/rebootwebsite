@@ -5,7 +5,7 @@ const AboutusComponent = ({ showsection, content }) => {
   const { aboutcontent, heading, img1, img2, img3, img4 } = content;
   return (
     <section className="flex flex-col gap-4 xl:p-16 lg:p-8 p-4">
-      <section className="flex flex-col lg:flex-row justify-between  gap-9">
+      <section className="flex flex-col-reverse lg:flex-row justify-between  gap-9">
         <div className="flex flex-col gap-4">
           <div className="flex gap-2 md:gap-4">
             <div className="flex flex-col justify-between gap-2 md:gap-6 lg:gap-4">
