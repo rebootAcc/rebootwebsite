@@ -3,34 +3,34 @@ import React, { useState } from "react";
 
 const AboutusComponent = ({ showsection, content }) => {
   const { aboutcontent, heading, img1, img2, img3, img4 } = content;
-  const [isExpanded, setIsExpanded] = useState(false);
+  // const [isExpanded, setIsExpanded] = useState(false);
 
-  const renderContent = () => {
-    const isSmallScreen =
-      typeof window !== "undefined" && window.innerWidth < 768;
+  // const renderContent = () => {
+  //   const isSmallScreen =
+  //     typeof window !== "undefined" && window.innerWidth < 768;
 
-    // Initially render a truncated version for small screens but avoid delaying the LCP
-    const contentToDisplay =
-      isSmallScreen && !isExpanded
-        ? aboutcontent.split(" ").slice(0, 50).join(" ") + "..."
-        : aboutcontent;
+  //   // Initially render a truncated version for small screens but avoid delaying the LCP
+  //   const contentToDisplay =
+  //     isSmallScreen && !isExpanded
+  //       ? aboutcontent.split(" ").slice(0, 50).join(" ") + "..."
+  //       : aboutcontent;
 
-    return (
-      <>
-        <p className="text-secondary xlg:text-sm/[22px] lg:text-xs text-sm xl:text-base">
-          {contentToDisplay}
-        </p>
-        {isSmallScreen && !isExpanded && (
-          <button
-            onClick={() => setIsExpanded(true)}
-            className="text-primary font-semibold ml-2"
-          >
-            Read More
-          </button>
-        )}
-      </>
-    );
-  };
+  //   return (
+  //     <>
+  //       <section className="text-secondary xlg:text-sm/[22px] lg:text-xs text-sm xl:text-base">
+  //         {contentToDisplay}
+  //       </section>
+  //       {isSmallScreen && !isExpanded && (
+  //         <button
+  //           onClick={() => setIsExpanded(true)}
+  //           className="text-primary font-semibold ml-2"
+  //         >
+  //           Read More
+  //         </button>
+  //       )}
+  //     </>
+  //   );
+  // };
 
   return (
     <section className="flex flex-col gap-4 xl:p-16 lg:p-8 p-4">
@@ -85,15 +85,18 @@ const AboutusComponent = ({ showsection, content }) => {
         </div>
         <div className="flex flex-col gap-2 xl:gap-2 justify-between">
           {showsection && (
-            <h3 className="text-black font-semibold text-xl xlg:text-xl capitalize">
+            <h3 className="text-black font-semibold text-lg md:text-xl xlg:text-xl capitalize">
               About Us!
             </h3>
           )}
 
-          <h1 className="text-primary text-3xl xlg:text-2xl lg:text-xl xl:text-[2rem] font-semibold">
+          <h1 className="text-primary text-xl md:text-3xl xlg:text-2xl lg:text-xl xl:text-[2rem] font-semibold">
             {heading}
           </h1>
-          <div>{renderContent()}</div>
+          <section
+            className="text-secondary xlg:text-sm/[22px] lg:text-xs text-sm  xl:text-base  "
+            dangerouslySetInnerHTML={{ __html: aboutcontent }}
+          ></section>
           {showsection && (
             <div className="w-full h-[4.5rem] rounded-lg flex justify-center items-center bg-primary text-white">
               <span className="xl:text-3xl lg:text-2xl md:text-xl text-lg font-semibold text-white flex items-center w-full justify-center gap-2">
