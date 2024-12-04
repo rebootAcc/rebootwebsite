@@ -29,15 +29,6 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
-      <style jsx global>{`
-        html {
-          font-family: ${jost.style.fontFamily};
-        }
-        body {
-          font-family: ${jost.style.fontFamily};
-        }
-      `}</style>
-
       {pageLoading ? (
         <Loading />
       ) : (
