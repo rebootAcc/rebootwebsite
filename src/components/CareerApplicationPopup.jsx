@@ -115,7 +115,7 @@ const CareerApplicationPopup = ({ jobDetails, onClose }) => {
                 name="name"
                 value={formData.name}
                 onChange={handleInputChange}
-                className="bg-white rounded h-[3rem] border border-[#cccccc]"
+                className="bg-white rounded h-[3rem] border p-2 border-[#cccccc] text-sm outline-none "
               />
               {errors.name && (
                 <p className="text-red-500 text-sm">{errors.name}</p>
@@ -129,7 +129,7 @@ const CareerApplicationPopup = ({ jobDetails, onClose }) => {
                 value={formData.mobileNumber}
                 onChange={handleInputChange}
                 maxLength="10"
-                className="bg-white rounded h-[3rem] border border-[#cccccc]"
+                className="bg-white rounded h-[3rem] border p-2 border-[#cccccc] text-sm outline-none"
               />
               {errors.mobileNumber && (
                 <p className="text-red-500 text-sm">{errors.mobileNumber}</p>
@@ -142,7 +142,7 @@ const CareerApplicationPopup = ({ jobDetails, onClose }) => {
                 name="applyingFor"
                 value={formData.applyingFor}
                 readOnly
-                className="bg-gray-100 rounded h-[3rem] border border-[#cccccc]"
+                className="bg-gray-100 rounded h-[3rem] border p-2 border-[#cccccc]"
               />
             </div>
             <div className="flex flex-col gap-1">
@@ -152,7 +152,7 @@ const CareerApplicationPopup = ({ jobDetails, onClose }) => {
                 name="lastQualification"
                 value={formData.lastQualification}
                 onChange={handleInputChange}
-                className="bg-white rounded h-[3rem] border border-[#cccccc]"
+                className="bg-white rounded h-[3rem] border p-2 border-[#cccccc] text-sm outline-none"
               />
               {errors.lastQualification && (
                 <p className="text-red-500 text-sm">
@@ -167,7 +167,7 @@ const CareerApplicationPopup = ({ jobDetails, onClose }) => {
                 name="totalExperience"
                 value={formData.totalExperience}
                 onChange={handleInputChange}
-                className="bg-white rounded h-[3rem] border border-[#cccccc]"
+                className="bg-white rounded h-[3rem] border p-2 border-[#cccccc] text-sm outline-none"
               />
             </div>
             <div className="flex flex-col gap-1">
@@ -176,7 +176,7 @@ const CareerApplicationPopup = ({ jobDetails, onClose }) => {
                 type="file"
                 onChange={handleFileChange}
                 accept="application/pdf"
-                className="bg-white rounded h-[3rem] border border-[#cccccc]"
+                className="bg-white rounded h-[3rem] border p-2 border-[#cccccc] text-sm outline-none"
               />
               {errors.uploadCV && (
                 <p className="text-red-500 text-sm">{errors.uploadCV}</p>
@@ -189,7 +189,7 @@ const CareerApplicationPopup = ({ jobDetails, onClose }) => {
                 name="location"
                 value={formData.location}
                 onChange={handleInputChange}
-                className="bg-white rounded h-[3rem] border border-[#cccccc]"
+                className="bg-white rounded h-[3rem] border p-2 border-[#cccccc] text-sm outline-none"
               />
             </div>
             {/* Submit Button */}
