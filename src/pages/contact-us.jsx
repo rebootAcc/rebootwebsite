@@ -139,9 +139,9 @@ const ContactUs = () => {
               </div>
               <div>
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3563.922680103641!2d88.42603299999999!3d26.714917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDQyJzUzLjciTiA4OMKwMjUnMzMuNyJF!5e0!3m2!1sen!2sin!4v1732366164969!5m2!1sen!2sin"
-                  referrerpolicy="no-referrer-when-downgrade"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14255.703154633266!2d88.406969!3d26.7148177!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e441df1e63510d%3A0xf3e7d65d7f4f0729!2sReboot%20AI%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1733480596901!5m2!1sen!2sin"
                   className="w-full h-[15rem] md:h-[20rem] lg:h-[22rem] xl:h-[25rem]"
+                  loading="lazy"
                 ></iframe>
               </div>
             </div>
