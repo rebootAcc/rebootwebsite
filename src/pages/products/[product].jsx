@@ -251,7 +251,6 @@ export const getStaticProps = async ({ params }) => {
 
   const { product } = params;
 
-  // Fetch data based on the service
   const data = serviceData[product];
 
   if (!data) {
