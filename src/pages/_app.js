@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import Loading from "@/components/loading";
+import ChatWithUs from "@/components/ChatWithUs";
 
 const jost = Jost({ subsets: ["latin"], display: "swap" });
 
@@ -35,6 +36,7 @@ export default function App({ Component, pageProps }) {
         <>
           <Navbar />
           <Component {...pageProps} />
+          <ChatWithUs />
           <Footer />
         </>
       )}

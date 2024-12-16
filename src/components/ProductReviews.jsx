@@ -35,24 +35,24 @@ const ProductReviews = ({ productreviews }) => {
                       height={82}
                       src="/icons/koma.svg"
                       alt="koma"
-                      className="w-full lg:h-[4rem] h-[2rem]"
+                      className="w-full xlg:h-[4rem] lg:h-[3rem] h-[2rem]"
                     />
                     <Image
                       width={46}
                       height={82}
                       src="/icons/koma.svg"
                       alt="koma"
-                      className="w-full lg:h-[4rem] h-[2rem]"
+                      className="w-full xlg:h-[4rem] lg:h-[3rem] h-[2rem]"
                     />
                   </section>
-                  <section className="flex  w-[90%] flex-col gap-1">
-                    <h1 className="xl:text-xl xlg:text-lg lg:text-lg text-base font-semibold">
+                  <section className="flex  w-[90%] flex-col xlg:gap-1">
+                    <h1 className="xl:text-xl xlg:text-lg lg:text-base text-base font-semibold">
                       {item.name}
                     </h1>
-                    <h1 className="xl:text-xl xlg:text-lg lg:text-lg text-base font-semibold">
+                    <h1 className="xl:text-xl xlg:text-lg lg:text-base text-base font-semibold">
                       {item.heading}
                     </h1>
-                    <div className="text-[#FFB800] text-2xl flex gap-1">
+                    <div className="text-[#FFB800] text-2xl lg:text-xl xlg:text-2xl flex gap-1">
                       <MdStarRate />
                       <MdStarRate />
                       <MdStarRate />
@@ -62,7 +62,7 @@ const ProductReviews = ({ productreviews }) => {
                   </section>
                 </section>
                 <p
-                  className="xlg:text-base/[22px] lg:text-sm/[18px] text-xs/[20px] md:text-xs/[18px]"
+                  className="xlg:text-base/[22px] lg:text-xs/[18px] text-xs/[20px] md:text-xs/[18px] h-full md:h-[12rem] lg:h-[8rem] xlg:h-[10rem]"
                   dangerouslySetInnerHTML={{ __html: item.text }}
                 ></p>
               </section>

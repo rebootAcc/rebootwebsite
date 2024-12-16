@@ -262,7 +262,7 @@ const Footer = () => {
           </div>
           <div className="flex flex-col gap-1 ">
             <h2 className="xlg:text-lg lg:text-base text-lg font-bold text-justify text-white flex items-center gap-1">
-              <span>Our Pages</span>
+              <span>Our Reg. No.</span>
               <span className="bg-[linear-gradient(90deg,_#4385F5_0%,_rgba(67,_133,_245,_0.00)_100%)] w-12 h-1"></span>
             </h2>
             <p className="xlg:text-base lg:text-sm text-base text-white whitespace-nowrap">

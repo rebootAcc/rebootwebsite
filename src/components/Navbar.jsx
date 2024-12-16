@@ -55,6 +55,10 @@ const Navbar = () => {
               text: "Terms of Services",
               href: "/images/Terms & Conditions.pdf",
             },
+            {
+              text: "List Of Holidays 2025",
+              href: "/images/List of Holidays 2025.pdf",
+            },
           ],
         },
       ],
@@ -318,11 +322,11 @@ const Navbar = () => {
       {/* Mobile Navigation */}
       {isMenuOpen && (
         <div className="bg-black/90 absolute top-full w-full left-0 text-white lg:hidden p-6 pb-24 rounded-b-lg h-screen overflow-y-scroll">
-          <ul className="flex flex-col gap-4">
+          <ul className="flex flex-col gap-4 capitalize">
             {navLinks.map((item, index) => (
               <li key={index} className="relative">
                 {item.href ? (
-                  <Link href={item.href} className="hover:text-primary">
+                  <Link href={item.href} className="hover:text-primary ">
                     {item.text}
                   </Link>
                 ) : (

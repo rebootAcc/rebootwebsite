@@ -70,9 +70,6 @@ const ClientReview = ({ slidesToShowReview }) => {
                       <MdStarRate />
                       <MdStarRate />
                       <MdOutlineStarBorder />
-                      <span className="text-base text-[#777] ps-1">
-                        &#40;4.3&#41; 512 Reviews
-                      </span>
                     </div>
                   </div>
                 </div>
