@@ -121,31 +121,31 @@ const Footer = () => {
         },
         {
           text: "Engineering Student App",
-          href: "",
+          href: "#",
         },
         {
           text: "Ecommerce Application",
-          href: "",
+          href: "#",
         },
         {
           text: "Pharma Company Management",
-          href: "",
+          href: "#",
         },
         {
           text: "Doctor Video Consultation",
-          href: "",
+          href: "#",
         },
         {
           text: "WhatsApp Oficial API",
-          href: "",
+          href: "#",
         },
         {
           text: "Food Delivery App",
-          href: "",
+          href: "#",
         },
         {
           text: "OTT Streaming App",
-          href: "",
+          href: "#",
         },
       ],
     },
@@ -162,7 +162,7 @@ const Footer = () => {
         },
         {
           text: "Life at Reboot",
-          href: "",
+          href: "#",
         },
         {
           text: "Privacy Policy",

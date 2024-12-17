@@ -37,7 +37,11 @@ const ProductsPageDesign = ({
   };
   return (
     <div>
-      <SubPageBanner heading={"Products"} headinglink={""} subheading={title} />
+      <SubPageBanner
+        heading={"Products"}
+        headinglink={"#"}
+        subheading={title}
+      />
       <ServiceAndproductPage1stpart content={content} />
       <ServiceAndProductPageTechnologySection benifits={benifits} />
       <section className="xl:p-16 lg:p-8 sm:p-4 flex flex-col gap-8">
