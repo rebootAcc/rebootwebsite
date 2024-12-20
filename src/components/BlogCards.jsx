@@ -21,8 +21,8 @@ const BlogCards = ({ blog }) => {
           {blog.createdAt}
         </span>
       </div>
-      <div className="flex justify-between gap-4">
-        <div className="flex items-center gap-1 text-xs">
+      <div className="flex justify-between gap-4 h-[2.5rem]">
+        <div className="flex items-center gap-1 text-[11px]">
           <span className="p-1 inline-flex items-center justify-center rounded-full bg-[rgba(67,_133,_245,_0.10)] text-primary">
             <PiFolderSimpleUserThin />
           </span>
@@ -31,7 +31,7 @@ const BlogCards = ({ blog }) => {
             {blog.category.split(" ").slice(0, 2).join(" ")}
           </span>
         </div>
-        <div className="flex items-center gap-1 text-xs">
+        <div className="flex items-center gap-1 text-[11px]">
           <span className="p-1 inline-flex items-center justify-center rounded-full bg-[rgba(67,_133,_245,_0.10)] text-primary">
             <BsChatLeftText />
           </span>
@@ -39,7 +39,7 @@ const BlogCards = ({ blog }) => {
             {blog.comments} Min Read
           </span>
         </div>
-        <div className="flex items-center gap-1 text-xs">
+        <div className="flex items-center gap-1 text-[11px]">
           <span className="p-1 inline-flex items-center justify-center rounded-full bg-[rgba(67,_133,_245,_0.10)] text-primary">
             <MdOutlineRemoveRedEye />
           </span>

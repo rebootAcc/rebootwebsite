@@ -26,11 +26,12 @@ const BlogDetailsPageEnquiry = dynamic(
 
 // Fetch blog data by blogId
 export async function getServerSideProps({ params }) {
-  const [blogId, slug] = params.blogIdslug.split("-");
+  const slug = params.slug;
   const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
 
   try {
-    const res = await fetch(`${backendUrl}/api/blogs/get/${blogId}`);
+    // Query the backend to get blog details by slug
+    const res = await fetch(`${backendUrl}/api/blogs/getBySlug/${slug}`);
     const data = await res.json();
 
     if (!data || !data.blogId) {

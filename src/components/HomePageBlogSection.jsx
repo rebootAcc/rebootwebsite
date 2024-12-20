@@ -101,11 +101,7 @@ const HomePageBlogSection = () => {
         method: "PATCH",
       });
 
-      router.push(
-        `/blogs/${blog.blogId}-${blog.heading
-          .replace(/\s+/g, "-")
-          .toLowerCase()}`
-      );
+      router.push(`/blogs/${blog.heading.replace(/\s+/g, "-").toLowerCase()}`);
     } catch (error) {
       console.error("Error incrementing view count:", error);
     }
