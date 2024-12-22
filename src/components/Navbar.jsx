@@ -217,7 +217,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center relative">
         <Link href="/">
           <Image
-            src="/logo.svg"
+            src="/logo.png"
             alt="logo"
             width={253}
             height={46}

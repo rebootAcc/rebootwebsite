@@ -247,11 +247,11 @@ const Footer = () => {
           <div className="flex flex-col items-start gap-2 ">
             <Link href="/">
               <Image
-                src="/logo.svg"
+                src="/logo.png"
                 alt="logo"
                 width={253}
                 height={46}
-                className=" lg:h-[2rem] h-[3rem] xlg:h-[3rem]"
+                className=" lg:h-[2rem] h-[3rem] xlg:h-[3rem] w-full"
               />
             </Link>
             <p className="xlg:text-base lg:text-sm text-base text-white ">
