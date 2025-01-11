@@ -31,7 +31,7 @@ const About = () => {
       icon: "/icons/missionicon.svg",
       name: "Mission",
       details:
-        "Our mission is to meet the diverse needs of our customers, aiming to serve organizations of all sizes. We are driven by innovation, consistently challenging the status quo to provide state-of-the-art solutions that foster progress and transformation for both our clients and ourselves. We are committed to the long-term health of our clients and the well-being of our communities.We promote a culture of collaboration, teamwork, and knowledge-sharing, harnessing the expertise and creativity of our diverse team to achieve outstanding results. We empower our Brainers to reach their full potential by offering the resources, support, and opportunities necessary for personal and collective growth. Partner with us to develop your AI-powered digital products and services.",
+        "At Reboot AI, our mission is to make sure the client's needs are addressed to help organizations of all kinds. We are innovative - as a result of this, we dare to disrupt and offer solutions that change the status quo. Our clients and the communities we serve are our main focus and we work towards their sustainable success. We work as a team and share knowledge that enables the creativity of the different team members, thus attaining the best results. We equip and enable our employees to succeed in their endeavors and we support their development. Become our client to co-develop innovative AI-based digital solutions and applications for a better tomorrow.",
     },
     {
       icon: "/icons/visionicon.svg",
@@ -43,7 +43,7 @@ const About = () => {
       icon: "/icons/objectiveicon.svg",
       name: "Objective",
       details:
-        "Our goal is to foster a sense of comfort and trust with brands. We are dedicated to enhancing our services to ensure transparency and efficiency in all interactions. Reboot provides actionable insights that highlight market trends and opportunities, empowering businesses to make strategic decisions for a competitive edge. Our skilled team is well-versed in Return on investment and has hands-on experience with live development projects and hosting platforms. We prioritize delivering IT solutions that are aligned with business objectives, with a strong emphasis on digital transformation. Our ambition is to cultivate a world-class workforce. We create client-focused strategies aimed at delivering solutions that drive return on investment (ROI). ",
+        "The goal of Reboot AI is to create trust and credibility in brands through an improvement in clarity and effectiveness in all processes. Our information and recommendations concern the state and trends of the market, which enable making correct decisions for the business and gaining a competitive advantage. We have a team of professionals who are well conversant with ROI and who have worked on high-stakes development projects to bring you IT solutions that are in line with business objectives and outcomes, oriented with the theme of digital transformation. Join us to create value for your business by focusing on growth and profitability.",
     },
   ];
   const [slidesToShow, setSlidesToShow] = useState(3);
