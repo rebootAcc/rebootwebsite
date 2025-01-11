@@ -25,10 +25,10 @@ const ServiceAndProductComponent = ({ services }) => {
               {item.name}
             </h1>
           </section>
-          <section className="text-[#666666] text-xs/[20px]   md:text-sm/[25px] lg:text-[10px]/[17px] xlg:text-xs/[20px] xl:text-sm/[20px]">
+          <section className="text-[#666666] text-xs line-clamp-4 h-auto md:line-clamp-none   md:text-sm/[25px] lg:text-[10px]/[17px] xlg:text-xs/[20px] xl:text-sm/[20px]">
             {item.details}
           </section>
-          <section className="xlg:mt-3 lg:mt-2 xs:mt-2 flex items-end h-full">
+          <section className="xlg:mt-3 lg:mt-2 xs:mt-0 flex items-end h-full">
             <Link
               href={item.link}
               className=" lg:h-[1.8rem] xs:h-[2rem] xlg:h-[2rem]  w-fit px-6 flex justify-center items-center xs:text-xs xlg:text-sm font-medium bg-primary text-white rounded-md"

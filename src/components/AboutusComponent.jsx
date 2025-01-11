@@ -1,16 +1,54 @@
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 const AboutusComponent = ({ showsection, content }) => {
   const { aboutcontent, heading, img1, img2, img3, img4 } = content;
+  const [contentHeight, setContentHeight] = useState(0);
+  const rightContentRef = useRef(null);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 768);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const updateHeight = () => {
+    if (rightContentRef.current) {
+      setContentHeight(rightContentRef.current.offsetHeight);
+    }
+  };
+
+  useEffect(() => {
+    // Initial height setup
+    updateHeight();
+
+    // Handle height on window resize
+    const handleResize = () => {
+      updateHeight();
+    };
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <section className="flex flex-col gap-4 xl:p-16 lg:p-8 p-4">
       <section className="flex flex-col-reverse lg:flex-row justify-between gap-9">
-        <div className="flex flex-col gap-4">
-          <div className="flex gap-2 md:gap-4">
-            <div className="flex flex-col justify-between gap-2 md:gap-6 lg:gap-4">
-              <div className="w-[50vw] h-[20vmax] md:w-[60vw] lg:min-w-0 lg:w-[30vw] xl:w-[22vw] md:min-h-[30vmax] lg:min-h-[23.83vmax] xl:min-h-[20.83vmax] relative">
+        <div className="flex flex-col gap-4 w-full lg:w-[45%]">
+          <div
+            className="flex gap-2 md:gap-4"
+            style={{ height: isSmallScreen ? "20rem" : `${contentHeight}px` }}
+          >
+            <div className="flex flex-col justify-between gap-2 md:gap-6 lg:gap-4 w-[60%]">
+              <div className="relative w-full h-[50%]">
                 <Image
                   src={img1}
                   alt="about-us"
@@ -20,8 +58,8 @@ const AboutusComponent = ({ showsection, content }) => {
                   className="object-cover rounded-lg h-full w-full"
                 />
               </div>
-              <div className="flex justify-between gap-2 md:gap-4">
-                <div className="md:w-[30vw] w-[25vw] lg:w-[14.3vw] xl:w-[10.3vw] min-h-[16vmax] md:min-h-[25.7vmax] lg:min-h-[11.7vmax] relative">
+              <div className="flex justify-between gap-2 md:gap-4 h-[50%]">
+                <div className=" w-full h-full  relative">
                   <Image
                     src={img2}
                     alt="about us"
@@ -31,7 +69,7 @@ const AboutusComponent = ({ showsection, content }) => {
                     className="object-cover rounded-lg w-full h-full"
                   />
                 </div>
-                <div className="relative md:w-[30vw] w-[25vw] lg:w-[14.3vw] xl:w-[10.3vw] min-h-[16vmax] md:min-h-[25.7vmax] lg:min-h-[11.7vmax]">
+                <div className="relative w-full h-full">
                   <Image
                     src={img3}
                     alt="about us"
@@ -43,7 +81,7 @@ const AboutusComponent = ({ showsection, content }) => {
                 </div>
               </div>
             </div>
-            <div className="w-full flex-1 lg:w-[13.125vw] min-h-[33.8vmax] relative">
+            <div className="w-[40%] h-full relative">
               <Image
                 src={img4}
                 alt="about us"
@@ -55,13 +93,10 @@ const AboutusComponent = ({ showsection, content }) => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-2 xl:gap-2 justify-between">
-          {showsection && (
-            <h3 className="text-black font-semibold text-lg md:text-xl xlg:text-xl capitalize">
-              About Us!
-            </h3>
-          )}
-
+        <div
+          className="flex flex-col gap-2 xl:gap-2 justify-between w-full lg:w-[55%]"
+          ref={rightContentRef}
+        >
           <h1 className="text-primary text-xl md:text-3xl xlg:text-2xl lg:text-xl xl:text-[2rem] font-semibold">
             {heading}
           </h1>

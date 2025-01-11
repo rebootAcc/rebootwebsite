@@ -19,43 +19,43 @@ const Footer = () => {
       links: [
         {
           text: "Custom Website Development",
-          href: "/services/custom-website-development",
+          href: "/services/website-development-company-in-kolkata",
         },
         {
           text: "E-commerce Store Development",
-          href: "/services/e-commerce-store-development",
+          href: "/services/e-commerce-website-developer-in-kolkata",
         },
         {
           text: "Web Application Development",
-          href: "/services/web-application-development",
+          href: "/services/web-application-development-service-in-kolkata",
         },
         {
           text: "Dynamic Website Development",
-          href: "/services/dynamic-website-development",
+          href: "/services/dynamic-website-development-service-in-siliguri",
         },
         {
           text: "Saas Application Development",
-          href: "/services/saas-application-development",
+          href: "/services/saas-application-development-service-in-kolkata",
         },
         {
           text: "Web Apps Development",
-          href: "/services/web-application-development",
+          href: "/services/web-application-development-service-in-kolkata",
         },
         {
           text: "Android App Development",
-          href: "/services/android-app-development",
+          href: "/services/app-developer-in-kolkata-android-app-development",
         },
         {
           text: " iOS App Development",
-          href: "/services/ios-app-development",
+          href: "/services/ios-app-development-company-in-siliguri",
         },
         {
           text: "Flutter App Development",
-          href: "/services/flutter-app-development",
+          href: "/services/flutter-developer-in-kolkata",
         },
         {
           text: "AI & ML Integration",
-          href: "/services/ai-ml-integration",
+          href: "/services/ai-ml-integration-services-in-kolkata",
         },
       ],
     },
@@ -64,39 +64,39 @@ const Footer = () => {
       links: [
         {
           text: "Business Consultation",
-          href: "/services/business-consultation",
+          href: "/services/business-consultation-service-in-kolkata",
         },
         {
           text: "Performance Marketing",
-          href: "/services/performance-marketing",
+          href: "/services/performance-marketing-agency-in-kolkata",
         },
         {
           text: "PR & Brand Building",
-          href: "/services/pr-brand-building",
+          href: "/services/influencer-marketing-agency-in-kolkata",
         },
         {
           text: "Google Marketing",
-          href: "/services/google-marketing",
+          href: "/services/seo-agency-in-kolkata",
         },
         {
           text: "Social Media Solutions",
-          href: "/services/social-media-solutions",
+          href: "/services/social-media-agency-in-siliguri",
         },
         {
           text: " IT Consultation",
-          href: "/services/it-consultation",
+          href: "/services/it-consultation-service-in-kolkata",
         },
         {
           text: "Web & Apps Security",
-          href: "/services/web-and-apps-security",
+          href: "/services/cyber-security-service-in-kolkata",
         },
         {
           text: "Creative UI Design",
-          href: "/services/creative-ui-design",
+          href: "/services/ui-ux-developer-in-kolkata",
         },
         {
           text: "Brand Starter Solution",
-          href: "/services/brand-starter-solution",
+          href: "/services/brand-starter-solution-agency-in-kolkata",
         },
         {
           text: "Cloud Server Setup",

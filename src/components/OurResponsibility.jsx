@@ -102,33 +102,31 @@ const OurResponsibility = ({ showsection }) => {
             </h1>
           </section>
           <p className="xlg:text-sm/[20px] xl:text-base  lg:text-xs/[18px] md:text-[10px]/[15px] text-sm/[25px] text-[#333333]">
-            When it comes to driving business growth and increasing revenue, we
-            can be your trusted long-term partner in elevating your position in
-            the industry. Our technology advisors are here to help you develop
-            market-leading strategies, ensuring any last-minute adjustments to
-            your product and service launches. From the initial planning stages
-            to the final rollout, we are dedicated to supporting your expansion
-            and maximizing your return on investment. Leverage the capabilities
-            of contemporary web frameworks to create progressive web
-            applications that grow and generate leads with our services.
+            At Reboot AI, we consider ourselves a reliable partner committed to
+            your success and your company&apos;s increased revenue as well. Our
+            team of technology advisors helps plan, develop strategies, and
+            implement new products into the market. Whether you are in the
+            process of developing new products or improving your services for
+            that matter, we make your business progress with direction and
+            accuracy.
             <br />
-            Our budget-friendly approach allows us to offer cost-effective
-            services to our clients and encourage them to freely share their
-            business needs with us. By utilizing our services, you can expect to
-            see increased traffic, higher sales, greater revenue, and,
-            naturally, more leads. Our dedicated team is always available to
-            assist you and provide consultations tailored to your requirements,
-            ensuring your progress remains uninterrupted. We specialize in web
-            app development, delivering unique web solutions for businesses
-            across various industries. With our advanced technologies and
-            innovative strategies, we are committed to boosting your business
-            revenue in the years ahead. Contact us today to address your
-            specific needs!
+            Our core focus is on building applications using modern web
+            frameworks that enhance your online brand, and at the same time
+            deliver a steady stream of high-quality leads also. We offer easy
+            solutions that will help you increase traffic, sales, and revenue
+            while also considering your specific budget.
+            <br />
+            Our goal is to provide affordable and measurable services that
+            enable you to freely communicate your business goals. When working
+            with Reboot AI, you receive a powerful tool helping you achieve
+            progress and success. In order to help you achieve your objectives
+            without interruption, our exceptional staff is ever prepared to
+            offer you specifications that suit your needs and requirements.
           </p>
         </section>
         <section className="lg:w-[40%] flex flex-col gap-8">
           <h1 className="xlg:text-4xl md:text-2xl text-xl font-semibold text-primary">
-            Let’ See <br />
+            Let&apos; See <br />
             <span className="text-[#333333]">How Will</span> You Benefit?
           </h1>
           <section className="flex flex-col gap-8 ">

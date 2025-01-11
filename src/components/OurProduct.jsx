@@ -7,7 +7,7 @@ const OurProduct = () => {
       icon: "/icons/educationcrm.svg",
       name: "Educational CRM Advanced",
       details:
-        "A CRM for Education is a comprehensive student management solution tailored to meet the specific needs of educational institutions such as universities, schools, coaching centers, consultancies, and other organizations within the education sector. Our CRM enhances the productivity of the admission process and improves conversion rates for these organizations. With our platform, you can manage multiple leads in one place and prioritize them effectively.",
+        "Reboot AI Private Limited has emerged as a pioneer in the technological industry, we are committed to offer Educational CRM Advanced solutions that have been designed to revolutionize student management and institutional efficiency. Our extensive platform provides educational institutions like universities, schools, coaching centres, and consultancies with a powerful tool to streamline complex administrative processes.",
       link: "/products/educational-CRM-advanced",
     },
     {
@@ -21,7 +21,7 @@ const OurProduct = () => {
       icon: "/icons/doctorclinic.svg",
       name: "Doctor Clinic Management",
       details:
-        "Doctor Clinic Management is designed to efficiently maintain records of prescriptions, bills, and other essential information. This software offers a range of features, including an appointment scheduler, electronic health records, SMS notifications, medical billing, and more. If you're in search of reliable practice management software, look no further. Our Doctor Clinic Management solution facilitates the creation of doctor profiles and the management of patient records and consultations.",
+        " Reboot AI is a game changer when it comes to streamlining your service center business. We understand that the service center is full of people and needs proper CRM to control the load and cater to every single client. While frustration levels are already at their peak when at a service center, we do not want to stress you out with the tech! Instead, we use the tech and make it work for you and streamline the queue in an organized way!",
       link: "/products/clinic-management-software",
     },
     {

@@ -60,17 +60,17 @@ export const getStaticProps = async ({ params }) => {
   // Mock data for services
   const serviceData = {
     "educational-CRM-advanced": {
-      metatitle: "Educational Consultancy Sales Calling  Marketing Automation",
+      metatitle: "Educational CRM Online",
       metadescription:
-        "A CRM for Education is a comprehensive student management solution tailored to meet the specific needs of educational institutions such as universities, schools, coaching centers, consultancies, and other organizations within the education sector.",
-      title: "Educational CRM Advanced",
+        "Reboot AI Private Limited has emerged as a pioneer in the technological industry, we are committed to offer Educational CRM Advanced solutions that have been designed to revolutionize student management and institutional efficiency.",
+      title: "Educational CRM Online",
       content: {
         serviceimg: "/images/Educational Consultant CRM 2 (1).webp",
-        servicename: "Educational CRM Advanced",
+        servicename: "Educational CRM Online",
         servicedesc1:
-          "A CRM for Education is a comprehensive student management solution tailored to meet the specific needs of educational institutions such as universities, schools, coaching centers, consultancies, and other organizations within the education sector. Our CRM enhances the productivity of the admission process and improves conversion rates for these organizations. With our platform, you can manage multiple leads in one place and prioritize them effectively.",
+          "Reboot AI Private Limited has emerged as a pioneer in the technological industry, we are committed to offer Educational CRM Advanced solutions that have been designed to revolutionize student management and institutional efficiency. Our extensive platform provides educational institutions like universities, schools, coaching centres, and consultancies with a powerful tool to streamline complex administrative processes.",
         servicedesc2:
-          " Our education agent CRM facilitates seamless communication and engagement with leads through both online and offline channels. Designed to streamline the enrollment process, this CRM empowers institutions with efficient lead management, nurturing, and smooth conversion.</br>Empower your candidates to monitor their entire journey with a customizable centralized dashboard. Enhance the student experience and boost retention at every stage through a unified dashboard that allows them to apply, track progress, communicate, and enroll in additional courses. Create sophisticated, feature-rich application forms in just minutes, offering prospective students an engaging experience they'll remember. This CRM software is ideal for small businesses looking to manage leads effectively. Our advanced Educational CRM software delivers cutting-edge tech solutions across various industries. .",
+          " The Educational CRM Advanced by Reboot AI is meticulously crafted to enhance productivity across the entire student engagement cycle. By facilitating seamless communication through online and offline channels, our solution enables institutions to manage multiple leads effectively, prioritize potential candidates, and at the same time significantly improve conversion rates. <br> The key features of our Educational CRM Advanced include a customizable centralized dashboard that helps to empower candidates to monitor their entire academic journey. <br> By leveraging cutting-edge AI technologies, Reboot AI's Educational CRM has innovated a CRM that goes beyond traditional management systems. This innovative approach helps educational organizations to optimize their operational efficiency, enhance student experiences, and ultimately drive institutional growth in an increasingly competitive market. Reboot AI's solution is particularly beneficial for small to medium-sized educational businesses seeking efficient, technology-driven management solutions that can adapt to unique organizational needs.",
       },
       benifits: [
         "Telecallers Management",
@@ -123,18 +123,17 @@ export const getStaticProps = async ({ params }) => {
       ],
     },
     "clinic-management-software": {
-      metatitle:
-        "Doctor Clinic Management Software - Easy to Use with 100% Customizations",
+      metatitle: " Doctor Clinic Management ERP Software ",
       metadescription:
-        "Doctor Clinic Management is trusted by 100+ Doctors &  designed to efficiently maintain records of prescriptions, bills, and other essential information. This software offers a range of features, including an appointment scheduler, electronic health records, SMS notifications, medical billing, and more.",
-      title: "Doctor Clinic Management",
+        "Doctor Clinic Management is a powerful new-age system that helps administer healthcare services within a clinical setting. We at Reboot AI Private Limited have revolutionized new and creative solutions that specialize in comprehensive Doctor Clinic Management",
+      title: " Doctor Clinic Management ERP Software",
       content: {
         serviceimg: "/images/Clinic Management Software 1.webp",
-        servicename: "Doctor Clinic Management",
+        servicename: " Doctor Clinic Management ERP Software",
         servicedesc1:
-          "Doctor Clinic Management is designed to efficiently maintain records of prescriptions, bills, and other essential information. This software offers a range of features, including an appointment scheduler, electronic health records, SMS notifications, medical billing, and more. If you're in search of reliable practice management software, look no further. Our Doctor Clinic Management solution facilitates the creation of doctor profiles and the management of patient records and consultations.",
+          "Doctor Clinic Management is a powerful new-age system that helps administer healthcare services within a clinical setting. We at Reboot AI Private Limited have revolutionized new and creative solutions that specialize in comprehensive Doctor Clinic Management solutions. Our advanced software platform allows healthcare professionals to use a rich and intelligent tool to manage all clinic functions and patient-related records more effectively alongside admin workflow. ",
         servicedesc2:
-          "We developed a medical management software that provides a comprehensive overview of all clinics and sessions, along with their current statuses. This doctor clinic management software guides you through each step, from gathering patient information to processing billing. It is specifically designed to assist clinics of all sizes in efficiently managing their daily operations. With our solution, you have all the tools necessary to run your clinic effectively.</br> Our software streamlines the management process, saving you both time and money through automation. With our online appointment booking system, your clients can easily schedule appointments at times that work for them. This user-friendly, cost-effective, and robust software empowers doctors to manage their clinics effortlessly. ",
+          "The Doctor Clinic Management solution, by Reboot AI, uniquely offers a variety of features ranging from electronic health record management, scheduling of appointments, medical billing, and automated SMS notifications. The platform, made with cutting-edge AI technologies, helps healthcare service providers streamline day-to-day tasks and reduce their administrative burdens to better focus on patients. <br> An advanced and comprehensive solution that includes a range of significant features such as easy-to-use interfaces, seamless online appointment booking capabilities, and smart automation to save time and minimize operational costs. <br> The Reboot AI software has been meticulously designed to cater to clinics of all sizes, thus providing scalable and adaptable management tools that enhance overall practice efficiency. By combining advanced software engineering with a deep understanding of medical practice requirements, we are committed to providing doctors and our clients with powerful tools to optimize their clinical workflows and improve patient engagement.",
       },
       benifits: [
         "Complete Patient  CRM",
@@ -191,17 +190,17 @@ export const getStaticProps = async ({ params }) => {
       ],
     },
     "service-center-management-crm": {
-      metatitle: "Service Center CRM - Daily Call Process Automations",
+      metatitle: " Service center ERP Software",
       metadescription:
-        "Leverage the capabilities of Service Centre Solutions to cultivate a loyal customer base through automated services. We can assist you in optimizing your backend operations to provide exceptional, customer-centric experiences.",
-      title: "Service Centre Solutions",
+        " Reboot AI is a game changer when it comes to streamlining your service center business. We understand that the service center is full of people and needs proper CRM to control the load and cater to every single client. While frustration levels are already at their peak when at a service center, we do not want to stress you out with the tech! Instead, we use the tech and make it work for you and streamline the queue in an organized way!",
+      title: "Service center ERP Software",
       content: {
         serviceimg: "/images/Service Center Management CRM 1.webp",
-        servicename: "Service Centre Solutions",
+        servicename: "Service center ERP Software",
         servicedesc1:
-          "Leverage the capabilities of Service Centre Solutions to cultivate a loyal customer base through automated services. We can assist you in optimizing your backend operations to provide exceptional, customer-centric experiences. Today, our service solutions can be a major business asset with a robust service center platform. Our software is integrated, multi-user, online, and modular in design. ",
+          "Streamlining Your Service Center Business With Innovative IT Excellence <br> Reboot AI is a game changer when it comes to streamlining your service center business. We understand that the service center is full of people and needs proper CRM to control the load and cater to every single client. While frustration levels are already at their peak when at a service center, we do not want to stress you out with the tech! Instead, we use the tech and make it work for you and streamline the queue in an organized way! ",
         servicedesc2:
-          "We provide comprehensive Service Centre Solutions that streamline your service center operations. Our solutions facilitate effortless job management, real-time job updates, and comprehensive business analysis. Optimize your services for greater efficiency, performance, and speed. </br> We provide you with essential insights and tools to enhance your operational effectiveness. Optimize Your Services for Greater Efficiency, Performance, and Speed. We offer essential insights and tools to enhance your operational effectiveness. Our solutions are designed to assist in managing product services at any stage of development. No matter what your products and services are, our extensive experience equips us to provide the right solutions for you. With robust options at your disposal, we empower our clients to generate new revenue streams, integrate technical solutions, enhance efficiency, increase customer loyalty, and achieve a variety of other goals.",
+          "Our tech wizards create effective CRM and dashboards for you to track the progress of each of the clients and their queries at the service center. We reduce the workload on people so that they can focus on getting the physical work done while the IT system takes care of the people at the counter. Our AI-driven process further simplifies the work load as it reduces the need for human intervention. At the end of the day when happy clients leave your service center, they end up being your loyal customers too as well! Not only this, our tech enables business owners to scale their business and create new revenue generations streams as well from their existing business!  <br> A myriad of opportunities open up when you partner with a tech wizard like Reboot AI. Feeling intrigued yet? Your service center business can shoot up with the right partnership as we have the arsenal of tech to help boost the growth!  ",
       },
       benifits: [
         "Fast Data Manage",

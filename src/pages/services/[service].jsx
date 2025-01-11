@@ -43,24 +43,24 @@ export default CustomWebsiteDevelopment;
 export const getStaticPaths = async () => {
   // Define 5 static paths for your services
   const paths = [
-    { params: { service: "custom-website-development" } },
-    { params: { service: "e-commerce-store-development" } },
-    { params: { service: "web-application-development" } },
-    { params: { service: "dynamic-website-development" } },
-    { params: { service: "saas-application-development" } },
-    { params: { service: "android-app-development" } },
-    { params: { service: "ios-app-development" } },
-    { params: { service: "flutter-app-development" } },
-    { params: { service: "ai-ml-integration" } },
-    { params: { service: "business-consultation" } },
-    { params: { service: "performance-marketing" } },
-    { params: { service: "pr-brand-building" } },
-    { params: { service: "google-marketing" } },
-    { params: { service: "social-media-solutions" } },
-    { params: { service: "it-consultation" } },
-    { params: { service: "web-and-apps-security" } },
-    { params: { service: "creative-ui-design" } },
-    { params: { service: "brand-starter-solution" } },
+    { params: { service: "website-development-company-in-kolkata" } },
+    { params: { service: "e-commerce-website-developer-in-kolkata" } },
+    { params: { service: "web-application-development-service-in-kolkata" } },
+    { params: { service: "dynamic-website-development-service-in-siliguri" } },
+    { params: { service: "saas-application-development-service-in-kolkata" } },
+    { params: { service: "app-developer-in-kolkata-android-app-development" } },
+    { params: { service: "ios-app-development-company-in-siliguri" } },
+    { params: { service: "flutter-developer-in-kolkata" } },
+    { params: { service: "ai-ml-integration-services-in-kolkata" } },
+    { params: { service: "business-consultation-service-in-kolkata" } },
+    { params: { service: "performance-marketing-agency-in-kolkata" } },
+    { params: { service: "influencer-marketing-agency-in-kolkata" } },
+    { params: { service: "seo-agency-in-kolkata" } },
+    { params: { service: "social-media-agency-in-siliguri" } },
+    { params: { service: "it-consultation-service-in-kolkata" } },
+    { params: { service: "cyber-security-service-in-kolkata" } },
+    { params: { service: "ui-ux-developer-in-kolkata" } },
+    { params: { service: "brand-starter-solution-agency-in-kolkata" } },
     { params: { service: "cloud-server-setup" } },
   ];
 
@@ -73,20 +73,19 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async ({ params }) => {
   // Mock data for services
   const serviceData = {
-    "custom-website-development": {
-      metatitle:
-        "Website Development Company  in Kolkata - Custom Website Development",
+    "website-development-company-in-kolkata": {
+      metatitle: "Website Development Company in Kolkata",
       metadescription:
-        "Looking for an experienced custom website development company to build a unique online presence with Reboot AI's Custom Website Development services.",
-      title: "Custom Website Development",
+        "Reboot AI, a leading custom website developer in Kolkata, 1000+ custom Website developed for Corporates, 5 years experience, futuristic design. Achieve seamless functionality, future-proof designs, and unmatched performance.",
+      title: "Website Development Company in Kolkata",
       content: {
         serviceimg:
           "/servicesfast/Custom Website Development Custom Website Development 1.webp",
-        servicename: "Custom Website Development",
+        servicename: "Website Development Company in Kolkata",
         servicedesc1:
-          "To create a website that offers top-notch brand value, you can always count on Reboot AI Private Limited. We assist our clients by transforming a conventional website into a user-friendly website with our custom website development services. Improving your website requires scalability and responsive design. Here you can depend on us as we give the best proficient site improvement that grandstands your basic beliefs with an imaginative touch.",
+          "Do you need the services of a reliable Custom Website Development Company in Kolkata? Well, if so, then you are at the right place. At Reboot AI, we provide unique, high quality web design solutions that include the latest design, seamless functionality and future proof technologies. <br/> From the perspective of business and professional activities, a customized website design brings forth several advantages. Whether you are a doctor managing a clinic or a professional working in an organization, having a website that fits your niche requirements is a must. Custom designed websites differ from off-the-shelf templates in that they help drive your web presence by addressing specific objectives, without affecting the flexibility to accommodate greater traffic as your business grows.",
         servicedesc2:
-          "Today, a website needs more than just a traditional design and this incorporates, interlinking to social media profiles, fast loading times, and a site optimized for search engines. There are tons of companies for website development in India. However, what outsmarts us is that we figure out the special website necessities. </br> We consider the targeted audience and thus try to leave an impression. This is the sole justification for why clients approach us when they need website development Company in Kolkata. We have in-depth knowledge of various CRM software and our custom website services offer something different that can meet your business requirements. We comprehend that the fundamental objective of site advancement is to accomplish the targeted business goals therefore, our focus is on creating customer websites that deliver next-level dynamics. One more advantage is that these custom websites offer higher Returns on investments.",
+          "In addition, at our Custom Website Development Company in Kolkata, we know how to make your website perform efficiently. In cases where you want to achieve a marketing goal through your website, we create solutions that improve on the user interface while delivering the intended market value. Similarly, if you have a clear vision of the design that you want, or you expect certain tailor-made features, we handle every detail with great care regarding your ideas. <br> Choosing custom website development helps one gets a platform that will develop in tandem with their personal or professional needs and requirements. This prevents your website from becoming a stagnant liability in this current era of stiff market competition.<br> At Reboot AI, one of the best Custom Website Development companies in Kolkata, we make your visions come to fruition. Contact us today to pave the way to success for your personal and business ambitions and goals!",
       },
       workimg: "/services23/Custom Website Development 2.webp",
       packageimg: "/services23/Custom Website Development 3.webp",
@@ -151,19 +150,18 @@ export const getStaticProps = async ({ params }) => {
       ],
     },
 
-    "e-commerce-store-development": {
-      metatitle:
-        "E-commerce Developer in Kolkata - custom eCommerce development",
+    "e-commerce-website-developer-in-kolkata": {
+      metatitle: "Ecommerce Website Developer in Kolkata",
       metadescription:
-        "Launch a successful e-commerce platform with our expert E-commerce Store Development services. Get custom-built online stores designed to drive conversions and sales.",
-      title: "E-Commerce Store Development",
+        "Reboot AI, a top ecommerce developer in Kolkata, delivers custom, scalable online store solutions. Scalable, Highly Secure, fully custom, most affordable cost.",
+      title: "Ecommerce Website Developer in Kolkata",
       content: {
         serviceimg: "/servicesfast/E-commerce Store Development 1.webp",
-        servicename: "E-commerce Store Development",
+        servicename: "Ecommerce Website Developer in Kolkata",
         servicedesc1:
-          "With the expansion in the online shopping trend, our E-commerce store development services can assist you expand beyond geographical boundaries. E-commerce stores allow you to reach out to customers more conveniently and provide them with a delightful shopping experience.Excel the E-commerce Market with the best E-commerce store Development in Kolkata.",
+          "For your online store idea to transform into a reality, it is crucial to identify the right Ecommerce Developer in Kolkata. From the application of scalable, custom coded solutions encoded into your brand-new online portal, to the refashioning of a traditional business into an Internet e-commerce business, at Reboot AI, we handle it all at one place. As a leading Custom Ecommerce website development company in Kolkata, we ensure our clients get exactly what they need for success.",
         servicedesc2:
-          "As compared to conventional E-commerce stores, a modern one requires a secure SMS gateway, OTP login security, and a secured payment gateway. Likewise, everyone wants a store that is SEO and mobile-friendly. This component diminishes the page stacking time and upgrades the shopping experience.Our team provides cutting-edge UI and extraordinary UX for small and large-scale businesses. With a unique e-commerce store, you can explore countless possibilities and generate new sales funnels. </br> We provide a seamless store launch to our clients so that our customers can encounter a bug-free store for selling their products and services. When it comes to quality, security, and professionalism, we are just a call away. An E-commerce store helps to grow your business and showcases your products/services for a seamless buying experience. We generate wireframes that can handle lots of visitors at a single time without any crashes. At Reboot AI Private Limited, our main focus is on generating a responsive E-commerce store that impeccably aligns with your brand identity. Join the best E-commerce store Development in Kolkata to create an optimized website for an enhanced user-friendly experience.",
+          "Every business needs its own e-commerce platform with company-specific style and features that meet customers' expectations. Superior quality design, exceptional functionality, and flawless scalability are the basics of our solutions, establishing us as a top Development Company. New and customized e-commerce websites need to be built to cater to present day business demands. As an experienced Custom Ecommerce Developer in Kolkata, Reboot AI designs web solutions rooted in flexibility to sustain client's requirements continuously. Payment gateways, mobile optimization, easy to navigate features are some of the key aspects we integrate together to offer an absolutely smooth and hassle-free experience.<br> A good e-commerce strategy fuels growth while improving the interaction between the business and customers. With the help of our Ecommerce website development company in Kolkata, businesses get an access to advanced solutions capable of withstanding the ever-changing consumer trends. We offer affordable services for both startups and bigger companies with various goals and needs & requirements.",
       },
       workimg: "/services23/E-commerce Store Development 2.webp",
       packageimg: "/services23/E-commerce Store Development 3.webp",
@@ -219,17 +217,17 @@ export const getStaticProps = async ({ params }) => {
         "/ecomweb/E-commerce website 4.webp",
       ],
     },
-    "web-application-development": {
+    "web-application-development-service-in-kolkata": {
       metatitle:
         "Web Application Development Services in Kolkata - Reboot AI Pvt Ltd",
       metadescription:
         "Web Application Development for businesses looking to streamline operations. Scalable, secure, and optimized web apps tailored to your needs.",
-      title: "Web Application Development",
+      title: "Web Application Development Services in Kolkata",
       content: {
         serviceimg: "/servicesfast/Web Application Development 1.webp",
-        servicename: "Web Apps Development",
+        servicename: "Web Application Development Services in Kolkata",
         servicedesc1:
-          "Today, creating apps is not limited to mobile phones; making them web-responsive is a truly necessary step. At Reboot AI Private Limited, we have a group of the best web apps developer in Kolkata, India who can transform your vision into dynamic web apps. Our aphorism is “Let’s Turn Your Ideas into Reality” and hence we work to legitimize it.",
+          "Today, creating apps is not limited to mobile phones; making them web-responsive is a truly necessary step. At Reboot AI Private Limited, we have a group of the best web apps developer in Kolkata, India who can transform your vision into dynamic web apps. Our aphorism is “Let's Turn Your Ideas into Reality” and hence we work to legitimize it.",
         servicedesc2:
           "To meet various business needs, we integrate the latest technology, such as SQL, Node.js, React, Python, etc., into our web apps. Today, cross-platform web apps are a necessity, and this requires the best UX and web API. With this, we work to reduce the bounce rate and further develop the client experience.We are focused on creating responsive web apps, database-friendly, and include the best UI. Dynamic web apps help you reach countless customers. We intend to incorporate features like mobile push notifications, chatbots, and a mobile-friendly interface. From the initial discussion to the end product, our team of web apps developer in Kolkata, India combines cutting-edge technologies to fulfill the client’s wish. </br> As a web apps service provider, we secure your data and follow the security protocols.  For this reason, we keep up with data security throughout the app lifecycle. With the help of our technology, we help organizations grow and expand their businesses beyond limits. Brand visibility, customer engagement, and return on investments are all incorporated in the designs while creating the web apps.If you are looking to mark an exceptional user experience then hire us for web app development!",
       },
@@ -276,14 +274,14 @@ export const getStaticProps = async ({ params }) => {
         "/images/Web Application 3.webp",
       ],
     },
-    "dynamic-website-development": {
+    "dynamic-website-development-service-in-siliguri": {
       metatitle: "Website Development Services in Siliguri - Reboot AI Pvt Ltd",
       metadescription:
         "Create dynamic, engaging websites with Reboot AI's Dynamic Website Development services. Enhance user experience and SEO with flexible, responsive designs.",
-      title: "Dynamic Website Development",
+      title: "Website Development Services in Siliguri",
       content: {
         serviceimg: "/servicesfast/Dynamic Website Development 1.webp",
-        servicename: "Dynamic Website Development",
+        servicename: "Website Development Services in Siliguri",
         servicedesc1:
           "Nowadays every organization leans towards a dynamic website for user interaction as it generates real-time pages. Such a website uses a combination of different languages such as Java, CSS, Python, etc. If you want to keep your audience interaction active then at Reboot AI Private Limited, we offer the best Dynamic Website Development Service in Siliguri.",
         servicedesc2:
@@ -352,15 +350,15 @@ export const getStaticProps = async ({ params }) => {
         "/customwebdev/website view 11.webp",
       ],
     },
-    "saas-application-development": {
+    "saas-application-development-service-in-kolkata": {
       metatitle:
         "SAAS Application Development Services in Kolkata - Reboot AI Pvt Ltd",
       metadescription:
         "Reboot AI offers SAAS Application Development for businesses with scalable and secure cloud-based solutions. Build and manage custom software solutions.",
-      title: "Sass Application Development",
+      title: "SAAS Application Development Services in Kolkata",
       content: {
         serviceimg: "/servicesfast/SAAS Application Development 1.webp",
-        servicename: "SAAS Application Development",
+        servicename: "SAAS Application Development Services in Kolkata",
         servicedesc1:
           "SAAS Applications are accessed over the internet through a browser or a dedicated client. Such applications require security, integration, proper deployment, and of course maintenance. At Reboot AI Private Limited, we offer the best SAAS developer in Kolkata who can develop SAAS apps with protection against increasing cyber threats. It is one of the fastest-growing business models in the industry that can meet customer demands.",
         servicedesc2:
@@ -410,18 +408,18 @@ export const getStaticProps = async ({ params }) => {
       ],
     },
 
-    "android-app-development": {
-      metatitle: "App Developer in Kolkata - Android App Development Company",
+    "app-developer-in-kolkata-android-app-development": {
+      metatitle: "App Developer in Kolkata - Android App Development",
       metadescription:
-        "Experienced & Certified App Development agency in Kolkata, East India. Custom apps that engage users, improve brand visibility, and boost customer satisfaction.",
-      title: "Android App Development",
+        "Looking For High Quality Android App To Be Developed In Kolkata? Android App Development! 5 Years of Experience, 50+ App Developed.",
+      title: "App Developer in Kolkata - Android App Development",
       content: {
         serviceimg: "/servicesfast/Android App Development 1.webp",
-        servicename: "Android App Development",
+        servicename: "App Developer in Kolkata - Android App Development",
         servicedesc1:
-          "As a leading Android App development company in East India, Reboot AI Private Limited offers Android app development services with expertise. Our Android app developer in Kolkata creates easy-to-use apps to excel in the number of downloads on the Google app store. We are a trusted company that designs and develops apps for all business sectors. Alongside this, we offer steady help and an app built with a trusted framework. Our apps are intended for all screen sizes and processors and thus we can work on cross-platforms. ",
+          "Looking For High Quality Android App To Be Developed In Kolkata? We Are Here! Modern tech is led by innovations in the Android development space! We take pride in being a pioneer app developer in Kolkata with 5 years of experience in the industry. In our 5 years, we have delivered more than 50 apps for clients. We use some of the best and latest tech stacks to deliver you a stunning Android solution. Our process-oriented workflow ensures that right from exploration call to delivery, both client and team are on the same page. ",
         servicedesc2:
-          "If you are looking for an Android app developed in Kolkata then at reboot our designers have a strong command of different programming languages like Kotlin, Flutter, React Native, Python, etc. Likewise, we have a group of full-stack Android developers that can develop apps for different interfaces.</br> For organizations who are searching for expansion, android apps are the most ideal choice as they hold the greater part of the market. Android itself is an open-source platform and thus requires less maintenance cost. The vital advantage of picking us as your Android developers is that we understand the client’s preference and thus design apps according to their business needs and targeted audience. We keep up with the business standard by utilizing the Android UI so that the interface of the app can be easily navigable. We develop apps with a simple interface and compatible UX. Also, today the use of Android Developer Tool during the testing process makes it easy to make a bug-free Android application. Connect with us to develop an Android app.",
+          "After the exploration call is done, we provide the app layout via Figma or Adobe XD as per the client's requirement. This is done so that the expectation is set right and finalized before the work on the tech begins! Such constant focus on client needs makes us the best Android app developer in Kolkata. Every expert working in our Android development team bears on his/her shoulder the feeling of pride about working with the best App development company in Kolkata.  <br> We work on projects of varying scale. Be it a huge MNC client or a local business looking for a classic Android solution at an affordable rate, we are the App developer in Kolkata that you need. Our process and tech stacks are highly secure and we offer free backups of your project so that you can live stress-free. The best way you will find out more about us is by connecting with us through our exploration call!  <br> <strong> Have an Idea? Let's discuss this on our exploration call!  <strong>",
       },
       workimg: "/services23/Android App Development 2.webp",
       packageimg: "/services23/Android App Development 3.webp",
@@ -477,18 +475,18 @@ export const getStaticProps = async ({ params }) => {
         "/images/app development 3.webp",
       ],
     },
-    "ios-app-development": {
-      metatitle: "iOS App Development Company in Siliguri | Reboot AI Pvt Ltd",
+    "ios-app-development-company-in-siliguri": {
+      metatitle: "iOS App Development Company in Siliguri - Reboot AI Pvt Ltd",
       metadescription:
         "Get a high-performing, user-friendly iOS app with Reboot AI's iOS App Development services. Deliver exceptional experiences to your iPhone and iPad users.",
-      title: "iOS App Development",
+      title: "iOS App Development Company in Siliguri",
       content: {
         serviceimg: "/servicesfast/iOS App Development 1.webp",
-        servicename: "iOS App Developer",
+        servicename: "iOS App Development Company in Siliguri",
         servicedesc1:
           "Top-notch app development is a necessity to reach customers around the globe. When it comes to iOS, the app must be developed and compatible with all Apple devices on the App Store. For businesses looking for an iOS app developer in Siliguri, Reboot AI Private Limited is just a call away.",
         servicedesc2:
-          "Due to Apple’s widespread popularity, getting an iOS app is one step closer to improving your sales. Our iOS app developers are specialists in different programming languages like Swift or Objective-C, and thus we build, test, and provide the final app according to the business needs. We offer custom iOS solutions to organizations of all sizes.</br> We assist businesses in developing scalable and functional iOS applications with secure features. We use the latest technologies such as IoT and advanced AI and ML solutions to transform your business idea into reality. To enhance data security, we further utilize blockchain technology to protect sensitive information that can only be decrypted by authorized owners. Thus, we provide cloud services for a smooth customer experience. Our iOS app development services in India are integrated with robust technologies so that businesses can develop. To reach a larger audience, we develop apps that can increase the business's digital presence. Our R&D is focused on delivering an app that can improve the revenue of the business. Connect with us to create a futuristic app.",
+          "Due to Apple's widespread popularity, getting an iOS app is one step closer to improving your sales. Our iOS app developers are specialists in different programming languages like Swift or Objective-C, and thus we build, test, and provide the final app according to the business needs. We offer custom iOS solutions to organizations of all sizes.</br> We assist businesses in developing scalable and functional iOS applications with secure features. We use the latest technologies such as IoT and advanced AI and ML solutions to transform your business idea into reality. To enhance data security, we further utilize blockchain technology to protect sensitive information that can only be decrypted by authorized owners. Thus, we provide cloud services for a smooth customer experience. Our iOS app development services in India are integrated with robust technologies so that businesses can develop. To reach a larger audience, we develop apps that can increase the business's digital presence. Our R&D is focused on delivering an app that can improve the revenue of the business. Connect with us to create a futuristic app.",
       },
       workimg: "/services23/iOS App Development 2.webp",
       packageimg: "/services23/iOS App Development 3.webp",
@@ -544,18 +542,18 @@ export const getStaticProps = async ({ params }) => {
         "/images/app development 3.webp",
       ],
     },
-    "flutter-app-development": {
-      metatitle: "Flutter App Development Company in India - Reboot AI Pvt Ltd",
+    "flutter-developer-in-kolkata": {
+      metatitle: "Flutter Developer in Kolkata",
       metadescription:
-        "Cross-platform app development made easy with Flutter. Reboot AI offers Flutter App Development to create visually stunning apps for both Android and iOS.",
-      title: "Flutter App Development",
+        "Get your concept converted into powerful multi-platform apps with our Flutter app developers in Kolkata. Google's new open-source platform Flutter — A way for companies to develop dynamic, rich applications with one codebase that runs on Android, iOS, web and desktop.",
+      title: "Flutter Developer in Kolkata",
       content: {
         serviceimg: "/servicesfast/Flutter App Development 1.webp",
-        servicename: "Flutter App Development",
+        servicename: "Flutter Developer in Kolkata",
         servicedesc1:
-          "Flutter applications are developed using a single codebase that works across multiple platforms. Initially created by Google, Flutter is an open-source framework. We provide top-notch Flutter app development services for mobile, desktop, and web applications. Our team of experts is ready to create customized apps tailored to your business needs.",
+          "Get your concept converted into powerful multi-platform apps with our Flutter app developers in Kolkata. Google’s new open-source platform Flutter — A way for companies to develop dynamic, rich applications with one codebase that runs on Android, iOS, web and desktop. <br> We at Reboot AI really indeed specialize in providing absolutely customised solutions that meet your business needs and requirements. We are one of the absolutely leading Flutter app developers in Kolkata who design apps which work as if they were native and make your users have a great and fantastic experience. Be it a new app development or an upgrade of an existing app, our turnkey solutions include app migration and API integrations to build scalable systems that keep your app on the market first. ",
         servicedesc2:
-          "Utilize cutting-edge services to create a dynamic, feature-rich, and cross-platform Flutter application. Our team specializes in developing apps that can handle high traffic seamlessly. We provide expert guidance and craft strategies tailored to your business objectives. Additionally, with our Flutter app development services in India, we can assist in migrating or upgrading your existing app to the latest version. We create both Android and iOS applications, pushing the limits of traditional app development. Our goal is to deliver a multi-platform user experience, enabling you to launch a fully functional app. </br> As a premier Flutter app development company in India, we are here to help you reach your business objectives. Our Flutter applications deliver a native-like experience and perform seamlessly across a wide range of Android and iOS devices. Supported by Google, Flutter offers an extensive UI library that accelerates the app development process. In the years ahead, the Dart programming language is expected to gain popularity, leading to a significant increase in demand for Flutter applications.",
+          "With Flutter's complete UI library and Dart programming language we can develop faster with the highest possible quality. Our seasoned developers use these to develop simple and visually appealing applications for all kinds of users. We’re very much focused on innovation and leading-edge technology and helping companies achieve their goals and remain competitive. We have products from startups to enterprises and they are designed for growth and sustainability. Working with the best Flutter app developers in Kolkata, make your dreams fully real with effective, cross-platform applications that leave a mark and a lasting impression to go with as well.",
       },
       workimg: "/services23/Flutter App Development 2.webp",
       packageimg: "/services23/Flutter App Development 3.webp",
@@ -612,14 +610,14 @@ export const getStaticProps = async ({ params }) => {
         "/images/app development 3.webp",
       ],
     },
-    "ai-ml-integration": {
+    "ai-ml-integration-services-in-kolkata": {
       metatitle: "AI & ML Integration Services in Kolkata - Reboot AI Pvt Ltd",
       metadescription:
         "Unlock the power of Artificial Intelligence and Machine Learning with Reboot AI's integration services. Drive innovation and improve business processes with AI solutions.",
-      title: "AI & ML Integration",
+      title: "AI & ML Integration Services in Kolkata",
       content: {
         serviceimg: "/servicesfast/ai and ml 1.webp",
-        servicename: "AI & ML Integration support",
+        servicename: "AI & ML Integration Services in Kolkata",
         servicedesc1:
           "Efficient, precise, and contemporary technology solutions can be achieved through the integration of AI and ML. Recognized as one of the most forward-looking technologies, this market has provided significant advantages to numerous businesses. Currently, companies are gradually incorporating AI and ML into their operations to fulfill their business objectives. Our business strategies can help you develop applications and ensure a secure integration of both AI and ML. Our AI and ML services are designed to do extensive data analysis and use ML models to increase the efficiency of the system.",
         servicedesc2:
@@ -680,19 +678,18 @@ export const getStaticProps = async ({ params }) => {
         "/images/ai and ml slide 2.webp",
       ],
     },
-    "business-consultation": {
-      metatitle:
-        "Business Consultation Services in Kolkata - Reboot AI Pvt Ltd",
+    "business-consultation-service-in-kolkata": {
+      metatitle: "Business Consultation Service in Kolkata",
       metadescription:
         "Get expert business consultation services to scale your enterprise. We help you navigate challenges and implement strategies for sustainable growth.",
-      title: "Business Consultation",
+      title: "Business Consultation Service in Kolkata",
       content: {
         serviceimg: "/servicesfast/Business Consultation 1.webp",
-        servicename: "Business Consultation",
+        servicename: "Business Consultation Service in Kolkata",
         servicedesc1:
-          "Today, consulting encompasses much more than mere advice. It provides solutions, assesses risks, and performs thorough market growth analyses. For addressing business challenges and developing new strategies, business consulting services are the ideal choice. These services can help identify and resolve conflicts, ultimately fostering business growth.",
+          "Our business consultation in Kolkata is meant to help businesses travel a long way to meet the prospect of issues that come their way, facilitate the opportunity, and work on strategies for the growth of their businesses in the coming future. Starting from acquiring the licenses required to generate the first revenue, we offer all the solutions along a clear set out road to your success. Our approach includes consulting on logo creation, lead generation strategies, and business solutions based on your business requirements.",
         servicedesc2:
-          "Our business consultants are skilled in predicting market trends and adjusting to the ever-changing market landscape. We can identify the necessary steps to reduce daily disruptions. If your company is seeking a proactive business consultant in Kolkata, look no further. We specialize in customer-centric operations and are committed to providing you with the guidance and insights needed to thrive in a competitive landscape.</br>Enhance your objectives with our guidance platform and expand your industry knowledge to boost your success. We adopt a digital transformation approach to develop adaptable strategies tailored for businesses across various sectors. In any organization, stakeholders play a crucial role as financial decision-makers, and their input is vital for driving growth. Our business consulting services can support you in achieving your goals through comprehensive market analysis. Partner with us to stay ahead of your competitors in meeting all compliance requirements. </br>",
+          "By keeping risk assessments very deep within the markets and giving strong market insights, empowering businesses to address the dynamics of the markets is what our services entail. Say, an entrepreneur is just starting their business venture or a growing established organization looking for expansion has to approach business consultation in Kolkata to put them in the strategic direction necessary for survival in a very competitive environment.</br> At Reboot AI, we have got years of experience offering personal advice to meet the business needs of your organization. Our trained specialists dedicate themselves to sharing the actionable advice and fresh market strategies for solving your biggest issues. As the market demand grows, we will consult you with the leading strategies. Get engaged with us for business consultation in Kolkata and take the first step to realizing your business vision. ",
       },
 
       workimg: "/services23/business consulting 2.webp",
@@ -737,15 +734,17 @@ export const getStaticProps = async ({ params }) => {
         "/images/consulting 3.webp",
       ],
     },
-    "performance-marketing": {
+    "performance-marketing-agency-in-kolkata": {
       metatitle:
-        "Digital Marketing Agency in Kolkata - Performance Marketing Agency",
+        "Digital Marketing Agency in Kolkata - Performance Marketing Agency in Kolkata",
       metadescription:
         "Achieve measurable results with Reboot AI's Performance Marketing services. Maximize ROI through targeted campaigns designed to increase conversions and sales.",
-      title: "Performance Marketing",
+      title:
+        "Digital Marketing Agency in Kolkata - Performance Marketing Agency in Kolkata",
       content: {
         serviceimg: "/servicesfast/Performance Marketing 1.webp",
-        servicename: "Performance Marketing",
+        servicename:
+          "Digital Marketing Agency in Kolkata - Performance Marketing Agency in Kolkata",
         servicedesc1:
           "Brands have started utilizing performance marketing to boost their brand visibility. By launching targeted campaigns, they focus on reaching potential customers who are likely to convert into buyers. Our company is dedicated to delivering high returns by employing conversion rate optimization strategies to enhance user experience. These services not only boost brand value and expand market reach but also ensure that brands only incur costs when their objectives are achieved.",
         servicedesc2:
@@ -802,18 +801,18 @@ export const getStaticProps = async ({ params }) => {
       pagedesignheading: "Rank 24*7 on Top of Google",
       pagedesigns: ["/images/marketing 1.webp", "/images/marketing 2.webp"],
     },
-    "pr-brand-building": {
-      metatitle: "PR & Branding Agency in Kolkata - Reboot AI Pvt Ltd",
+    "influencer-marketing-agency-in-kolkata": {
+      metatitle: " Influencer Marketing Agency in Kolkata",
       metadescription:
-        "Boost your brand image and create lasting impressions with our PR & Branding services. Build trust and authority in your industry with expert PR strategies.",
-      title: "PR & Brand Building",
+        "Boost your brand's visibility with Reboot AI, the top Influencer agency in Kolkata. From influencer collaborations to award recognition, we deliver tailored solutions to elevate your brand in 2025.",
+      title: "Influencer Marketing Agency in Kolkata",
       content: {
         serviceimg: "/servicesfast/pr and brand identity 1.webp",
-        servicename: "PR & Branding Solutions",
+        servicename: "Influencer Marketing Agency in Kolkata",
         servicedesc1:
-          "The PR & Branding Agency Solution is dedicated to developing and managing a brand's market image. Our branding services enhance a brand's visual identity, including its logo and color scheme, to project a positive image within the industry. Effective branding not only defines a company's value but also helps to establish a distinctive brand presence. By employing strategic branding techniques, businesses can expand and effectively position their brands in the marketplace.",
+          "Are you a brand owner?  Does the competitive scenario in the marketplace make you worried about finding best PR & branding agency in Kolkata? Well, then your search ends here at Reboot AI Pvt Ltd. If you haven't heard our name before, we must tell you Reboot AI Pvt Ltd is a one stop solution for Branding your Business, where you can avail tailored solutions to get the desired exposure it deserves. <br> As a trusted Influencer Marketing agency in Kolkata, we offer a full suite of services designed to elevate your brand image right from the scratch. We believe in offering value to our clients, and that's why our in house experts focus on creating a distinguishing brand image that helps creating a position in the competitive marketplace. ",
         servicedesc2:
-          "We specialize in press release distribution and a range of media coverage services. At our Branding Solution Agency, we prioritize preserving a positive image for your brand across both traditional and digital platforms. In times of crisis, our team takes decisive action to mitigate damage and safeguard your brand's values.</br> Today, you have the opportunity to enhance your brand's image through comprehensive media coverage and targeted outreach to your ideal audience. With our cutting-edge marketing strategies, your brand can establish a significant presence in the industry. Our PR experts specialize in linking your brand with valued customers, helping to boost brand awareness with our public relations objectives. Recognizing the importance of public perception, we prioritize the creation of positive publicity.Whether you're introducing a new product or enhancing an existing one, our branding solution agency is here to handle all your needs. We aim to provide affordable PR solutions that help businesses boost their revenue. ",
+          "In 2025, businesses are adopting various strategies and establishing a prominent online presence is one of the key factors in today's business like influencer marketing. Considering today's business demands, our in-house experts offer a full range of end-to-end services for your brand. Our PR and branding services include <br> Now you can connect your brand with well-known personalities. <br> In addition, collaborate with all your favorite influencers, podcasters, and online personalities from social media, and reach out to more potential customers with their help.You can also get solution for brands to achieve desired recognition in prestigious industry awards.So get ready to collaborate with the best PR & branding agency in Kolkata and start your brand's journey towards the limelight big time. ",
       },
 
       workimg: "/services23/PR & Branding 2.webp",
@@ -860,18 +859,18 @@ export const getStaticProps = async ({ params }) => {
         "/images/award 4.webp",
       ],
     },
-    "google-marketing": {
-      metatitle: "SEO Agency in Kolkata - Google Marketing Service ",
+    "seo-agency-in-kolkata": {
+      metatitle: "SEO Agency in Kolkata",
       metadescription:
-        "Enhance your digital presence with Google Marketing services. Leverage Google Ads and SEO strategies to increase visibility, drive traffic, and boost sales.",
-      title: "Google Marketing",
+        "Looking for the best SEO agency in Kolkata in 2025? Reboot AI specializes in GMB Ranking, Website SEO, and PPC optimization, driving organic traffic and maximizing ROI for your business growth.",
+      title: "SEO Agency in Kolkata",
       content: {
         serviceimg: "/servicesfast/Google Martketing 1.webp",
-        servicename: "Google Marketing",
+        servicename: "SEO Agency in Kolkata",
         servicedesc1:
-          "To achieve the best results from your campaigns and drive revenue growth for your business, utilizing Google marketing services is essential. Google Ads currently dominates the market, providing superior returns on investment. To enhance your online presence and ensure the success of your campaigns, it's vital to seek guidance that can simplify the vast landscape of online advertising. With millions of users accessing the Google search engine every day, there is no larger targeted audience available than that offered by Google.",
+          "If you are running a business in 2025, we hope you must have heard of SEO or Serach Engine Optimization; the OG in the Branding world! At Reboot AI Pvt Ltd, we have a team of expert professionals, who own extensive and in-depth knowledge of Google SEO, and can help you reach wider audience with various Organic strategies. As a dominant force in the market, Google SEO guarantees exceptional growth and Returns on Investment, ensuring your business attracts the right audience. By any chance if you are in search of a trustworthy SEO agency in Kolkata, we are here to help you out. ",
         servicedesc2:
-          "Collaborating with a professional Google Marketing cum SEO Agency in Kolkata, such as ours, brings valuable industry expertise and in-depth market trend analysis. Our research and development team is dedicated to delivering real-time insights and crafting optimal strategies for your business. We focus on ensuring that your products and services connect with the right audience, maximizing your return on every pay-per-click investment.</br> With Google Marketing, you can display your ads to a specific audience of your choice. Many individuals utilize Google services before making a purchase, making it an ideal platform to promote your offerings. Unlike traditional targeting methods, Google Marketing provides more precise targeting options, including geotargeting. We conduct regular A/B testing and campaign optimization, along with consistent campaign report management, to ensure you achieve your desired outcomes. Our strategist's expertise ensures the development of a robust marketing strategy that delivers profitable results and boosts revenue. Contact us to develop results-driven campaigns.",
+          "Our Google marketing Startegy in Kolkata can help you analyze the market trends to understand the demand of the customers. In addition, our R&D Team can also help you avail real-time insights to find the right audience. It will further help you define your customer persona and come up with unique ideas to grab their attention. Google Ads: Boost your online presence with precise ad targeting to reach millions of buyers online. SEO Services: Attract more buyers with organic traffic with the help of Search Engine Optimization. Campaign Optimization: Conduct regular tests and optimizations to maximize your ROI and boost sales by up to 80% or even more. <br> Reboot AI Pvt Ltd is a one stop Google marketing agency in Kolkata that has been helping individuals for years to generate higher revenue with impressive results. Contact us today and achieve your business goals with our specialized Google marketing services.",
       },
 
       workimg: "/services23/google marketing 2 (1).webp",
@@ -925,19 +924,18 @@ export const getStaticProps = async ({ params }) => {
 
       pagedesigns: ["/images/marketing 1.webp", "/images/marketing 2.webp"],
     },
-    "social-media-solutions": {
-      metatitle:
-        "Social Media Agency in Siliguri - influencer marketing agency",
+    "social-media-agency-in-siliguri": {
+      metatitle: "Social Media Agency in Siliguri",
       metadescription:
-        "Elevate your brand with expert Social Media Solutions though Insta, Linkedin. Engage your audience, grow your followers, and create meaningful connections across platforms.",
-      title: "Social Media Solutions",
+        "A strong web presence is fundamental and the base to a business's growth and development. A social media agency in Siliguri can offer various services; for instance, we Reboot AI can offer many services and help businesses strengthen their online presence on different forms and platforms of social media.",
+      title: "Social Media Agency in Siliguri",
       content: {
         serviceimg: "/servicesfast/social media solution 1.webp",
-        servicename: "Social Media Solutions",
+        servicename: "Social Media Agency in Siliguri",
         servicedesc1:
-          "To foster brand growth, establishing a strong social media presence is essential. Over the past few years, social media has expanded significantly and holds great potential for future success. Consequently, brands are dedicating more resources to enhance their brand value. Social media marketing effectively engages customers and boosts brand visibility.",
+          "A strong web presence is fundamental and the base to a business's growth and development. A social media agency in Siliguri can offer various services; for instance, we Reboot AI can offer many services and help businesses strengthen their online presence on different forms and platforms of social media. We specialize in organic marketing strategies, organic video ranking, and paid social media ads, all aimed at producing clear results and boosting your online impact.",
         servicedesc2:
-          "As the leading social media agency in Siliguri, we assist businesses in selecting the ideal platforms to promote their products and services. Our team creates tailored strategies for various social media channels, including Facebook, Twitter, Instagram, and LinkedIn, guiding you in making informed decisions. Furthermore, we conduct deep data evaluation to evaluate ad campaign performance and reveal valuable insights to upgrade your strategies.</br> Statistics indicate that social media audiences have expanded since 2020, with individuals spending at least two hours daily across various platforms. This growth presents a valuable opportunity to connect with your target demographics. A forward-thinking digital marketing agency in Siliguri, like ours, can help your business craft a creative social media strategy that generates more leads. </br>Move beyond conventional methods for selling your products and services. Our social media solutions guarantee rapid results. Our influencer marketing approch can improve your audience, strengthen customer loyalty, and elevate your business return on investment. With our revenue-driven social media strategies, you'll be able to craft more impactful content for your audience.",
+          "We use a data-driven approach, combining organic tactics such as content creation, audience targeting, and influencer collaboration with paid campaigns to amplify your brand's reach and sales. We work on getting your video content noticed, which in turn will help it rank better in search results as well. Being the best social media agency in Siliguri, we understand the changing social media trends and algorithms, which helps us improve strategies that work well. <br> Our team co-works to develop campaigns suiting your business goals. Creating creative content along with running relevant targeted ads ensure that your brand stays important as well as front in the view of customers for you, within a difficult marketplace with cut-throat competition. From requiring free engagement through to requiring stronger paid ad schemes, our social media agency in Siliguri can leverage the best instruments and experiences needed to succeed. <br> We focus on building sustainable organic natural growth through content and engagement that attracts your target audience. Our targeted paid ads are designed to reach the right audience, driving measurable results and conversions.",
       },
 
       workimg: "/services23/social media solution 2.webp",
@@ -995,18 +993,18 @@ export const getStaticProps = async ({ params }) => {
         "/images/social media 3.webp",
       ],
     },
-    "it-consultation": {
-      metatitle: "IT Consultation Services in Kolkata - Reboot AI Pvt Ltd",
+    "it-consultation-service-in-kolkata": {
+      metatitle: "IT Consultation Service in Kolkata",
       metadescription:
-        "Reboot AI offers professional IT Consultation services to help businesses navigate tech challenges, optimize infrastructure, and implement cutting-edge solutions.",
-      title: "IT Consultation",
+        "As the real world is gradually shrinking, the virtual world has opened up its doors for multiple avenues of opportunities in various walks of life. The World Wide Web (WWW) is an endless cosmos of numerous web entities and Ecommerce portals that represent a wide array of business and service models. If you have a requirement for a certain service or product, chances are you will meet the right match for your needs through a simple Google search. The virtual world is literally the destination for all up and coming businesses to connect with their prospective buyers and clients in the near future. Reboot AI is an IT Consultation agency in Kolkata that offers impeccable & immaculate services for brands and enterprises wishing to take their businesses online.",
+      title: "IT Consultation Service in Kolkata",
       content: {
         serviceimg: "/servicesfast/IT Consulting 1.webp",
-        servicename: "IT Consultation",
+        servicename: "IT Consultation Service in Kolkata",
         servicedesc1:
-          "IT consultation plays a crucial role in meeting project goals within the specified time and budget constraints. This service facilitates the seamless operation of a company and aids in adapting to evolving infrastructures. In today's landscape, IT consultation encompasses all aspects of the IT industry and offers strategic services to prospective clients.",
+          "As the real world is gradually shrinking, the virtual world has opened up its doors for multiple avenues of opportunities in various walks of life. The World Wide Web (WWW) is an endless cosmos of numerous web entities and Ecommerce portals that represent a wide array of business and service models. If you have a requirement for a certain service or product, chances are you will meet the right match for your needs through a simple Google search. The virtual world is literally the destination for all up and coming businesses to connect with their prospective buyers and clients in the near future. Reboot AI is an IT Consultation agency in Kolkata that offers impeccable & immaculate services for brands and enterprises wishing to take their businesses online.",
         servicedesc2:
-          "If you're seeking an IT consultation company in Kolkata, look no further. We specialize in evaluating your products and services to enhance overall efficiency while keeping costs in check. Our approach includes a comprehensive digital transformation strategy aimed at fostering a profitable business. We will identify potential risks and create a tailored roadmap for success. To optimize your resources and minimize waste, our team will pinpoint any obstacles, ensuring you derive maximum value from your current offerings.</br> When developing any product, we prioritize comprehensive documentation, streamlined workflows, and robust support. Our agency is equipped to implement a sophisticated security system, ensuring that no vulnerabilities exist. We are committed to being your long-term partner, addressing any challenges that could threaten your IT operations. Our emphasis is on providing cutting-edge technologies, enabling you to stay at the leading edge of innovation.</br> We are committed to analyzing your business operations and offering valuable insights, enabling you to make necessary adjustments and enhance the efficiency of your offerings.",
+          "Cutting edge technology and latest advancements combined with state-of-the-art infrastructure to propel business websites to instant prominence on the online space. Our IT Consultation Agency in Kolkata covers all of these aspects that are key to the launch and success of any business or brand online. <br> Reboot AI is an IT Consultation agency in Kolkata that provides end to end deliverables that include conceptualization, wireframe design and live deployment of web based applications along with marketing services to ensure optimum visibility for the end user. Our IT Consultation team consists of highly experienced subject matter experts who have had a prior background in delivering unmatched and unparalleled results. Our workspace is protected by a safe, secure, and highly foolproof environment allowing no scope for firewall breach or data compromise and data theft. ",
       },
 
       benifits: [
@@ -1053,18 +1051,18 @@ export const getStaticProps = async ({ params }) => {
         "/images/consulting 3.webp",
       ],
     },
-    "web-and-apps-security": {
-      metatitle: "Web Apps & Security Services in Kolkata - Reboot AI Pvt Ltd",
+    "cyber-security-service-in-kolkata": {
+      metatitle: "Cyber Security Service in Kolkata",
       metadescription:
-        "Protect your business with our Web Apps & Security services. We provide end-to-end security solutions to secure your web applications from potential threats.",
-      title: "Web & Apps Security",
+        "Reboot AI, the best Cyber Security provider in Kolkata; runs a global network providing many of the security services listed above, including DDoS mitigation, API protection a Web Application Firewall, and more.",
+      title: "Cyber Security Service in Kolkata",
       content: {
         serviceimg: "/servicesfast/Web & Apps Security 1 (1).webp",
-        servicename: "Web Apps & Security",
+        servicename: "Cyber Security Service in Kolkata",
         servicedesc1:
-          "Today, cyber threats pose significant challenges to online businesses, making the security of web applications crucial. Web security safeguards computers and servers while protecting sensitive company information. By implementing effective scanning and malware protection, potential threats can be effectively mitigated.",
+          "Web application security, also popularly known in industry circles by its abbreviated form Web App Sec, is the science of designing safe and secure web base applications that are not vulnerable to frequent cyber attacks or breach of privacy and data. This is achieved by building secure and foolproof framework that are protected from malicious attacks. Web based applications such as softwares are extremely dynamic ecosystems by themselves and as such need constant upgrading to eliminate any loopholes in the system. Web application security leverages secure production practices and implementation of security measures in the software development life cycle (SDLC), ensuring that the design-level flaws and implementation-level bugs are addressed.",
         servicedesc2:
-          "We monitor and analyze any indications of virus attacks or security breaches in your web applications. Our team is committed to conducting regular assessments for vulnerabilities to safeguard you against hackers, cyber theft, and malware threats. Ensuring web security is crucial for the safe and efficient operation of any business. With the support of our top-tier experts, you will receive comprehensive assistance regarding CISSP and CREST CEH certifications.</br> To safeguard your company’s data, it is essential to maintain up-to-date SSL certificates and encryption methods. Our security team diligently ensures that all necessary patches are applied to mitigate any potential security vulnerabilities. To protect vital information, our team implements protocols that secure the code.  Our Web Security Agency in Kolkata offers top-notch web security solutions, safeguarding the organization against the latest cyber threats. Furthermore, we defend against hackers and bots attempting to infiltrate or steal the company's data.",
+          "As dynamic as the world of web based applications can get, requiring constant monitoring and surveillance to identify security risks, Reboot AI is committed to change as and when new attacks and threats emerge. Some of the common web application security risks that could affect the security and performance of any software cycle include Zero Day Vulnerability, Memory Corruption, Shadow APIs, Third Party Code abuse and attack of surface level misconfigurations.<br> Reboot AI, the best Cyber Security provider in Kolkata; runs a global network providing many of the security services listed above, including DDoS mitigation, API protection a Web Application Firewall, and more. <br> These services are all designed to run through any data centre in our network, allowing them to stop attacks close to their source. In addition, our web application security services are compatible to work in all kinds of website infrastructure.",
       },
 
       benifits: [
@@ -1107,19 +1105,18 @@ export const getStaticProps = async ({ params }) => {
 
       pagedesigns: ["/images/Websecurity 1.webp", "/images/Websecurity 2.webp"],
     },
-    "creative-ui-design": {
-      metatitle:
-        "UI/UX Development Agency in Kolkata- Creative Designing Agency",
+    "ui-ux-developer-in-kolkata": {
+      metatitle: "UI-UX Developer in Kolkata",
       metadescription:
-        "Stand out with Creative UI Solutions designed to engage users and enhance their experience. Get intuitive, aesthetic, and user-friendly designs for your website or app.",
-      title: "Creative UI/UX Design",
+        "Looking for expert UI/UX developers? Reboot AI specializes in creative, user-focused designs that enhance digital experiences. Transform your vision into reality with our innovative and industry-leading solutions!",
+      title: "UI-UX Developer in Kolkata",
       content: {
         serviceimg: "/servicesfast/Creative UI design 1.webp",
-        servicename: "Creative UI/UX Development",
+        servicename: "UI-UX Developer in Kolkata",
         servicedesc1:
-          "Our Creative UI/UX Development specialize in designing user interfaces and experiences for websites, applications, and various digital products. These services enhance user-friendliness, boost customer engagement, and drive revenue growth. Partner with us to turn your vision into a seamless user experience that stands out in the industry. We craft intuitive and user-centric UI/UX designs that adapt to your evolving business needs. Our streamlined design process guarantees top-quality results. We offer a comprehensive range of UI/UX services, encompassing branding, responsive web design, mobile app design, consulting, and promotional design, all leveraging the latest trends and technologies. Through our UI/UX Development in Kolkata, we identify opportunities to make your platform smoother, faster, and more intuitive.",
+          "Reboot AI Private Limited has emerged as a prominent technology partner and UI developer in Kolkata. As a premier UI developer in Kolkata we are committed to deliver complete UI solutions that will transform digital landscapes. With a substantial proven track record of developing cutting-edge digital products using the latest software technologies we have empowered 1000+ businesses to achieve their technological ambitions big time. Our approach combines 100% creative, unique, and industry-ahead design methodologies that have set new yardsticks and benchmarks in the world of digital innovation.",
         servicedesc2:
-          "Turn your vision into a smooth user experience centered around user-focused design principles, ensuring every product effectively serves your target audience. Our team of specialists upholds the highest standards, enabling users to benefit from our services. Embark on your digital journey with our expert support. By integrating user research methods with our offerings, we deliver a holistic UI/UX design strategy that caters to the needs of our clients. Our designers provide exceptional concepts for mobile app designs that prioritize quick loading times, appealing aesthetics, ease of use, and improved customer satisfaction.",
+          "As an IT startup based in West Bengal, Reboot AI has distinguished itself as an UI developer in Kolkata by offering technology solutions at an affordable and feasible rate while maintaining exceptional quality. Our international experience in the digital domain enables us to craft sophisticated interfaces that meet global standards. Our 100% satisfaction promise and quick delivery times demonstrate our dedication to quality.<br> For entrepreneurs and companies looking to develop business solutions, build high-end apps, powerful SaaS platforms, or strong e-commerce ecosystems, we are your perfect option! We at Reboot AI provide our customers with comprehensive technological support. By leveraging contemporary web frameworks and innovative strategies, Reboot AI ensures that each project not only meets but exceeds our client expectations, thus building a lifelong trusted partnership for businesses across diverse industries.",
       },
 
       benifits: [
@@ -1166,18 +1163,18 @@ export const getStaticProps = async ({ params }) => {
         "/images/creativeui 3.webp",
       ],
     },
-    "brand-starter-solution": {
-      metatitle: "Brand Building  Agency Kolkata - Reboot AI Pvt Ltd",
+    "brand-starter-solution-agency-in-kolkata": {
+      metatitle: "Brand Starter Solution Agency in Kolkata",
       metadescription:
         "Kickstart your brand with Reboot AI's Brand Starter Solutions. From logo design to marketing strategies, we provide everything to launch your brand successfully.",
-      title: "Brand Starter Solution",
+      title: "Brand Starter Solution Agency in Kolkata",
       content: {
         serviceimg: "/servicesfast/Brand Starter Solution 1.webp",
-        servicename: "Brand Starter Solution",
+        servicename: "Brand Starter Solution Agency in Kolkata",
         servicedesc1:
-          "Brand starter solutions provide companies with a boost during their early stages. These services encompass everything from brand identity to design, resulting in effective branding strategies. Such services support both startups and established businesses in broadening their portfolios and moving closer to their objectives. The key question is: in a landscape filled with trending brands and emerging technologies, does your business possess the unique identity needed to stand out?",
+          "Brand starter solution is a strategic approach that is designed to help businesses establish a very strong market identity. These solutions go beyond mere visual design, and focus on creating a holistic brand foundation that connects with the target audiences. Reboot AI Private Limited is a highly dynamic technology company. It has emerged as an immensely prominent brand starter solution provider. Our goal is to turn business ideas into powerful market identities. We are a state-of-the-art web and app development company that specializes in creating smart digital solutions that help companies in a variety of sectors. ",
         servicedesc2:
-          "Our all-encompassing branding solutions provide the essential tools and analysis to elevate your business vision. We offer unmatched support and guidance in sourcing and cost optimization. Our strategic approaches are designed to ensure that your brand receives the necessary backing to achieve profitability. We help entrepreneurs, corporations, and non-profits develop robust brands. Additionally, we provide the expertise to navigate market trends effectively.</br> Every business is distinct, and to elevate your brand, it needs unique assets to differentiate itself in the marketplace. Our brand building agency in Kolkata safeguards your brand assets and enhances your brand's value. Additionally, we assist in developing, managing, and promoting brands at every stage of their journey. Customers are essential to any business, making it vital to cultivate and nurture those relationships.",
+          "Our brand building services are meticulously designed to enable startups and existing organizations in achieving unique market positioning. By leveraging advanced AI technologies we at Reboot AI offers end-to-end support ranging from logo design and marketing strategies to sophisticated digital infrastructure development and efficient brand starter solution. Our company's approach to digital innovation combines creative design, technological innovation, and strategic insights to help businesses differentiate themselves in competitive landscapes. <br> With a definite proven track record of supporting 1000+ businesses, Reboot AI provides absolutely tailored solutions that address specific organizational needs. Our multidisciplinary team focuses on developing a multitude of market needs from custom web applications, to e-commerce platforms, and brand identity packages that drive business growth and revenue generation. We establish ourselves as a reliable, long-term technology partner for business owners who aim to create strong, industry-leading brands by providing clear pricing, ongoing post-delivery support, and dedicated customer communication. The fundamental objective of our organization is turning business obstacles into opportunities by using AI-powered solutions that open up fresh avenues and new vistas for development and creativity.",
       },
       benifits: [
         "Expert Designs",
