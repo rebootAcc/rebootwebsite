@@ -1,17 +1,35 @@
-import AboutusComponent from "@/components/AboutusComponent";
-import OurClient from "@/components/OurClient";
 import OurProduct from "@/components/OurProduct";
 import OurProjects from "@/components/OurProjects";
 import OurResponsibility from "@/components/OurResponsibility";
 import OurServices from "@/components/OurServices";
-import OurUseTechnology from "@/components/OurUseTechnology";
 
 import dynamic from "next/dynamic";
 import Head from "next/head";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-const Slider = dynamic(() => import("react-slick/lib/slider"), {
+const OurUseTechnology = dynamic(
+  () => import("@/components/OurUseTechnology"),
+  {
+    ssr: false,
+  }
+);
+
+const AwardAndRecognitions = dynamic(
+  () => import("@/components/AwardAndRecognitions"),
+  {
+    ssr: false,
+  }
+);
+
+const AboutusComponent = dynamic(
+  () => import("@/components/AboutusComponent"),
+  {
+    ssr: false,
+  }
+);
+
+const OurClient = dynamic(() => import("@/components/OurClient"), {
   ssr: false,
 });
 
@@ -30,9 +48,6 @@ const HomePageBlogSection = dynamic(
 );
 
 export default function Home() {
-  const [slidesToShow, setSlidesToShow] = useState(3);
-  const [autoslide, setAutoslide] = useState(false);
-
   const [slidesToShowReview, setSlidesToShowRiview] = useState(3);
 
   useEffect(() => {
@@ -61,53 +76,6 @@ export default function Home() {
     };
   }, []);
 
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth <= 340) {
-        setSlidesToShow(1);
-        setAutoslide(true);
-      } else if (window.innerWidth <= 560) {
-        setSlidesToShow(2);
-        setAutoslide(true);
-      } else if (window.innerWidth <= 860) {
-        setSlidesToShow(3);
-        setAutoslide(false);
-      } else if (window.innerWidth <= 1024) {
-        setSlidesToShow(3);
-        setAutoslide(false);
-      } else if (window.innerWidth <= 1780) {
-        setSlidesToShow(3);
-        setAutoslide(false);
-      } else {
-        setSlidesToShow(3);
-        setAutoslide(false);
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    handleResize();
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-  const settings = {
-    infinite: true,
-    slidesToShow: slidesToShow,
-    slidesToScroll: 1,
-    autoplay: autoslide,
-    speed: 6000,
-    autoplaySpeed: 2000,
-    arrows: false,
-  };
-
-  const awardsLogo = [
-    "/icons/google-partner-logo.webp",
-    "/icons/meta-business-partner-logo.webp",
-    "/icons/makeinindia.webp",
-  ];
-
   const aboutcontent = {
     aboutcontent:
       "At Reboot AI Private Limited, our mission is to enhance the competitiveness and agility of companies through innovative software solutions. We empower individuals and organizations with exceptional design, reliable technology, and ongoing support to drive transformation within their industries. Based in Kolkata, West Bengal, we offer comprehensive services across India. Our offerings include web and app development, as well as business and IT consulting. Our development processes are designed to boost productivity and enable businesses to scale using modern techniques. </br> As a Google Partner Firm, we specialize in delivering exceptional services to enhance website security in response to the evolving landscape of organic and paid marketing. Our team comprises skilled security professionals equipped with advanced tools to identify, upgrade, and eliminate any malicious activities. We offer a comprehensive range of expertise across sales, support, marketing, and business development to meet all your business requirements. Our current projects include an Educational Consultant CRM, Clinic Management Software, and Service Centre Management solutions. With our custom development services, clients can tailor solutions to their specific needs. We foster digital innovation through user experience-driven engineering, design thinking, product accelerators for streamlined delivery, and strategic partnerships <br/> Ensure your digital products and services offer exceptional security, reliability, and performance to distinguish yourself in the online landscape. If you’re looking for a Web Development, App Development or Agency for Brand Building , Performance Marketing -this is the right place for you. With Reboot’s advance AI Technologies automate your business operation & boost productivity. Please consult with our Sales Team for any kind of IT or Business Consultation.",
@@ -121,7 +89,13 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Reboot Ai</title>
+        <title>
+          Welcome to Reboot AI Pvt Ltd - Top Web, App Development Company
+        </title>
+        <meta
+          name="description"
+          content="IT Solutions for the Future, Most Trusted Startups for Web, Apps & Performance Marketing Services."
+        />
       </Head>
       <main>
         <video
@@ -136,32 +110,8 @@ export default function Home() {
           <source src="/videos/header-cover.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <section className="flex xl:gap-8 lg:gap-6 gap-4 justify-evenly  items-center xl:p-16 lg:p-8 p-4">
-          <h1 className="text-[#333] w-[20%] md:w-[15%] font-semibold  md:text-lg text-sm lg:text-2xl xlg:text-3xl xl:text-4xl">
-            Awards &amp; Recognitions
-          </h1>
-          <div className="md:w-[85%] w-[80%]">
-            <Slider {...settings}>
-              {awardsLogo.map((src, index) => (
-                <div
-                  className="  bg-white !flex w-full justify-center items-center p-2 md:p-4"
-                  key={index}
-                >
-                  <div className="flex justify-center items-center w-full lg:w-[95%] xl:w-[90%] shadow-[0_0_10px_2px_rgba(0,_0,_0,_0.12)] rounded">
-                    <Image
-                      src={src}
-                      alt="partner logo"
-                      width={272}
-                      height={102}
-                      priority
-                      className="rounded md:h-[5rem] h-[4rem] lg:h-[6rem] xlg:h-[8rem] w-fit "
-                    />
-                  </div>
-                </div>
-              ))}
-            </Slider>
-          </div>
-        </section>
+
+        <AwardAndRecognitions />
 
         <AboutusComponent showsection={false} content={aboutcontent} />
 

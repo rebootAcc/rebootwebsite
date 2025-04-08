@@ -3,7 +3,7 @@ import Link from "next/link";
 import BlogCards from "./BlogCards";
 import dynamic from "next/dynamic";
 import Loading from "./loading";
-import { useRouter } from "next/navigation";
+import { useRouter } from "next/router";
 const Slider = dynamic(() => import("react-slick/lib/slider"), {
   ssr: false,
 });
@@ -16,6 +16,7 @@ const HomePageBlogSection = () => {
 
   const [slidesToShow, setSlidesToShow] = useState(3);
   const [autoslide, setAutoslide] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
     const handleResize = () => {
@@ -27,16 +28,16 @@ const HomePageBlogSection = () => {
         setAutoslide(true);
       } else if (window.innerWidth <= 860) {
         setSlidesToShow(2);
-        setAutoslide(false);
+        setAutoslide(true);
       } else if (window.innerWidth <= 1024) {
         setSlidesToShow(3);
-        setAutoslide(false);
+        setAutoslide(true);
       } else if (window.innerWidth <= 1780) {
         setSlidesToShow(4);
-        setAutoslide(false);
+        setAutoslide(true);
       } else {
         setSlidesToShow(4);
-        setAutoslide(false);
+        setAutoslide(true);
       }
     };
 
@@ -53,7 +54,7 @@ const HomePageBlogSection = () => {
     slidesToShow: slidesToShow,
     slidesToScroll: 1,
     autoplay: autoslide,
-    speed: 6000,
+    speed: 5000,
     autoplaySpeed: 2000,
     arrows: false,
   };
@@ -95,6 +96,22 @@ const HomePageBlogSection = () => {
     fetchRelatedBlogs();
   }, []);
 
+  const handleBlogClick = async (blog) => {
+    try {
+      await fetch(`${backendUrl}/api/blogs/${blog.blogId}/view`, {
+        method: "PATCH",
+      });
+
+      router.push(
+        `/blogs/${blog.blogId}-${blog.heading
+          .replace(/\s+/g, "-")
+          .toLowerCase()}`
+      );
+    } catch (error) {
+      console.error("Error incrementing view count:", error);
+    }
+  };
+
   if (loading)
     return (
       <div>
@@ -123,7 +140,7 @@ const HomePageBlogSection = () => {
               className="!flex w-full justify-center items-center"
             >
               <div
-                onClick={() => router.push(`/blogs/${blog.blogId}`)}
+                onClick={() => handleBlogClick(blog)}
                 className="w-[95%] cursor-pointer"
               >
                 <BlogCards blog={blog} />

@@ -190,7 +190,7 @@ const QueryForm = () => {
             loading ? "opacity-50 cursor-not-allowed" : ""
           }`}
         >
-          {loading ? "Submitting..." : "Send Query"}
+          {loading ? "Submitting..." : "Submit"}
         </button>
         {errors.form && <p className="text-red-500 mt-3">{errors.form}</p>}
         {success && <p className="text-green-500 mt-3">{success}</p>}

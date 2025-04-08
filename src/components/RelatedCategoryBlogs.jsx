@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Link from "next/link";
 import BlogCards from "./BlogCards";
 import dynamic from "next/dynamic";
+import { useRouter } from "next/router";
 const Slider = dynamic(() => import("react-slick/lib/slider"), {
   ssr: false,
 });
@@ -10,6 +10,7 @@ const RelatedCategoryBlogs = ({ category, excludeBlogId }) => {
   const [relatedBlogs, setRelatedBlogs] = useState([]);
   const [loading, setLoading] = useState(true);
   const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
+  const router = useRouter();
 
   const [slidesToShow, setSlidesToShow] = useState(3);
   const [autoslide, setAutoslide] = useState(false);
@@ -94,6 +95,22 @@ const RelatedCategoryBlogs = ({ category, excludeBlogId }) => {
     }
   }, [category]);
 
+  const handleBlogClick = async (blog) => {
+    try {
+      await fetch(`${backendUrl}/api/blogs/${blog.blogId}/view`, {
+        method: "PATCH",
+      });
+
+      router.push(
+        `/blogs/${blog.blogId}-${blog.heading
+          .replace(/\s+/g, "-")
+          .toLowerCase()}`
+      );
+    } catch (error) {
+      console.error("Error incrementing view count:", error);
+    }
+  };
+
   if (loading) return <p>Loading related blogs...</p>;
 
   if (relatedBlogs.length === 0) return <p></p>;
@@ -106,9 +123,12 @@ const RelatedCategoryBlogs = ({ category, excludeBlogId }) => {
             key={blog.blogId}
             className="!flex w-full justify-center items-center"
           >
-            <Link href={`/blogs/${blog.blogId}`} className="w-[95%]">
+            <div
+              onClick={() => handleBlogClick(blog)}
+              className="w-[95%] cursor-pointer"
+            >
               <BlogCards blog={blog} />
-            </Link>
+            </div>
           </div>
         ))}
       </Slider>

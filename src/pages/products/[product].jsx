@@ -3,6 +3,8 @@ import Head from "next/head";
 import React from "react";
 
 const Educationalconsultantcrm = ({
+  metatitle,
+  metadescription,
   title,
   content,
   productfeatures,
@@ -18,7 +20,8 @@ const Educationalconsultantcrm = ({
   return (
     <>
       <Head>
-        <title>Reboot AI | Products</title>
+        <title>{metatitle}</title>
+        <meta name="description" content={metadescription} />
       </Head>
       <div>
         <ProductsPageDesign
@@ -44,9 +47,9 @@ export default Educationalconsultantcrm;
 export const getStaticPaths = async () => {
   return {
     paths: [
-      { params: { product: "educational_CRM_advanced" } },
-      { params: { product: "clinic_management_software" } },
-      { params: { product: "service_center_management_crm" } },
+      { params: { product: "educational-CRM-advanced" } },
+      { params: { product: "clinic-management-software" } },
+      { params: { product: "service-center-management-crm" } },
     ],
 
     fallback: false,
@@ -56,7 +59,10 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async ({ params }) => {
   // Mock data for services
   const serviceData = {
-    educational_CRM_advanced: {
+    "educational-CRM-advanced": {
+      metatitle: "Educational Consultancy Sales Calling  Marketing Automation",
+      metadescription:
+        "A CRM for Education is a comprehensive student management solution tailored to meet the specific needs of educational institutions such as universities, schools, coaching centers, consultancies, and other organizations within the education sector.",
       title: "Educational CRM Advanced",
       content: {
         serviceimg: "/images/Educational Consultant CRM 2 (1).webp",
@@ -113,7 +119,11 @@ export const getStaticProps = async ({ params }) => {
         },
       ],
     },
-    clinic_management_software: {
+    "clinic-management-software": {
+      metatitle:
+        "Doctor Clinic Management Software - Easy to Use with 100% Customizations",
+      metadescription:
+        "Doctor Clinic Management is trusted by 100+ Doctors &  designed to efficiently maintain records of prescriptions, bills, and other essential information. This software offers a range of features, including an appointment scheduler, electronic health records, SMS notifications, medical billing, and more.",
       title: "Doctor Clinic Management",
       content: {
         serviceimg: "/images/Clinic Management Software 1.webp",
@@ -174,7 +184,10 @@ export const getStaticProps = async ({ params }) => {
         },
       ],
     },
-    service_center_management_crm: {
+    "service-center-management-crm": {
+      metatitle: "Service Center CRM - Daily Call Process Automations",
+      metadescription:
+        "Leverage the capabilities of Service Centre Solutions to cultivate a loyal customer base through automated services. We can assist you in optimizing your backend operations to provide exceptional, customer-centric experiences.",
       title: "Service Centre Solutions",
       content: {
         serviceimg: "/images/Service Center Management CRM 1.webp",
@@ -249,6 +262,8 @@ export const getStaticProps = async ({ params }) => {
 
   return {
     props: {
+      metatitle: data.metatitle,
+      metadescription: data.metadescription,
       title: data.title,
       content: data.content,
       productfeatures: data.productfeatures,

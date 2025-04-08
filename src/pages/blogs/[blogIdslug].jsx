@@ -26,7 +26,7 @@ const BlogDetailsPageEnquiry = dynamic(
 
 // Fetch blog data by blogId
 export async function getServerSideProps({ params }) {
-  const { blogId } = params;
+  const [blogId, slug] = params.blogIdslug.split("-");
   const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
 
   try {
@@ -57,9 +57,14 @@ const BlogDetails = ({ blog }) => {
     <>
       <Head>
         <title>{`RebootAi | ${blog.blogTitle}`}</title>
+        <meta name="description" content={blog.metadescription} />
       </Head>
 
-      <SubPageBanner heading="Our Blogs" subheading={blog.blogTitle} />
+      <SubPageBanner
+        heading="Our Blogs"
+        headinglink={"/blogs"}
+        subheading={blog.blogTitle}
+      />
 
       <main className="xl:p-16 lg:p-8 p-4 flex flex-col gap-8">
         <div className="flex gap-6">

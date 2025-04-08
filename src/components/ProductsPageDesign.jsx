@@ -37,7 +37,7 @@ const ProductsPageDesign = ({
   };
   return (
     <div>
-      <SubPageBanner heading={"Products"} subheading={title} />
+      <SubPageBanner heading={"Products"} headinglink={""} subheading={title} />
       <ServiceAndproductPage1stpart content={content} />
       <ServiceAndProductPageTechnologySection benifits={benifits} />
       <section className="xl:p-16 lg:p-8 sm:p-4 flex flex-col gap-8">
@@ -184,7 +184,7 @@ const ProductsPageDesign = ({
           <div className=" w-full sm:h-[50vh] lg:h-[100vh] justify-center items-center flex flex-col  rounded-lg">
             <div className="w-full flex p-4 justify-end items-center">
               <button
-                className="bg-primary text-white lg:w-16 absolute top-14 lg:h-10 sm:w-12 sm:h-8 flex items-center justify-center rounded-lg hover:bg-white hover:text-primary border-2 border-primary"
+                className="bg-primary text-white lg:w-16 absolute z-[1400] top-14 lg:h-10 sm:w-12 sm:h-8 flex items-center justify-center rounded-lg hover:bg-white hover:text-primary border-2 border-primary"
                 onClick={closeModal}
               >
                 <FaRegWindowClose className="lg:text-2xl sm:text-xl" />

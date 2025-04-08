@@ -1,7 +1,3 @@
-import AboutusComponent from "@/components/AboutusComponent";
-import ClientReview from "@/components/ClientReview";
-import OurClient from "@/components/OurClient";
-import OurUseTechnology from "@/components/OurUseTechnology";
 import SubPageBanner from "@/components/SubPageBanner";
 import dynamic from "next/dynamic";
 import Head from "next/head";
@@ -12,6 +8,23 @@ import React, { useEffect, useState } from "react";
 const Slider = dynamic(() => import("react-slick/lib/slider"), {
   ssr: false,
 });
+
+const AboutusComponent = dynamic(
+  () => import("@/components/AboutusComponent"),
+  {
+    ssr: false,
+  }
+);
+
+const OurClient = dynamic(() => import("@/components/OurClient"), {
+  ssr: false,
+});
+const OurUseTechnology = dynamic(
+  () => import("@/components/OurUseTechnology"),
+  {
+    ssr: false,
+  }
+);
 const About = () => {
   const vissionmission = [
     {
@@ -93,10 +106,16 @@ const About = () => {
   return (
     <>
       <Head>
-        <title>Reboot AI | About Us</title>
+        <title>
+          About Reboot AI Pvt Ltd - Let&apos;s Turn Your Ideas into Reality
+        </title>
+        <meta
+          name="description"
+          content="Reboot AI Pvt Ltd is a IT startup company based on West Bengal. The company has vision of providing Technology at affordable rate to everyone."
+        />
       </Head>
       <section>
-        <SubPageBanner heading={"About Us"} />
+        <SubPageBanner heading={"About Us"} headinglink={"/about"} />
 
         <AboutusComponent showsection={true} content={aboutcontent} />
 
