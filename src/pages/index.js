@@ -1,7 +1,8 @@
+import AboutusComponent from "@/components/AboutusComponent";
+import AwardAndRecognitions from "@/components/AwardAndRecognitions";
 import OurProduct from "@/components/OurProduct";
 import OurProjects from "@/components/OurProjects";
 import OurResponsibility from "@/components/OurResponsibility";
-import OurServices from "@/components/OurServices";
 
 import dynamic from "next/dynamic";
 import Head from "next/head";
@@ -15,19 +16,9 @@ const OurUseTechnology = dynamic(
   }
 );
 
-const AwardAndRecognitions = dynamic(
-  () => import("@/components/AwardAndRecognitions"),
-  {
-    ssr: false,
-  }
-);
-
-const AboutusComponent = dynamic(
-  () => import("@/components/AboutusComponent"),
-  {
-    ssr: false,
-  }
-);
+const OurServices = dynamic(() => import("@/components/OurServices"), {
+  ssr: false,
+});
 
 const OurClient = dynamic(() => import("@/components/OurClient"), {
   ssr: false,
@@ -78,8 +69,8 @@ export default function Home() {
 
   const aboutcontent = {
     aboutcontent:
-      "At Reboot AI Private Limited, our mission is to enhance the competitiveness and agility of companies through innovative software solutions. We empower individuals and organizations with exceptional design, reliable technology, and ongoing support to drive transformation within their industries. Based in Kolkata, West Bengal, we offer comprehensive services across India. Our offerings include web and app development, as well as business and IT consulting. Our development processes are designed to boost productivity and enable businesses to scale using modern techniques. </br> As a Google Partner Firm, we specialize in delivering exceptional services to enhance website security in response to the evolving landscape of organic and paid marketing. Our team comprises skilled security professionals equipped with advanced tools to identify, upgrade, and eliminate any malicious activities. We offer a comprehensive range of expertise across sales, support, marketing, and business development to meet all your business requirements. Our current projects include an Educational Consultant CRM, Clinic Management Software, and Service Centre Management solutions. With our custom development services, clients can tailor solutions to their specific needs. We foster digital innovation through user experience-driven engineering, design thinking, product accelerators for streamlined delivery, and strategic partnerships <br/> Ensure your digital products and services offer exceptional security, reliability, and performance to distinguish yourself in the online landscape. If you’re looking for a Web Development, App Development or Agency for Brand Building , Performance Marketing -this is the right place for you. With Reboot’s advance AI Technologies automate your business operation & boost productivity. Please consult with our Sales Team for any kind of IT or Business Consultation.",
-    heading: "Crafting Intelligent Web & App Solutions with AI",
+      "Welcome to Reboot AI, eastern India's fastest-growing web and app solution provider! With over 5 years of experience and industry eminence, we are known for delivering creative IT solutions to clients as per their needs and requirements! From developing ERP for our clients to student apps, Dental clinic management software, Health SaaS, and pharma management software, our team has delivered effective latest integrated solutions every time. We are known for providing the best technology in the market at competitive pricing that will ensure you don't burn a hole in your pocket. <br/> Reboot AI is helmed as a tech leader in the country due to their smart innovative ideas that turn client vision into a palpable reality! Our 24/7 support further makes a client believe that the team is right with them at every stage of their business! If we do the work, we make sure to own it! <br/> <strong>Reboot AI: The #1 IT Solutions Provider Near You! </strong> <br/> With a vision to engrave our status as the pioneer in the industry, we aim to be part of Digital India which enables tech leaders and businesses to scale exponentially through innovative tech at affordable and feasible rates. Our services cover a wide range of requirements such as IT consultation, project designing, development and lead generation. Each service at Reboot AI is helmed by teams of dedicated experts who with their wealth of experience ensure super smooth delivery of the project! And our OTIF always remains 100%! Let’s connect and start exploring your requirements! ",
+    heading: "Redefining Innovation with Progressive Web and App Solutions",
     img1: "/images/homeabout1.webp",
     img2: "/images/homeabout2.webp",
     img3: "/images/homeabout3.webp",
@@ -96,6 +87,10 @@ export default function Home() {
           name="description"
           content="IT Solutions for the Future, Most Trusted Startups for Web, Apps & Performance Marketing Services."
         />
+        <link rel="preload" href="/images/homeabout1.webp" as="image" />
+        <link rel="preload" href="/images/homeabout2.webp" as="image" />
+        <link rel="preload" href="/images/homeabout3.webp" as="image" />
+        <link rel="preload" href="/images/homeabout4.webp" as="image" />
       </Head>
       <main>
         <video
@@ -105,7 +100,7 @@ export default function Home() {
           loop
           muted
           preload="auto"
-          className="w-full h-full"
+          className="w-full md:h-full h-[50vh] object-cover"
         >
           <source src="/videos/header-cover.mp4" type="video/mp4" />
           Your browser does not support the video tag.

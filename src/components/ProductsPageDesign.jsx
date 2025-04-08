@@ -37,7 +37,11 @@ const ProductsPageDesign = ({
   };
   return (
     <div>
-      <SubPageBanner heading={"Products"} headinglink={""} subheading={title} />
+      <SubPageBanner
+        heading={"Products"}
+        headinglink={"#"}
+        subheading={title}
+      />
       <ServiceAndproductPage1stpart content={content} />
       <ServiceAndProductPageTechnologySection benifits={benifits} />
       <section className="xl:p-16 lg:p-8 sm:p-4 flex flex-col gap-8">
@@ -61,10 +65,10 @@ const ProductsPageDesign = ({
                 </p>
               ))}
             </section>
-            <section className="flex flex-row gap-4 text-white text-lg">
+            <section className="flex flex-row gap-4 text-white text-sm xlg:text-lg">
               <button
                 onClick={() => openModal("EnquiryBoxComponent")}
-                className=" xs:h-[3rem] lg:h-[2.5rem] xs:px-4 lg:px-8 flex justify-center items-center gap-2 bg-[#4385F5] rounded-md"
+                className=" xs:h-[3rem] lg:h-[2.5rem] px-4 xlg:px-8 flex justify-center items-center gap-2 bg-[#4385F5] rounded-md"
               >
                 <Image
                   width={22}

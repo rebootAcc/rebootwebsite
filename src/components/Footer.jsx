@@ -19,43 +19,43 @@ const Footer = () => {
       links: [
         {
           text: "Custom Website Development",
-          href: "/services/custom-website-development",
+          href: "/services/website-development-company-in-kolkata",
         },
         {
           text: "E-commerce Store Development",
-          href: "/services/e-commerce-store-development",
+          href: "/services/e-commerce-website-developer-in-kolkata",
         },
         {
           text: "Web Application Development",
-          href: "/services/web-application-development",
+          href: "/services/web-application-development-service-in-kolkata",
         },
         {
           text: "Dynamic Website Development",
-          href: "/services/dynamic-website-development",
+          href: "/services/dynamic-website-development-service-in-siliguri",
         },
         {
           text: "Saas Application Development",
-          href: "/services/saas-application-development",
+          href: "/services/saas-application-development-service-in-kolkata",
         },
         {
           text: "Web Apps Development",
-          href: "/services/web-application-development",
+          href: "/services/web-application-development-service-in-kolkata",
         },
         {
           text: "Android App Development",
-          href: "/services/android-app-development",
+          href: "/services/app-developer-in-kolkata-android-app-development",
         },
         {
           text: " iOS App Development",
-          href: "/services/ios-app-development",
+          href: "/services/ios-app-development-company-in-siliguri",
         },
         {
           text: "Flutter App Development",
-          href: "/services/flutter-app-development",
+          href: "/services/flutter-developer-in-kolkata",
         },
         {
           text: "AI & ML Integration",
-          href: "/services/ai-ml-integration",
+          href: "/services/ai-ml-integration-services-in-kolkata",
         },
       ],
     },
@@ -64,39 +64,39 @@ const Footer = () => {
       links: [
         {
           text: "Business Consultation",
-          href: "/services/business-consultation",
+          href: "/services/business-consultation-service-in-kolkata",
         },
         {
           text: "Performance Marketing",
-          href: "/services/performance-marketing",
+          href: "/services/performance-marketing-agency-in-kolkata",
         },
         {
           text: "PR & Brand Building",
-          href: "/services/pr-brand-building",
+          href: "/services/influencer-marketing-agency-in-kolkata",
         },
         {
           text: "Google Marketing",
-          href: "/services/google-marketing",
+          href: "/services/seo-agency-in-kolkata",
         },
         {
           text: "Social Media Solutions",
-          href: "/services/social-media-solutions",
+          href: "/services/social-media-agency-in-siliguri",
         },
         {
           text: " IT Consultation",
-          href: "/services/it-consultation",
+          href: "/services/it-consultation-service-in-kolkata",
         },
         {
           text: "Web & Apps Security",
-          href: "/services/web-and-apps-security",
+          href: "/services/cyber-security-service-in-kolkata",
         },
         {
           text: "Creative UI Design",
-          href: "/services/creative-ui-design",
+          href: "/services/ui-ux-developer-in-kolkata",
         },
         {
           text: "Brand Starter Solution",
-          href: "/services/brand-starter-solution",
+          href: "/services/brand-starter-solution-agency-in-kolkata",
         },
         {
           text: "Cloud Server Setup",
@@ -121,31 +121,31 @@ const Footer = () => {
         },
         {
           text: "Engineering Student App",
-          href: "",
+          href: "#",
         },
         {
           text: "Ecommerce Application",
-          href: "",
+          href: "#",
         },
         {
           text: "Pharma Company Management",
-          href: "",
+          href: "#",
         },
         {
           text: "Doctor Video Consultation",
-          href: "",
+          href: "#",
         },
         {
           text: "WhatsApp Oficial API",
-          href: "",
+          href: "#",
         },
         {
           text: "Food Delivery App",
-          href: "",
+          href: "#",
         },
         {
           text: "OTT Streaming App",
-          href: "",
+          href: "#",
         },
       ],
     },
@@ -162,7 +162,7 @@ const Footer = () => {
         },
         {
           text: "Life at Reboot",
-          href: "",
+          href: "#",
         },
         {
           text: "Privacy Policy",
@@ -247,11 +247,11 @@ const Footer = () => {
           <div className="flex flex-col items-start gap-2 ">
             <Link href="/">
               <Image
-                src="/logo.svg"
+                src="/rebootailogoindianflagcolor.png"
                 alt="logo"
                 width={253}
                 height={46}
-                className=" lg:h-[2rem] h-[3rem] xlg:h-[3rem]"
+                className=" lg:h-[2rem] h-[3rem] xlg:h-[3rem] w-full"
               />
             </Link>
             <p className="xlg:text-base lg:text-sm text-base text-white ">
@@ -262,7 +262,7 @@ const Footer = () => {
           </div>
           <div className="flex flex-col gap-1 ">
             <h2 className="xlg:text-lg lg:text-base text-lg font-bold text-justify text-white flex items-center gap-1">
-              <span>Our Pages</span>
+              <span>Our Reg. No.</span>
               <span className="bg-[linear-gradient(90deg,_#4385F5_0%,_rgba(67,_133,_245,_0.00)_100%)] w-12 h-1"></span>
             </h2>
             <p className="xlg:text-base lg:text-sm text-base text-white whitespace-nowrap">

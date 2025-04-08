@@ -55,6 +55,10 @@ const Navbar = () => {
               text: "Terms of Services",
               href: "/images/Terms & Conditions.pdf",
             },
+            {
+              text: "List Of Holidays 2025",
+              href: "/images/List of Holidays 2025.pdf",
+            },
           ],
         },
       ],
@@ -68,23 +72,23 @@ const Navbar = () => {
           menus: [
             {
               text: "Custom Website Development",
-              href: "/services/custom-website-development",
+              href: "/services/website-development-company-in-kolkata",
             },
             {
               text: "E-commerce Store Development",
-              href: "/services/e-commerce-store-development",
+              href: "/services/e-commerce-website-developer-in-kolkata",
             },
             {
               text: "Web Application Development",
-              href: "/services/web-application-development",
+              href: "/services/web-application-development-service-in-kolkata",
             },
             {
               text: "Dynamic Website Development",
-              href: "/services/dynamic-website-development",
+              href: "/services/dynamic-website-development-service-in-siliguri",
             },
             {
               text: "Saas Application Development",
-              href: "/services/saas-application-development",
+              href: "/services/saas-application-development-service-in-kolkata",
             },
           ],
         },
@@ -93,23 +97,23 @@ const Navbar = () => {
           menus: [
             {
               text: "Web Apps Development",
-              href: "/services/web-application-development",
+              href: "/services/web-application-development-service-in-kolkata",
             },
             {
               text: "Android App Development",
-              href: "/services/android-app-development",
+              href: "/services/app-developer-in-kolkata-android-app-development",
             },
             {
               text: " iOS App Development",
-              href: "/services/ios-app-development",
+              href: "/services/ios-app-development-company-in-siliguri",
             },
             {
               text: "Flutter App Development",
-              href: "/services/flutter-app-development",
+              href: "/services/flutter-developer-in-kolkata",
             },
             {
               text: "AI & ML Integration",
-              href: "/services/ai-ml-integration",
+              href: "/services/ai-ml-integration-services-in-kolkata",
             },
           ],
         },
@@ -118,23 +122,23 @@ const Navbar = () => {
           menus: [
             {
               text: "Business Consultation",
-              href: "/services/business-consultation",
+              href: "/services/business-consultation-service-in-kolkata",
             },
             {
               text: "Performance Marketing",
-              href: "/services/performance-marketing",
+              href: "/services/performance-marketing-agency-in-kolkata",
             },
             {
               text: "PR & Brand Building",
-              href: "/services/pr-brand-building",
+              href: "/services/influencer-marketing-agency-in-kolkata",
             },
             {
               text: "Google Marketing",
-              href: "/services/google-marketing",
+              href: "/services/seo-agency-in-kolkata",
             },
             {
               text: "Social Media Solutions",
-              href: "/services/social-media-solutions",
+              href: "/services/social-media-agency-in-siliguri",
             },
           ],
         },
@@ -143,19 +147,19 @@ const Navbar = () => {
           menus: [
             {
               text: " IT Consultation",
-              href: "/services/it-consultation",
+              href: "/services/it-consultation-service-in-kolkata",
             },
             {
               text: "Web & Apps Security",
-              href: "/services/web-and-apps-security",
+              href: "/services/cyber-security-service-in-kolkata",
             },
             {
               text: "Creative UI Design",
-              href: "/services/creative-ui-design",
+              href: "/services/ui-ux-developer-in-kolkata",
             },
             {
               text: "Brand Starter Solution",
-              href: "/services/brand-starter-solution",
+              href: "/services/brand-starter-solution-agency-in-kolkata",
             },
             {
               text: "Cloud Server Setup",
@@ -213,7 +217,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center relative">
         <Link href="/">
           <Image
-            src="/logo.svg"
+            src="/rebootailogoindianflagcolor.png"
             alt="logo"
             width={253}
             height={46}
@@ -286,6 +290,7 @@ const Navbar = () => {
           type="button"
           className="inline-flex lg:hidden text-3xl"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
+          title="menu-open"
         >
           <svg width="0" height="0">
             <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -317,11 +322,11 @@ const Navbar = () => {
       {/* Mobile Navigation */}
       {isMenuOpen && (
         <div className="bg-black/90 absolute top-full w-full left-0 text-white lg:hidden p-6 pb-24 rounded-b-lg h-screen overflow-y-scroll">
-          <ul className="flex flex-col gap-4">
+          <ul className="flex flex-col gap-4 capitalize">
             {navLinks.map((item, index) => (
               <li key={index} className="relative">
                 {item.href ? (
-                  <Link href={item.href} className="hover:text-primary">
+                  <Link href={item.href} className="hover:text-primary ">
                     {item.text}
                   </Link>
                 ) : (

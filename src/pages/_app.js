@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import Loading from "@/components/loading";
+import ChatWithUs from "@/components/ChatWithUs";
 
 const jost = Jost({ subsets: ["latin"], display: "swap" });
 
@@ -29,18 +30,13 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
-      <style jsx global>{`
-        html {
-          font-family: ${jost.style.fontFamily};
-        }
-      `}</style>
-
       {pageLoading ? (
         <Loading />
       ) : (
         <>
           <Navbar />
           <Component {...pageProps} />
+          <ChatWithUs />
           <Footer />
         </>
       )}
