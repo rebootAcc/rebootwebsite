@@ -64,7 +64,7 @@ const ProductReviews = ({ productreviews }) => {
                 <p
                   className="xlg:text-base/[22px] lg:text-xs/[18px] text-xs/[20px] md:text-xs/[18px] h-full md:h-[12rem] lg:h-[8rem] xlg:h-[10rem]"
                   dangerouslySetInnerHTML={{ __html: item.text }}
-                ></div>
+                ></p>
               </section>
             </section>
           ))}
