@@ -54,14 +54,14 @@ const ServiceAndproductPage1stpart = ({ content }) => {
           </h1>
         </section>
         <section className="flex flex-col gap-4">
-          <p
+          <div
             className="xlg:text-base/[27px] lg:text-[15px]/[25px] md:text-sm text-xs"
             dangerouslySetInnerHTML={{ __html: servicedesc1 }}
-          ></p>
-          <p
+          ></div>
+          <div
             className="xlg:text-base/[27px] lg:text-[15px]/[25px] md:text-sm text-xs"
             dangerouslySetInnerHTML={{ __html: servicedesc2 }}
-          ></p>
+          ></div>
           <Link
             href={"https://api.whatsapp.com/send?phone=919088576170"}
             target="_blank"

@@ -209,7 +209,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className=" relative">
+    <footer className="relative">
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/footer-bg.png"
@@ -299,10 +299,10 @@ const Footer = () => {
             </h2>
             <p className="xlg:text-base lg:text-sm text-base text-white flex gap-1">
               <HiLocationMarker className="text-primary w-[2rem] text-xl" />
-              <div>
+              <span>
                 4th Floor, Shib Shankar Market, Bidhan Road Siliguri, West
                 Bengal, IN 734001
-              </div>
+              </span>
             </p>
           </div>
         </div>
